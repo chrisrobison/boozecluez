@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Lexend", "Helvetica Neue", "Helvetica", sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-color: #08a;
+        }
+
+        header {
+            height: 5vh;
+            display: flex;
+            width: 100vw;
+            justify-content: flex-end;
+        }
+
+        header a {
+            font-size: 24px;
+            padding: 0.6rem;
+        }
+
+        main {
+            color: #ddd;
+            flex-direction: row;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-around;
+        }
+        h1 {
+            text-shadow: 2px 2px 0px #000;
+        }
+        footer {
+            background-color: #666;
+            color: #eee;
+            height: 0vh;
+        }
+        .qrwrap {
+
+            width: 260px;
+            text-align: center;
+        }
+        .current {
+            background-color: #ff0;
+        }
+    </style>
+    <script src="qrcode.js"></script>
+</head>
+
+<body>
+    <header>
+        
+    </header>
+    <main></main>
+
+    <script>
+        const $ = str => document.querySelector(str);
+        const $$ = str => document.querySelectorAll(str);
+
+        (function() {
+            const app = {
+                init() {
+                    fetch("sf-bars.json").then(r=>r.json()).then(data=>{
+                        app.data = data;
+
+                        let pages = app.data.length / 53;
+                        let out = "";
+
+                        for (let i=0; i<pages; i++) {
+                            out += ` <a id='page${i}' onclick='return app.page(${i})' href='#${i}'>${i+1}</a> `;
+                        }
+                        $("header").innerHTML = out;
+                        app.genQRCodes();
+                        $("#page0").classList.add("current");
+                    }); 
+                    app.state.loaded = true;
+                    console.info("Loaded.");
+                },
+                page: function(page) {
+                    $(".current").classList.remove("current");
+                    $(`#page${page}`).classList.add("current");
+
+                    let start = page * app.state.pagesize;
+                    $("main").innerHTML = "";
+                    app.genQRCodes(start);
+                },
+                genQRCodes: function(start=0) {
+                    app.state.count = 0;
+                    
+                    for (let i=start; i < (start + app.state.pagesize); i++) {
+                        let item = app.data[i];
+                        let el = document.createElement('div');
+                        el.className = "qrwrap";
+
+                        let code = document.createElement('div');
+                        let qr = new QRCode(code, `https://talesfromthetap.com/api.php?b=${encodeURIComponent(item.name)}`);
+                        el.append(code);
+
+                        let title = document.createElement('h1');
+                        title.innerHTML = item.name;
+                        
+                        el.append(title);
+
+                        $("main").append(el);
+                        app.state.codes.push(qr);
+                    }
+                },
+                state: {
+                    pagesize: 53,
+                    loaded: false,
+                    codes: [],
+                    count: 0
+                }
+            }
+            window.app = app;
+            app.init();
+        })();
+    </script>
+</body>
+
+</html>

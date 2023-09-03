@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Lexend", "Helvetica Neue", "Helvetica", sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+            font-weight: 200;
+            display: flex;
+            flex-direction: row;
+        }
+
+        header {
+            background-color: #999;
+            color: #eee;
+            height: 0vh;
+        }
+
+        main {
+            color: #ddd;
+        }
+
+        footer {
+            background-color: #666;
+            color: #eee;
+            height: 0vh;
+        }
+        ol.bars {
+            columns: 5;
+        }
+        #map {
+            height: 100vh;
+        }
+        .zip:hover {
+            background-color: #0099cc;
+        }
+        #hood {
+            height: 5em;
+            width: 30em;
+            display: inline-block;
+            background: #000;
+            color: #0c0;
+        }
+    </style>
+</head>
+
+<body>
+    <object data='sf.svg' id='map' type='image/svg+xml'></object>
+    <main>
+        <div id='hood'></div>
+    </main>
+
+    <script>
+        const $ = str => document.querySelector(str);
+        const $$ = str => document.querySelectorAll(str);
+
+        (function() {
+            const app = {
+                init() {
+                    //app.loadBars();
+                    app.state.loaded = true;
+                    console.info("Loaded.");
+                    
+                    fetch("hoods.js").then(r=>r.json()).then(data=>{
+                        app.hoods = data;
+                    });
+                    
+                    $("#map").addEventListener("load", function() {
+                        app.map = $("#map");
+                       app.svgDoc = $("#map").contentDocument;
+                       let hoods = app.svgDoc.getElementsByClassName("zip");
+
+                       for (var i=0; i < hoods.length; i++) {
+                          hoods[i].addEventListener("mouseover", function(evt) {
+                            console.dir(evt);
+                            var zip = evt.target.className.baseVal.replace(/\D/g, '');
+                            app.state.over = zip;
+                              $("#hood").innerHTML = `${app.hoods[zip]} [${zip}] <span style="color:#cc0;">Currently at: ${app.state.current}</span>`;
+                          },false);
+
+                          hoods[i].addEventListener("click", function(evt) {
+                            var zip = evt.target.className.baseVal.replace(/\D/g, '');
+                            let cur = app.svgDoc.querySelector(".current");
+               console.dir(evt);                 
+                            if (cur) {
+                                cur.classList.remove("current");    
+                            }
+                            evt.target.classList.add("current");
+                            app.state.current = zip;
+                              $("#hood").innerHTML = `${app.hoods[app.state.over]} [${app.state.over}] <span style="color:#cc0;">Currently at: ${app.state.current}</span>`;
+                            //jetToDistrict(game.hoods[zip]);
+                          },false);
+                       }
+                    },false);
+                },
+
+                loadSVG: function() {
+                    
+                },
+                svgDoc: {},
+                loadBars: function() {
+                    fetch("sf-bars.json").then(resp=>resp.json()).then(data=>{
+                        app.bars = data;
+                        $("main").innerHTML = app.makeList(app.bars);
+                    });
+                },
+                makeList: function(bars) {
+                    out = "<ol class='bars'>";
+                    bars.forEach((bar, idx) => {
+                        out += `<li>${bar.name}</li>`;
+                    });
+                    out += "</ol>";
+                    return out;
+                },
+                state: {
+                    loaded: false
+                }
+            }
+            window.app = app;
+            app.init();
+        })();
+    </script>
+</body>
+
+</html>
