@@ -54,6 +54,15 @@
     "lng": "-122.404502"
   },
   {
+    "name": "500 Club, The",
+    "address": "500 Guerrero Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94110",
+    "lat": "37.7630249",
+    "lng": "-122.4241968"
+  },
+  {
     "name": "54 Mint Wine Bar",
     "address": "16 Mint Plaza",
     "city": "San Francisco",
@@ -90,6 +99,33 @@
     "lng": "-122.3977007"
   },
   {
+    "name": "ABV",
+    "address": "3174 16th Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.765043",
+    "lng": "-122.4235763"
+  },
+  {
+    "name": "AMD Project",
+    "address": "198 Church Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94114",
+    "lat": "37.7678879",
+    "lng": "-122.4291839"
+  },
+  {
+    "name": "ATwater Tavern",
+    "address": "295 Terry A Francois Boulevard",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94158",
+    "lat": "37.774311",
+    "lng": "-122.3872211"
+  },
+  {
     "name": "Abbey Tavern",
     "address": "4100 Geary Boulevard",
     "city": "San Francisco",
@@ -106,15 +142,6 @@
     "zip": "94102",
     "lat": "37.7771042",
     "lng": "-122.4227403"
-  },
-  {
-    "name": "ABV",
-    "address": "3174 16th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.765043",
-    "lng": "-122.4235763"
   },
   {
     "name": "Ace's",
@@ -135,6 +162,15 @@
     "lng": "-122.3930809"
   },
   {
+    "name": "Alembic, The",
+    "address": "1725 Haight Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94117",
+    "lat": "37.7693079",
+    "lng": "-122.4511505"
+  },
+  {
     "name": "Ales Unlimited Basement",
     "address": "222 Hyde Street",
     "city": "San Francisco",
@@ -142,6 +178,15 @@
     "zip": "94102",
     "lat": "37.78295019999999",
     "lng": "-122.415646"
+  },
+  {
+    "name": "Alibi, The",
+    "address": "839 Geary Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.7861207",
+    "lng": "-122.4170595"
   },
   {
     "name": "Aliment",
@@ -160,15 +205,6 @@
     "zip": "94133",
     "lat": "37.8086803",
     "lng": "-122.4161115"
-  },
-  {
-    "name": "AMD Project",
-    "address": "198 Church Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94114",
-    "lat": "37.7678879",
-    "lng": "-122.4291839"
   },
   {
     "name": "Ame Restaurant",
@@ -234,6 +270,15 @@
     "lng": "-122.4195416"
   },
   {
+    "name": "Armory Club, The",
+    "address": "1799 Mission Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.7684172",
+    "lng": "-122.419716"
+  },
+  {
     "name": "AsiaSF",
     "address": "201 9th Street",
     "city": "San Francisco",
@@ -268,15 +313,6 @@
     "zip": "94105",
     "lat": "37.7879523",
     "lng": "-122.4002209"
-  },
-  {
-    "name": "ATwater Tavern",
-    "address": "295 Terry A Francois Boulevard",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94158",
-    "lat": "37.774311",
-    "lng": "-122.3872211"
   },
   {
     "name": "Aunt Charlies Lounge",
@@ -405,15 +441,6 @@
     "lng": "-122.41288"
   },
   {
-    "name": "Bar and restaraunt",
-    "address": "121 7th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.7788006",
-    "lng": "-122.4102065"
-  },
-  {
     "name": "Bar Basic",
     "address": "510 Brannan Street",
     "city": "San Francisco",
@@ -477,6 +504,15 @@
     "lng": "-122.4368372"
   },
   {
+    "name": "Bar and restaraunt",
+    "address": "121 7th Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.7788006",
+    "lng": "-122.4102065"
+  },
+  {
     "name": "Barney's Gourmet Hamburgers",
     "address": "4138 24th Street",
     "city": "San Francisco",
@@ -520,6 +556,24 @@
     "zip": "94110",
     "lat": "37.7603652",
     "lng": "-122.4190216"
+  },
+  {
+    "name": "Beer Hall, The",
+    "address": "1 Polk Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94102",
+    "lat": "37.77678700000001",
+    "lng": "-122.418101"
+  },
+  {
+    "name": "Bell Tower, The",
+    "address": "1900 Polk Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.7943304",
+    "lng": "-122.4212645"
   },
   {
     "name": "Benders Bar and Grill",
@@ -621,6 +675,15 @@
     "lng": "-122.4199171"
   },
   {
+    "name": "Bitter End, The",
+    "address": "441 Clement Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94118",
+    "lat": "37.7827265",
+    "lng": "-122.4640397"
+  },
+  {
     "name": "Bix Restaurant",
     "address": "56 Gold Street",
     "city": "San Francisco",
@@ -628,6 +691,15 @@
     "zip": "94133",
     "lat": "37.7968486",
     "lng": "-122.4029681"
+  },
+  {
+    "name": "Black Horse London Pub, The",
+    "address": "1514 Union Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94123",
+    "lat": "37.798609",
+    "lng": "-122.4244905"
   },
   {
     "name": "Black Magic",
@@ -900,6 +972,15 @@
     "lng": "-122.3952601"
   },
   {
+    "name": "Brixton on 2nd, The",
+    "address": "701 2nd Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94107",
+    "lat": "37.7806206",
+    "lng": "-122.3900016"
+  },
+  {
     "name": "Broadway Studios",
     "address": "435 Broadway",
     "city": "San Francisco",
@@ -925,6 +1006,15 @@
     "zip": "94110",
     "lat": "37.7589582",
     "lng": "-122.4188289"
+  },
+  {
+    "name": "Buccaneer, The",
+    "address": "2155 Polk Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.7966504",
+    "lng": "-122.4221227"
   },
   {
     "name": "Buck Tavern",
@@ -997,15 +1087,6 @@
     "zip": "94103",
     "lat": "37.7712896",
     "lng": "-122.4129159"
-  },
-  {
-    "name": "Buzz Works Sports Tavern",
-    "address": "365 11th Avenue",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94118",
-    "lat": "37.7815232",
-    "lng": "-122.4699477"
   },
   {
     "name": "Cabin",
@@ -1197,6 +1278,15 @@
     "lng": "-122.388126"
   },
   {
+    "name": "Chapel, The",
+    "address": "777 Valencia Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94110",
+    "lat": "37.7605088",
+    "lng": "-122.4212203"
+  },
+  {
     "name": "Chelsea Place",
     "address": "641 Bush Street",
     "city": "San Francisco",
@@ -1213,6 +1303,15 @@
     "zip": "94133",
     "lat": "37.7995614",
     "lng": "-122.4096741"
+  },
+  {
+    "name": "Chieftain, The",
+    "address": "198 5th Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.781468",
+    "lng": "-122.405287"
   },
   {
     "name": "China Town Business Pub Co",
@@ -1240,6 +1339,15 @@
     "zip": "94133",
     "lat": "37.7972336",
     "lng": "-122.4034106"
+  },
+  {
+    "name": "Cinch, The",
+    "address": "1723 Polk Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.7927563",
+    "lng": "-122.4214518"
   },
   {
     "name": "Citrus Club",
@@ -1458,6 +1566,15 @@
     "lng": "-122.4211832"
   },
   {
+    "name": "Cosmo Bar & Lounge, The",
+    "address": "440 Broadway",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94133",
+    "lat": "37.7983532",
+    "lng": "-122.4046718"
+  },
+  {
     "name": "Cotters Corner",
     "address": "4431 Mission Street",
     "city": "San Francisco",
@@ -1485,6 +1602,15 @@
     "lng": "-122.4331843"
   },
   {
+    "name": "Crafty Fox Ale House, The",
+    "address": "1700 Mission Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.7698262",
+    "lng": "-122.4204105"
+  },
+  {
     "name": "Cresta's Twenty Two Eleven Club",
     "address": "2211 Polk Street",
     "city": "San Francisco",
@@ -1510,6 +1636,15 @@
     "zip": "94132",
     "lat": "37.7259422",
     "lng": "-122.492665"
+  },
+  {
+    "name": "DNA Lounge",
+    "address": "375 11th Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.7711031",
+    "lng": "-122.4126145"
   },
   {
     "name": "Dada Sf Studio",
@@ -1638,15 +1773,6 @@
     "lng": "-122.439785"
   },
   {
-    "name": "DNA Lounge",
-    "address": "375 11th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.7711031",
-    "lng": "-122.4126145"
-  },
-  {
     "name": "Dobbs Ferry Restaurant",
     "address": "406 Hayes Street",
     "city": "San Francisco",
@@ -1710,6 +1836,24 @@
     "lng": "-122.480962"
   },
   {
+    "name": "Dubliner West Portal, The",
+    "address": "328 West Portal Avenue",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94127",
+    "lat": "37.737787",
+    "lng": "-122.4697999"
+  },
+  {
+    "name": "Dubliner, The",
+    "address": "3838 24th Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94114",
+    "lat": "37.7517866",
+    "lng": "-122.4283512"
+  },
+  {
     "name": "Duffy's Irish Pub",
     "address": "1451 Larkin Street",
     "city": "San Francisco",
@@ -1755,6 +1899,15 @@
     "lng": "-122.4044033"
   },
   {
+    "name": "Eagles Drift Inn, The",
+    "address": "1232 Noriega Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94122",
+    "lat": "37.7544435",
+    "lng": "-122.4770855"
+  },
+  {
     "name": "Eastside West Restaurant & Bar",
     "address": "3154 Fillmore Street",
     "city": "San Francisco",
@@ -1771,6 +1924,15 @@
     "zip": "94105",
     "lat": "37.7876628",
     "lng": "-122.3990075"
+  },
+  {
+    "name": "Edge, The",
+    "address": "4149 18th Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94114",
+    "lat": "37.7606565",
+    "lng": "-122.4360035"
   },
   {
     "name": "Edible Excursions",
@@ -1854,6 +2016,15 @@
     "lng": "-122.4200354"
   },
   {
+    "name": "Endup, The",
+    "address": "401 6th Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.7772746",
+    "lng": "-122.4037695"
+  },
+  {
     "name": "Eno",
     "address": "320 Geary Street",
     "city": "San Francisco",
@@ -1879,6 +2050,15 @@
     "zip": "94110",
     "lat": "37.7602981",
     "lng": "-122.4212092"
+  },
+  {
+    "name": "European, The",
+    "address": "490 Geary Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94102",
+    "lat": "37.7871218",
+    "lng": "-122.4113976"
   },
   {
     "name": "F8 Nightclub & Bar",
@@ -1944,6 +2124,15 @@
     "lng": "-122.4233794"
   },
   {
+    "name": "Fillmore, The",
+    "address": "1805 Geary Boulevard",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94115",
+    "lat": "37.7840042",
+    "lng": "-122.4331332"
+  },
+  {
     "name": "Final Final",
     "address": "2990 Baker Street",
     "city": "San Francisco",
@@ -1996,6 +2185,15 @@
     "zip": "94111",
     "lat": "37.7951044",
     "lng": "-122.4007895"
+  },
+  {
+    "name": "Fishbowl Bar & Grill, The",
+    "address": "1854 Divisadero Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94115",
+    "lat": "37.7869217",
+    "lng": "-122.4400223"
   },
   {
     "name": "Five Hundred Club",
@@ -2095,6 +2293,15 @@
     "zip": "94103",
     "lat": "37.765083",
     "lng": "-122.4223264"
+  },
+  {
+    "name": "Girls Lounge, The",
+    "address": "4717 Geary Boulevard",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94118",
+    "lat": "37.780577",
+    "lng": "-122.4699467"
   },
   {
     "name": "Gold Mirror",
@@ -2205,6 +2412,24 @@
     "lng": "-122.4369257"
   },
   {
+    "name": "Greens Sports Bar, The",
+    "address": "2239 Polk Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.7975626",
+    "lng": "-122.4223694"
+  },
+  {
+    "name": "Grubstake, The",
+    "address": "1525 Pine Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.789368",
+    "lng": "-122.4208221"
+  },
+  {
     "name": "Halberstadt Fencers' Club",
     "address": "220 16th Avenue",
     "city": "San Francisco",
@@ -2221,6 +2446,15 @@
     "zip": "94103",
     "lat": "37.771465",
     "lng": "-122.4139198"
+  },
+  {
+    "name": "Hall, The",
+    "address": "1028 Market Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94102",
+    "lat": "37.7818338",
+    "lng": "-122.4112267"
   },
   {
     "name": "Halu",
@@ -2385,6 +2619,24 @@
     "lng": "-122.4364723"
   },
   {
+    "name": "Hidden Vine, The",
+    "address": "408 Merchant Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94111",
+    "lat": "37.7955933",
+    "lng": "-122.4007555"
+  },
+  {
+    "name": "Hidden Vine, The",
+    "address": "620 Post Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.78801929999999",
+    "lng": "-122.4121724"
+  },
+  {
     "name": "Hideout",
     "address": "3121 16th Street",
     "city": "San Francisco",
@@ -2428,6 +2680,24 @@
     "zip": "94110",
     "lat": "37.7600837",
     "lng": "-122.4198861"
+  },
+  {
+    "name": "Holy Cow, The",
+    "address": "1535 Folsom Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.7713728",
+    "lng": "-122.4143025"
+  },
+  {
+    "name": "Homestead, The",
+    "address": "2301 Folsom Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94110",
+    "lat": "37.7604123",
+    "lng": "-122.4146016"
   },
   {
     "name": "Hong Kong Lounge",
@@ -2538,6 +2808,24 @@
     "lng": "-122.4539139"
   },
   {
+    "name": "Interval, The",
+    "address": "2 Marina Boulevard",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94123",
+    "lat": "37.8053418",
+    "lng": "-122.4324908"
+  },
+  {
+    "name": "Irish Bank, The",
+    "address": "10 Mark Lane",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94108",
+    "lat": "37.7904802",
+    "lng": "-122.4046843"
+  },
+  {
     "name": "Irving Pizza",
     "address": "928 Geary Street",
     "city": "San Francisco",
@@ -2554,6 +2842,15 @@
     "zip": "94115",
     "lat": "37.7841444",
     "lng": "-122.4325818"
+  },
+  {
+    "name": "JCB Tasting Lounge, The",
+    "address": "600 Stockton Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94108",
+    "lat": "37.7918754",
+    "lng": "-122.4070392"
   },
   {
     "name": "Jackalope",
@@ -2889,6 +3186,15 @@
     "lng": "-122.4171121"
   },
   {
+    "name": "Lister Bar, The",
+    "address": "77 Cambon Drive",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94132",
+    "lat": "37.7176835",
+    "lng": "-122.4737793"
+  },
+  {
     "name": "Little Minsky's Burlesque",
     "address": "1511 Haight Street",
     "city": "San Francisco",
@@ -2997,6 +3303,15 @@
     "lng": "-122.4203423"
   },
   {
+    "name": "Mad Dog In The Fog, The",
+    "address": "530 Haight Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94117",
+    "lat": "37.7721618",
+    "lng": "-122.431029"
+  },
+  {
     "name": "Madrone Art Bar",
     "address": "500 Divisadero Street",
     "city": "San Francisco",
@@ -3078,6 +3393,24 @@
     "lng": "-122.4205566"
   },
   {
+    "name": "Meatball Bar Hayes St, The",
+    "address": "602 Hayes Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94102",
+    "lat": "37.7767801",
+    "lng": "-122.4265958"
+  },
+  {
+    "name": "Meatball Bar, The",
+    "address": "126 Sutter Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94104",
+    "lat": "37.790078",
+    "lng": "-122.402794"
+  },
+  {
     "name": "Mecca",
     "address": "2029 Market Street",
     "city": "San Francisco",
@@ -3139,6 +3472,24 @@
     "zip": "94117",
     "lat": "37.7774002",
     "lng": "-122.4384474"
+  },
+  {
+    "name": "Mint Karaoke Lounge, The",
+    "address": "1942 Market Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94102",
+    "lat": "37.770277",
+    "lng": "-122.4258163"
+  },
+  {
+    "name": "Mint Space, The",
+    "address": "3153 California Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94115",
+    "lat": "37.7873189",
+    "lng": "-122.4462082"
   },
   {
     "name": "Mission Bar",
@@ -3258,6 +3609,15 @@
     "lng": "-122.4084128"
   },
   {
+    "name": "Monk's Kettle, The",
+    "address": "3141 16th Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.7647206",
+    "lng": "-122.422986"
+  },
+  {
     "name": "Montesacro Pinseria",
     "address": "510 Stevenson Street",
     "city": "San Francisco",
@@ -3328,6 +3688,15 @@
     "zip": "94108",
     "lat": "37.7897895",
     "lng": "-122.4074167"
+  },
+  {
+    "name": "Nags Head, The",
+    "address": "5346 Geary Boulevard",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94121",
+    "lat": "37.7807171",
+    "lng": "-122.4770739"
   },
   {
     "name": "Naked Fish",
@@ -3582,6 +3951,15 @@
     "lng": "-122.415026"
   },
   {
+    "name": "Office, The",
+    "address": "194 Church Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94114",
+    "lat": "37.7679404",
+    "lng": "-122.4291907"
+  },
+  {
     "name": "Olympic Club",
     "address": "2966 Diamond Street",
     "city": "San Francisco",
@@ -3645,6 +4023,15 @@
     "lng": "-122.4330384"
   },
   {
+    "name": "Outsiders, The",
+    "address": "894 Geary Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.7863512",
+    "lng": "-122.4180333"
+  },
+  {
     "name": "Pagan Idol",
     "address": "375 Bush Street",
     "city": "San Francisco",
@@ -3652,6 +4039,15 @@
     "zip": "94104",
     "lat": "37.79068669999999",
     "lng": "-122.4036347"
+  },
+  {
+    "name": "Page, The",
+    "address": "298 Divisadero Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94117",
+    "lat": "37.7721319",
+    "lng": "-122.4369257"
   },
   {
     "name": "Pagoda",
@@ -3816,6 +4212,15 @@
     "lng": "-122.4313969"
   },
   {
+    "name": "Peak's, The",
+    "address": "1316 Castro Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94114",
+    "lat": "37.7510037",
+    "lng": "-122.4343059"
+  },
+  {
     "name": "Pedro's Cantina",
     "address": "128 King Street",
     "city": "San Francisco",
@@ -3877,6 +4282,15 @@
     "zip": "94109",
     "lat": "37.7878316",
     "lng": "-122.4180126"
+  },
+  {
+    "name": "Phoenix Bar & Restaurant, The",
+    "address": "811 Valencia Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94110",
+    "lat": "37.7598422",
+    "lng": "-122.4210876"
   },
   {
     "name": "Phone Booth",
@@ -4005,6 +4419,15 @@
     "lng": "-122.4206305"
   },
   {
+    "name": "Plough & Stars, The",
+    "address": "116 Clement Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94118",
+    "lat": "37.7833917",
+    "lng": "-122.4605497"
+  },
+  {
     "name": "Plush Room Cabaret",
     "address": "940 Sutter Street",
     "city": "San Francisco",
@@ -4050,6 +4473,15 @@
     "lng": "-122.4253757"
   },
   {
+    "name": "Pour House, The",
+    "address": "1327 Polk Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.789051",
+    "lng": "-122.4206102"
+  },
+  {
     "name": "Powerhouse",
     "address": "1347 Folsom Street",
     "city": "San Francisco",
@@ -4084,6 +4516,24 @@
     "zip": "94109",
     "lat": "37.7889228",
     "lng": "-122.4121485"
+  },
+  {
+    "name": "Pub, The",
+    "address": "851 Beach Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.8062216",
+    "lng": "-122.4227688"
+  },
+  {
+    "name": "Pub, The",
+    "address": "1675 Owens Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94158",
+    "lat": "37.7680799",
+    "lng": "-122.393011"
   },
   {
     "name": "Punch Line Comedy Club",
@@ -4228,6 +4678,24 @@
     "zip": "94108",
     "lat": "37.79049930000001",
     "lng": "-122.4038395"
+  },
+  {
+    "name": "Riddler, The",
+    "address": "528 Laguna Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94102",
+    "lat": "37.7759402",
+    "lng": "-122.4259985"
+  },
+  {
+    "name": "Riptide, The",
+    "address": "3639 Taraval Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94116",
+    "lat": "37.7415774",
+    "lng": "-122.5053735"
   },
   {
     "name": "Ritch Street Supper Club",
@@ -4419,6 +4887,15 @@
     "lng": "-122.4345258"
   },
   {
+    "name": "SIP BAR & LOUNGE",
+    "address": "787 Broadway",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94133",
+    "lat": "37.7973181",
+    "lng": "-122.410047"
+  },
+  {
     "name": "Sabella & La Torre",
     "address": "2809 Taylor Street",
     "city": "San Francisco",
@@ -4435,6 +4912,15 @@
     "zip": "94109",
     "lat": "37.7877242",
     "lng": "-122.4120195"
+  },
+  {
+    "name": "Saloon, The",
+    "address": "1232 Grant Avenue",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94133",
+    "lat": "37.7985867",
+    "lng": "-122.4070229"
   },
   {
     "name": "Sam Jordan's Bar and Grill",
@@ -4599,15 +5085,6 @@
     "lng": "-122.434332"
   },
   {
-    "name": "SIP BAR & LOUNGE",
-    "address": "787 Broadway",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94133",
-    "lat": "37.7973181",
-    "lng": "-122.410047"
-  },
-  {
     "name": "Sip Tea Room",
     "address": "721 Lincoln Way",
     "city": "San Francisco",
@@ -4752,6 +5229,15 @@
     "lng": "-122.3806629"
   },
   {
+    "name": "Spot Restaurant, The",
+    "address": "2325 Taraval Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94116",
+    "lat": "37.7421809",
+    "lng": "-122.4911737"
+  },
+  {
     "name": "St Francis Yacht Club",
     "address": "700 Marina Boulevard",
     "city": "San Francisco",
@@ -4822,6 +5308,15 @@
     "zip": "94118",
     "lat": "37.7826521",
     "lng": "-122.4671797"
+  },
+  {
+    "name": "Stud Bar, The",
+    "address": "399 9th Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.7728134",
+    "lng": "-122.4099831"
   },
   {
     "name": "Sugar Lounge",
@@ -4896,6 +5391,15 @@
     "lng": "-122.4352017"
   },
   {
+    "name": "Sycamore, The",
+    "address": "2140 Mission Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94110",
+    "lat": "37.7627643",
+    "lng": "-122.419727"
+  },
+  {
     "name": "T J & R Pub Inc",
     "address": "2816 Diamond Street",
     "city": "San Francisco",
@@ -4912,6 +5416,15 @@
     "zip": "94103",
     "lat": "37.78383609999999",
     "lng": "-122.4030033"
+  },
+  {
+    "name": "Taco Shop at Underdogs, The",
+    "address": "1824 Irving Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94122",
+    "lat": "37.7638176",
+    "lng": "-122.4777046"
   },
   {
     "name": "Taj Campton Place Restaurant",
@@ -5004,555 +5517,6 @@
     "lng": "-122.4084551"
   },
   {
-    "name": "The 500 Club",
-    "address": "500 Guerrero Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94110",
-    "lat": "37.7630249",
-    "lng": "-122.4241968"
-  },
-  {
-    "name": "The Alembic",
-    "address": "1725 Haight Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94117",
-    "lat": "37.7693079",
-    "lng": "-122.4511505"
-  },
-  {
-    "name": "The Alibi",
-    "address": "839 Geary Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.7861207",
-    "lng": "-122.4170595"
-  },
-  {
-    "name": "The Armory Club",
-    "address": "1799 Mission Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.7684172",
-    "lng": "-122.419716"
-  },
-  {
-    "name": "The Beer Hall",
-    "address": "1 Polk Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94102",
-    "lat": "37.77678700000001",
-    "lng": "-122.418101"
-  },
-  {
-    "name": "The Bell Tower",
-    "address": "1900 Polk Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.7943304",
-    "lng": "-122.4212645"
-  },
-  {
-    "name": "The Bitter End",
-    "address": "441 Clement Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94118",
-    "lat": "37.7827265",
-    "lng": "-122.4640397"
-  },
-  {
-    "name": "The Black Horse London Pub",
-    "address": "1514 Union Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94123",
-    "lat": "37.798609",
-    "lng": "-122.4244905"
-  },
-  {
-    "name": "The Brixton on 2nd",
-    "address": "701 2nd Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94107",
-    "lat": "37.7806206",
-    "lng": "-122.3900016"
-  },
-  {
-    "name": "The Buccaneer",
-    "address": "2155 Polk Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.7966504",
-    "lng": "-122.4221227"
-  },
-  {
-    "name": "The Chapel",
-    "address": "777 Valencia Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94110",
-    "lat": "37.7605088",
-    "lng": "-122.4212203"
-  },
-  {
-    "name": "The Chieftain Irish Pub & Restaurant",
-    "address": "198 5th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.781468",
-    "lng": "-122.405287"
-  },
-  {
-    "name": "The Cinch",
-    "address": "1723 Polk Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.7927563",
-    "lng": "-122.4214518"
-  },
-  {
-    "name": "The Cosmo Bar & Lounge",
-    "address": "440 Broadway",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94133",
-    "lat": "37.7983532",
-    "lng": "-122.4046718"
-  },
-  {
-    "name": "The Crafty Fox Ale House",
-    "address": "1700 Mission Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.7698262",
-    "lng": "-122.4204105"
-  },
-  {
-    "name": "The Dubliner",
-    "address": "3838 24th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94114",
-    "lat": "37.7517866",
-    "lng": "-122.4283512"
-  },
-  {
-    "name": "The Dubliner Bar West Portal",
-    "address": "328 West Portal Avenue",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94127",
-    "lat": "37.737787",
-    "lng": "-122.4697999"
-  },
-  {
-    "name": "The Eagles Drift Inn",
-    "address": "1232 Noriega Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94122",
-    "lat": "37.7544435",
-    "lng": "-122.4770855"
-  },
-  {
-    "name": "The Edge",
-    "address": "4149 18th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94114",
-    "lat": "37.7606565",
-    "lng": "-122.4360035"
-  },
-  {
-    "name": "The Endup",
-    "address": "401 6th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.7772746",
-    "lng": "-122.4037695"
-  },
-  {
-    "name": "The European",
-    "address": "490 Geary Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94102",
-    "lat": "37.7871218",
-    "lng": "-122.4113976"
-  },
-  {
-    "name": "The Fillmore",
-    "address": "1805 Geary Boulevard",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94115",
-    "lat": "37.7840042",
-    "lng": "-122.4331332"
-  },
-  {
-    "name": "The Fishbowl Bar & Grill",
-    "address": "1854 Divisadero Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94115",
-    "lat": "37.7869217",
-    "lng": "-122.4400223"
-  },
-  {
-    "name": "The Girls Lounge",
-    "address": "4717 Geary Boulevard",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94118",
-    "lat": "37.780577",
-    "lng": "-122.4699467"
-  },
-  {
-    "name": "The Greens Sports Bar",
-    "address": "2239 Polk Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.7975626",
-    "lng": "-122.4223694"
-  },
-  {
-    "name": "The Grubstake",
-    "address": "1525 Pine Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.789368",
-    "lng": "-122.4208221"
-  },
-  {
-    "name": "The Hall",
-    "address": "1028 Market Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94102",
-    "lat": "37.7818338",
-    "lng": "-122.4112267"
-  },
-  {
-    "name": "The Hidden Vine",
-    "address": "408 Merchant Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94111",
-    "lat": "37.7955933",
-    "lng": "-122.4007555"
-  },
-  {
-    "name": "The Hidden Vine",
-    "address": "620 Post Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.78801929999999",
-    "lng": "-122.4121724"
-  },
-  {
-    "name": "The Holy Cow",
-    "address": "1535 Folsom Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.7713728",
-    "lng": "-122.4143025"
-  },
-  {
-    "name": "The Homestead",
-    "address": "2301 Folsom Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94110",
-    "lat": "37.7604123",
-    "lng": "-122.4146016"
-  },
-  {
-    "name": "The Interval",
-    "address": "2 Marina Boulevard",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94123",
-    "lat": "37.8053418",
-    "lng": "-122.4324908"
-  },
-  {
-    "name": "The Irish Bank",
-    "address": "10 Mark Lane",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94108",
-    "lat": "37.7904802",
-    "lng": "-122.4046843"
-  },
-  {
-    "name": "The JCB Tasting Lounge",
-    "address": "600 Stockton Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94108",
-    "lat": "37.7918754",
-    "lng": "-122.4070392"
-  },
-  {
-    "name": "The Lister Bar",
-    "address": "77 Cambon Drive",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94132",
-    "lat": "37.7176835",
-    "lng": "-122.4737793"
-  },
-  {
-    "name": "The Mad Dog In The Fog",
-    "address": "530 Haight Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94117",
-    "lat": "37.7721618",
-    "lng": "-122.431029"
-  },
-  {
-    "name": "The Meatball Bar",
-    "address": "126 Sutter Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94104",
-    "lat": "37.790078",
-    "lng": "-122.402794"
-  },
-  {
-    "name": "The Meatball Bar Hayes St",
-    "address": "602 Hayes Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94102",
-    "lat": "37.7767801",
-    "lng": "-122.4265958"
-  },
-  {
-    "name": "The Mint Karaoke Lounge",
-    "address": "1942 Market Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94102",
-    "lat": "37.770277",
-    "lng": "-122.4258163"
-  },
-  {
-    "name": "The Mint Space",
-    "address": "3153 California Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94115",
-    "lat": "37.7873189",
-    "lng": "-122.4462082"
-  },
-  {
-    "name": "The Monk's Kettle",
-    "address": "3141 16th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.7647206",
-    "lng": "-122.422986"
-  },
-  {
-    "name": "The Nags Head",
-    "address": "5346 Geary Boulevard",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94121",
-    "lat": "37.7807171",
-    "lng": "-122.4770739"
-  },
-  {
-    "name": "The Office",
-    "address": "194 Church Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94114",
-    "lat": "37.7679404",
-    "lng": "-122.4291907"
-  },
-  {
-    "name": "The Outsiders",
-    "address": "894 Geary Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.7863512",
-    "lng": "-122.4180333"
-  },
-  {
-    "name": "The Page",
-    "address": "298 Divisadero Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94117",
-    "lat": "37.7721319",
-    "lng": "-122.4369257"
-  },
-  {
-    "name": "The Peak's",
-    "address": "1316 Castro Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94114",
-    "lat": "37.7510037",
-    "lng": "-122.4343059"
-  },
-  {
-    "name": "The Phoenix Bar & Restaurant",
-    "address": "811 Valencia Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94110",
-    "lat": "37.7598422",
-    "lng": "-122.4210876"
-  },
-  {
-    "name": "The Plough & Stars",
-    "address": "116 Clement Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94118",
-    "lat": "37.7833917",
-    "lng": "-122.4605497"
-  },
-  {
-    "name": "The Pour House",
-    "address": "1327 Polk Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.789051",
-    "lng": "-122.4206102"
-  },
-  {
-    "name": "The Pub",
-    "address": "851 Beach Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.8062216",
-    "lng": "-122.4227688"
-  },
-  {
-    "name": "The Pub",
-    "address": "1675 Owens Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94158",
-    "lat": "37.7680799",
-    "lng": "-122.393011"
-  },
-  {
-    "name": "The Riddler",
-    "address": "528 Laguna Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94102",
-    "lat": "37.7759402",
-    "lng": "-122.4259985"
-  },
-  {
-    "name": "The Riptide",
-    "address": "3639 Taraval Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94116",
-    "lat": "37.7415774",
-    "lng": "-122.5053735"
-  },
-  {
-    "name": "The Saloon",
-    "address": "1232 Grant Avenue",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94133",
-    "lat": "37.7985867",
-    "lng": "-122.4070229"
-  },
-  {
-    "name": "The Spot Restaurant",
-    "address": "2325 Taraval Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94116",
-    "lat": "37.7421809",
-    "lng": "-122.4911737"
-  },
-  {
-    "name": "The Stud Bar",
-    "address": "399 9th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.7728134",
-    "lng": "-122.4099831"
-  },
-  {
-    "name": "The Sycamore",
-    "address": "2140 Mission Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94110",
-    "lat": "37.7627643",
-    "lng": "-122.419727"
-  },
-  {
-    "name": "The Taco Shop at Underdogs",
-    "address": "1824 Irving Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94122",
-    "lat": "37.7638176",
-    "lng": "-122.4777046"
-  },
-  {
-    "name": "The Tipsy Pig",
-    "address": "2231 Chestnut Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94123",
-    "lat": "37.8001359",
-    "lng": "-122.4400568"
-  },
-  {
-    "name": "The Wild Side West",
-    "address": "424 Cortland Avenue",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94110",
-    "lat": "37.7390005",
-    "lng": "-122.4172051"
-  },
-  {
-    "name": "The Wreck Room",
-    "address": "1390 California Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.7912325",
-    "lng": "-122.4171976"
-  },
-  {
     "name": "Thee Parkside",
     "address": "1600 17th Street",
     "city": "San Francisco",
@@ -5596,6 +5560,15 @@
     "zip": "94116",
     "lat": "37.754295",
     "lng": "-122.4781838"
+  },
+  {
+    "name": "Tipsy Pig, The",
+    "address": "2231 Chestnut Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94123",
+    "lat": "37.8001359",
+    "lng": "-122.4400568"
   },
   {
     "name": "Titanic",
@@ -6084,6 +6057,15 @@
     "lng": "-122.4405764"
   },
   {
+    "name": "Wild Side West, The",
+    "address": "424 Cortland Avenue",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94110",
+    "lat": "37.7390005",
+    "lng": "-122.4172051"
+  },
+  {
     "name": "Wildhawk",
     "address": "3464 19th Street",
     "city": "San Francisco",
@@ -6156,6 +6138,15 @@
     "lng": "-122.4695207"
   },
   {
+    "name": "Wreck Room, The",
+    "address": "1390 California Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94109",
+    "lat": "37.7912325",
+    "lng": "-122.4171976"
+  },
+  {
     "name": "Yancy's Saloon",
     "address": "734 Irving Street",
     "city": "San Francisco",
@@ -6190,6 +6181,15 @@
     "zip": "94133",
     "lat": "37.7979148",
     "lng": "-122.4048266"
+  },
+  {
+    "name": "Zeitgeist",
+    "address": "199 Valencia Street",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94103",
+    "lat": "37.770105",
+    "lng": "-122.421771"
   },
   {
     "name": "Zeki's Bar",
