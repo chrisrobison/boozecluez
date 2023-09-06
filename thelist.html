@@ -43,13 +43,27 @@
             color: #00f;
             text-decoration: underline;
         }
-
+        
         header {
+            display: flex;
             background-color: dodgerblue;
             color: #eee;
             height: 12vh;
             text-align: center;
             margin: 0 auto;
+            width: 800px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            position: relative;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+        
+        select {
+            background-color: #000;
+            color: #eee;
+            font-size: 24px;
+            width: 100vw;
         }
 
         main {
@@ -67,7 +81,7 @@
         ol {
             columns:1;
             line-height: 2;
-            width: 100vw;
+            width: 800px;
         }
 
         h1 {
@@ -178,6 +192,7 @@
                 background-color:#111;
                 color: #eee;
                 width: 100vw;
+                border-radius: 0px;
             }
 
         }
@@ -364,7 +379,7 @@
             transform: rotate(0deg);
         }
         img#logo {
-            width: 58vw;
+            height: 10vh;
             float: right;
         }
         button#hamburger {
@@ -584,6 +599,7 @@
         .heading h1 {
             padding-right: 1rem;
         }
+
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -627,9 +643,9 @@
 <button class="findme" onclick="app.getPosition(); return false;"></button>
     <img src='logo.png' id='logo'>
     <div id="barsDropdown"></div>
-    <button onclick="return app.doStart()">Get List</button>
+    <!--button onclick="return app.doStart()">Get List</button>
     <button onclick="app.showBars(app.bars); return false;">The List</button>
-    <button onclick="app.getPosition()">Find Me</button>
+    <button onclick="app.getPosition()">Find Me</button-->
 </header>
 <main><ol id='list'></ol></main>
 <div id="about">
