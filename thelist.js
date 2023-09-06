@@ -90,7 +90,7 @@ const $$ = str => document.querySelectorAll(str);
             let el = document.createElement("li");
             el.innerHTML = `
                 <details>
-                    <summary><input type='checkbox' onclick="app.doInput(event)" name='${bar.name}' id='${bar.name.replace(/\W/,'')}'${checked}><a onclick="return app.goto('${bar.name}', ${fullbar.lat}, ${fullbar.lng})" href='#${bar.name}'>${bar.name}</a></summary>
+                    <summary><input type='checkbox' name='${bar.name}' id='${bar.name.replace(/\W/,'')}'${checked}><a onclick="return app.goto('${bar.name.replace(/\'/, "\\\'")}', ${fullbar.lat}, ${fullbar.lng}, event)" href='#${bar.name}'> ${bar.name}</a></summary>
                     <div class="detail">
                         <span class='addr'>${fullbar.address}</span><br>
                         <em><span class='clue'>${ctxt}</span></em><br>
@@ -159,7 +159,7 @@ const $$ = str => document.querySelectorAll(str);
 
                     out += `<li>
                                 <details>
-                                    <summary><input type='checkbox' id='${bar.name.replace(/\W/,'')}'><a href='#${bar.name}'>${bar.name}</a></summary>
+                                    <summary><input type='checkbox' id='${bar.name.replace(/\W/,'')}'><a href='#${bar.name}'> ${bar.name}</a></summary>
                                     <label>Address:</label> <span class='addr'>${bar.address}</span><br>
                                     <label>Riddle:</label> <span class='addr'>${ctxt}</span><br>
                                     <label>Next Bar:</label> <span class='addr hidden'>${app.next[bar.name].closestBar.name} [${~~app.next[bar.name].distance}m]</span><br>
@@ -204,7 +204,8 @@ const $$ = str => document.querySelectorAll(str);
         },
         showBars: function(data) {
             if (!app.bars && data) app.bars = data;
-            $("header").innerHTML = `<h1>Booze Cluez</h1> ${app.buildSelect(data)} <br><button onclick="return app.doStart()">Get List</button><button onclick="app.showBars(app.bars); return false;">All Bars</button><button onclick="app.getPosition()">Start From Here</button>`;
+            let bdd = app.buildSelect(data);
+            $("#barsDropdown").innerHTML = bdd;
 
             let out = "<form oninput='app.doInput(event)'><ol>";
 
@@ -228,14 +229,28 @@ const $$ = str => document.querySelectorAll(str);
         },
         doInput: function(e) {
             console.dir(e);
-
-            if (app.state.visited[e.target.name]) {
-                app.state.visited[e.target.name].visits++;
-            } else {
-                app.state.visited[e.target.name] = { name: e.target.name, visits: 1, visited: new Date().toLocaleString };
+            
+            if (e.target.type === "checkbox") {
+                if (!e.target.hasAttribute("checked")) {
+                    celebrate(e);
+                    if (app.state.visited[e.target.name]) {
+                        app.state.visited[e.target.name].visits++;
+                        app.state.visited[e.target.name].last_visit = new Date().toLocaleString();
+                    } else {
+                        app.state.visited[e.target.name] = { name: e.target.name, visits: 1, first_visit: new Date().toLocaleString(), last_visit: new Date().toLocaleString() };
+                    }
+                    e.target.setAttribute("checked", "checked");
+                    console.log(`Saved ${e.target.name} visit [${app.state.visited[e.target.name].visits} visits]`);
+                } else {
+                    if (app.state.visited[e.target.name]) {
+                        delete app.state.visited[e.target.name];
+                    }
+                    e.target.removeAttribute("checked");
+                    console.log(`Removed ${e.target.name} from list`);
+                }
+                console.dir(app.state.visited);
+                app.saveSettings('visits', app.state.visited);
             }
-            app.saveSettings('visits', app.state.visited);
-            console.log(`Saved ${e.target.name} visit [${app.state.visited[e.target.name].visits} visits]`);
         },
         showHoods: function(data) {
 
@@ -273,13 +288,16 @@ const $$ = str => document.querySelectorAll(str);
                     closestBar = item;
                 }
             });
-            $("main").innerHTML = "<ol id='list'></ol>";
+            $("main").innerHTML = "<ol id='list' onclick='app.doInput(event)'></ol>";
             app.doNext(closestBar.name);
+            app.hideOverlay();
         },
         getPosition: function() {
+            app.showOverlay();
           if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(app.gotPosition);
           } else { 
+              app.hideOverlay();
             console.log("Geolocation is not supported by this browser.");
           }
 
@@ -296,10 +314,30 @@ const $$ = str => document.querySelectorAll(str);
             let angle = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(latDelta / 2), 2) + Math.cos(latFrom) * Math.cos(latTo) * Math.pow(Math.sin(lonDelta / 2), 2)));
             return angle * 6371000;
         },
-        goto: function(bar, lat, lng) {
+        goto: function(bar, lat, lng, e) {
+            if (e) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+
+            console.log(`Flying to ${bar} [${lat}, ${lng}]`);
+
             app.map.flyTo([lat, lng], 18);
             return false;
+        }, 
+        showOverlay: function() {
+            $("#overlayWrap").style.display = "block";
+        },
+        hideOverlay: function() {
+            $("#overlayWrap").style.display = "none";
+        }, 
+        showAbout: function() {
+            $("#about").style.transform = "translateX(0vw)";
+        },
+        hideAbout: function() {
+            $("#about").style.transform = "translateX(-100vw)";
         }
+
     }
     window.app = app;
     app.init();

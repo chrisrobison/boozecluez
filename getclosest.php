@@ -1,53 +1,117 @@
-#!/usr/local/bin/php
 <?php
+/*
+ *  getclosest.php  -   Gets closest San Francisco bars from a bar name or lat/long coordinates
+ *
+ *  Usage:
+ *
+ *  Make a http[s] request to this script with one of the following query argument:
+ *
+ *      bar -   (string) Name of bar to use as starting point
+ *
+ *          - or -
+ *      lat -   (float) Latitude of start location
+ *      lng -   (float) Longitude of start location
+ *          
+ *          - Optional -
+ *      cnt -   (int) Number of bars to return (default: 6)
+ *
+ *  Note: only one of "bar" or "lat/lng" is needed.
+ *
+ *  Example: 
+ *
+ *  https://boozecluez.com/getclosest.php?bar=Zeitgeist&cnt=10
+ *
+ *  Returns:
+ *
+ *      JSON object containing the name and address of the starting point
+ *      along with an array of the top 10 closest bars
+ *
+ */
 
-    $barstxt = file_get_contents("bars.json");
-    $bars = json_decode($barstxt);
-    $cnt = count($bars);
-    $out = array();
-    $used = array();
-    
-    // Iterate over each bar and then compare distances to all other bars
-    // to find the shortest distance
+$in = $_REQUEST;
+
+$bars = json_decode(file_get_contents("bars.json"));
+$cnt = count($bars);
+$out = array();
+$bybar = array();
+
+if (array_key_exists("bar", $in)) {
     foreach ($bars as $idx=>$bar) {
-        $shortestDist = 6371000;
-        $shortestBar = "";
-        $bar->name = preg_replace("/&amp;/", "&", $bar->name);
-        $shortests = array();
+        $bybar[$bars[$idx]->name] = $bars[$idx];
+        if ($bar->name == $in['bar']) {
+            $curbar = $bar;
+            break;
+        }
+    }
+    $in['lat'] = $curbar->lat;
+    $in['lng'] = $curbar->lng;
+    $bar = $curbar;
+} else if (array_key_exists("lat", $in)) {
+    $distances = array();
 
-        for ($i=0; $i<$cnt; $i++) {
-            if (($bar->name != $bars[$i]->name) && ($bar != $bars[$i])) {
-                $dist = distance($bar->lat, $bar->lng, $bars[$i]->lat, $bars[$i]->lng);
-                $ftdist = $dist * 3.28084;
-                $shortests[$bars[$i]->name] = round($ftdist);
+    foreach ($bars as $i=>$bar) {
+        $bybar[$bars[$i]->name] = $bars[$i];
+        $dist = distance($in['lat'], $in['lng'], $bar->lat, $bar->lng);
+        $distances[$bar->name] = $dist;
+    }
+    asort($distances);
+    $cbk = array_keys($distances);
+    $cbv = array_values($distances);
+    $bar = $curbar = $bybar[$cbk[0]];
+}
 
-                if ($dist < $shortestDist) { // ) && (!array_key_exists($bars[$i]->name, $used))) {
-                    if (($dist > 0) && ($idx != $i)) {
-                        $shortestDist = $dist;
-                        $shortestBar = $bars[$i];
-                        $shortestBarName = $bars[$i]->name;
-                        $shortestFeet = $ftdist;
-                    }
+$cnt = (array_key_exists("cnt", $in)) ? $in['cnt'] : 6;
+
+   $used = array();
+    
+    $shortestDist = 6371000;
+    $shortestBar = "";
+    $shortests = array();
+    $barcnt = count($bars);
+
+    for ($i=0; $i<$barcnt; $i++) {
+
+        if (($bar->name != $bars[$i]->name) && ($bar != $bars[$i])) {
+            $dist = distance($in['lat'], $in['lng'], $bars[$i]->lat, $bars[$i]->lng);
+            $ftdist = $dist * 3.28084;
+            $shortests[$bars[$i]->name] = round($ftdist);
+
+            if ($dist < $shortestDist) { // ) && (!array_key_exists($bars[$i]->name, $used))) {
+                if (($dist > 0) && ($idx != $i)) {
+                    $shortestDist = $dist;
+                    $shortestBar = $bars[$i];
+                    $shortestBarName = $bars[$i]->name;
+                    $shortestFeet = $ftdist;
                 }
             }
         }
-        $out[$bar->name] = new stdClass();
-        asort($shortests);
-        $keys = array_keys($shortests);
-        $vals = array_values($shortests);
-        $nearest = array_splice($keys, 0, 6);
-    
-        $out[$bar->name]->closestBars = array_splice($keys, 0, 6);
-        $out[$bar->name]->distances = array_splice($vals, 0, 6);
-
-        $used[$bar->name] = 1;
-//        $used[$shortestBarName] = 1;
-        $out[$bar->name]->closestBar = $shortestBar;
-        $out[$bar->name]->distance = $shortestDist;
-        $out[$bar->name]->name = $bar->name;
-//print "'" . $bar->name . "' closest bar: '" . $shortestBar->name . "' [".round($shortestFeet / 3)."yd]\n";
     }
-    print json_encode($out);
+    $out[$bar->name] = new stdClass();
+    asort($shortests);
+    $keys = array_keys($shortests);
+    $vals = array_values($shortests);
+    $nearest = array_splice($keys, 0, $cnt);
+    $dists = array_splice($vals, 0, $cnt);
+
+    $out[$bar->name]->name = $bar->name;
+    $out[$bar->name]->address = $bar->address;
+    
+    $out[$bar->name]->bars = array_splice($keys, 0, $cnt);
+    $out[$bar->name]->distances = array_splice($vals, 0, $cnt);
+    
+    $out[$bar->name]->closestBars = [];
+
+    foreach ($nearest as $idx=>$key) {
+        $obj = new stdClass();
+        $obj->distance = $dists[$idx];
+        $obj->name = $key;
+        $obj->address = $bybar[$key]->address;
+
+        $out[$bar->name]->closestBars[] = $obj;;
+    }
+
+//print "'" . $bar->name . "' closest bar: '" . $shortestBar->name . "' [".round($shortestFeet / 3)."yd]\n";
+print json_encode($out[$bar->name]);
 
     function distance( $latitudeFrom, $longitudeFrom, $latitudeTo, $longitudeTo, $earthRadius = 6371000) {
   // convert from degrees to radians
@@ -62,5 +126,5 @@
   $angle = 2 * asin(sqrt(pow(sin($latDelta / 2), 2) +
     cos($latFrom) * cos($latTo) * pow(sin($lonDelta / 2), 2)));
   return $angle * $earthRadius;
-}
+    }
 ?>

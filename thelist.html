@@ -45,7 +45,7 @@
         }
 
         header {
-            background-color: #999;
+            background-color: dodgerblue;
             color: #eee;
             height: 12vh;
             text-align: center;
@@ -61,23 +61,49 @@
             height: 47vh;
             overflow: scroll;
             margin: 0 auto;
+            transition: all 300ms linear;
         }
         
         ol {
             columns:1;
             line-height: 2;
+            width: 100vw;
         }
 
         h1 {
             background: #222;
             color: #eee;
         }
+        .location {
+            
+        }
 
         footer {
+            position: relative;
             background-color: #666;
             color: #eee;
             height: 40vh;
             margin: 0 auto;
+            transition: all 300ms linear;
+        }
+
+        .hidemap footer {
+            height: 1rem;
+        }
+        .hidemap main {
+            height: 87vh
+        }
+        .findme {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="103.896px" height="103.896px"> <path fill-rule="evenodd"  fill="rgb(51, 51, 51)" d="M45.779,-0.000 L54.221,-0.000 L54.221,100.000 L45.779,100.000 L45.779,-0.000 Z"/> <path fill-rule="evenodd"  fill="rgb(51, 51, 51)" d="M-0.000,54.221 L-0.000,45.779 L100.000,45.779 L100.000,54.221 L-0.000,54.221 Z"/> <path fill-rule="evenodd"  stroke="rgb(54, 50, 61)" stroke-width="7.792px" stroke-linecap="butt" stroke-linejoin="miter" fill="rgb(255, 255, 255)" d="M50.000,18.405 C67.449,18.405 81.595,32.551 81.595,50.000 C81.595,67.449 67.449,81.595 50.000,81.595 C32.551,81.595 18.405,67.449 18.405,50.000 C18.405,32.551 32.551,18.405 50.000,18.405 Z"/> <path fill-rule="evenodd"  fill="rgb(51, 51, 51)" d="M50.000,31.818 C60.042,31.818 68.182,39.958 68.182,50.000 C68.182,60.042 60.042,68.182 50.000,68.182 C39.958,68.182 31.818,60.042 31.818,50.000 C31.818,39.958 39.958,31.818 50.000,31.818 Z"/> </svg>');
+            background-size: contain;
+            height: 45px;
+            width: 45px;
+            background-repeat: no-repeat;
+            display: inline-block;
+            border: none;
+            background-color: transparent;
+            margin-left: 4rem;
+            margin-top: 1rem;
         }
         .marker {
             background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="52px" height="82px"><path fill-rule="evenodd" opacity="1" fill="rgb(255, 255, 255)" d="M2.889,23.244 L8.988,27.118 L24.716,23.890 L40.123,25.504 L44.296,27.764 L50.074,23.890 L50.074,20.661 L41.086,16.465 L34.667,15.496 L21.185,16.142 L12.519,16.465 L5.457,19.693 L2.889,23.244 Z"/><path fill-rule="evenodd" fill="rgb(163, 39, 31)" d="M32.259,18.079 C36.248,18.079 39.481,20.608 39.481,23.728 C39.481,26.849 36.248,29.378 32.259,29.378 C28.271,29.378 25.037,26.849 25.037,23.728 C25.037,20.608 28.271,18.079 32.259,18.079 Z"/><path fill-rule="evenodd" opacity="1" fill="rgb(255, 255, 255)" d="M7.704,28.087 L44.296,28.087 L26.642,46.488 L7.704,28.087 Z"/><path fill-rule="evenodd" opacity="1" fill="rgb(255, 255, 255)" d="M22.148,69.409 L22.790,68.118 L23.432,48.748 L28.889,48.748 L29.531,69.732 L31.778,72.961 L20.222,73.283 L22.148,69.409 Z"/><path fill-rule="evenodd" opacity="1" fill="rgb(255, 255, 255)" d="M10.914,74.252 L10.914,75.543 L14.444,78.126 L19.901,79.740 L25.358,80.063 L32.099,80.063 L37.877,78.772 L40.765,77.157 L42.049,75.220 L40.765,73.929 L33.383,76.512 L25.037,77.480 L17.012,76.835 "/><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M39.125,14.970 C39.125,14.970 52.127,17.794 52.000,23.391 C51.057,24.393 49.574,26.760 49.574,26.760 C49.574,26.760 45.338,31.181 43.230,33.309 C56.580,19.825 28.676,49.028 28.676,49.028 L28.303,55.952 C28.303,55.952 27.943,67.371 28.863,71.671 C29.512,72.091 29.993,72.606 30.729,72.981 C30.729,72.856 30.729,72.732 30.729,72.607 C29.847,71.873 29.635,70.977 29.609,69.426 C33.979,69.801 41.761,70.985 42.857,74.291 C43.669,75.283 42.946,76.709 42.670,77.659 C41.490,78.439 40.333,79.515 38.939,80.092 C31.582,83.138 15.685,82.505 10.204,78.408 C9.623,77.974 9.397,77.062 8.898,76.537 C8.926,70.819 16.950,69.794 22.519,69.426 C22.525,71.140 21.869,71.976 21.213,72.981 C21.337,72.981 21.462,72.981 21.586,72.981 C21.586,72.919 21.586,72.856 21.586,72.794 C25.047,71.620 23.825,55.765 23.825,55.765 L23.825,49.261 C23.825,49.261 19.713,44.469 17.108,41.730 C13.370,37.802 9.740,33.779 5.913,29.941 C4.515,28.540 -0.897,24.551 0.128,21.333 C1.059,18.411 3.115,17.264 7.778,15.990 C12.441,14.716 16.388,14.117 19.030,13.932 C21.672,13.747 28.333,13.891 30.169,13.848 C32.005,13.804 36.700,14.409 36.700,14.409 L39.125,9.918 L44.723,-0.000 L46.402,1.310 L44.434,4.865 L40.702,11.789 L39.125,14.970 ZM24.758,23.204 C25.314,19.317 30.335,17.586 34.834,17.965 C34.967,17.410 35.175,17.107 35.393,16.655 C34.958,16.655 34.523,16.655 34.087,16.655 C32.898,15.882 26.946,16.068 24.945,16.093 C18.036,16.181 11.397,17.166 6.472,19.274 C4.638,20.060 3.977,20.488 3.761,22.063 C3.545,23.632 5.986,26.168 9.085,26.573 C11.768,24.089 20.227,23.313 24.758,23.204 ZM37.633,17.029 C37.399,17.777 37.034,17.997 36.886,18.900 C39.296,19.536 40.854,22.293 40.805,25.450 C41.991,25.760 41.690,26.892 43.104,26.998 C45.152,26.522 47.444,26.181 48.893,23.411 C49.716,21.838 50.266,19.334 37.633,17.029 ZM32.221,19.836 C31.430,20.322 30.299,20.202 29.423,20.584 C27.931,21.235 26.281,22.928 26.251,25.076 C26.401,25.267 26.317,25.127 26.437,25.450 C28.780,26.908 38.762,28.990 38.939,24.140 C38.502,23.529 36.850,19.747 35.767,20.772 C35.247,21.268 35.218,21.563 34.274,21.707 C33.742,21.149 33.541,21.201 33.528,20.023 C33.590,19.961 33.652,19.898 33.714,19.836 C33.217,19.836 32.719,19.836 32.221,19.836 ZM29.049,21.707 C29.547,21.707 30.045,21.707 30.542,21.707 C30.885,22.254 31.053,22.251 31.102,23.204 C31.646,24.067 30.545,25.219 29.796,25.450 C29.481,25.664 28.882,25.649 28.303,25.637 C27.855,24.930 27.575,24.641 27.557,23.391 C28.073,22.858 28.548,22.244 29.049,21.707 ZM9.271,29.192 C9.271,29.380 9.560,29.567 9.560,29.754 C10.264,30.305 12.919,32.832 12.919,32.832 C12.919,32.832 24.428,45.441 26.045,45.286 C27.847,45.112 40.534,32.187 40.534,32.187 C40.534,32.187 43.176,30.224 43.790,28.631 C43.666,28.631 43.541,28.631 43.417,28.631 C41.722,29.950 38.563,29.574 36.140,30.128 C27.616,32.077 16.973,30.154 9.271,29.192 ZM11.324,74.852 C11.025,75.552 11.120,75.281 11.324,76.162 C13.001,76.756 14.628,77.981 16.548,78.595 C21.140,80.064 30.291,79.908 34.834,78.595 C37.055,77.953 40.356,77.585 40.991,75.414 C41.053,75.414 41.116,75.414 41.178,75.414 C41.116,75.351 41.053,75.289 40.991,75.227 C40.791,75.086 40.815,75.114 40.431,75.039 C39.232,76.583 36.966,76.831 34.834,77.472 C30.089,78.899 20.100,79.090 15.242,77.098 C13.793,76.504 12.608,75.530 11.324,74.852 Z"/><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M29.455,21.688 C30.313,21.415 30.814,21.997 30.671,22.882 C30.541,23.692 29.894,24.588 29.154,24.977 C28.336,25.408 27.605,25.119 27.605,24.206 C27.605,23.190 28.486,21.996 29.455,21.688 Z"/></svg>');
@@ -193,16 +219,434 @@
         summary::marker {
             content: "";
         }
+        input[type=checkbox] {
+            position: relative;
+        }
+        input[type=checkbox][checked]:after {
+            position: absolute;
+            background-image: url("1sec2.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 150px;
+            width: 40px;
+            left: -17px;
+            top: -19px;
+            content: " ";
+        }
 
+        #drunk {
+            position: absolute;
+            background-image: url("1sec.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 74px;
+            width: 32px;
+            left: 274px;
+            top: -2px;
+            display: none;
+        }
+        li {
+            margin-left: 0;
+            padding-left: 3rem;
+            text-indent: -1.9rem;
+            height: 4rem;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-content: center;
+                border-bottom: 1px solid #0006;
+        }
+        ol {
+            margin: 0;
+            background: #f9f9f9;
+        }
+        input[type=checkbox] {
+            background: #f00;
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+        }
+        #overlay {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            opacity: 0.7;
+            background-image: url("bubbles.svg");
+            background-size: contain;
+            z-index: 9999;
+            animation: 3s linear 0s infinite alternate running beer;
+            overflow: hidden;
+        }
+        #foam {
+            background-image: url("foam.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            bottom: 0vh;
+            left: 0px;
+            animation: 3s linear 0s infinite alternate running foam;
+            transform: translateY(10vh);
+            z-index: 9999;
+        }
+
+        @keyframes foam {
+            0% {
+                transform: translateY(20vh);
+            }
+            80% {
+                transform: translateY(-65vh);
+            }
+            100% {
+                transform: translateY(-65vh);
+            }
+        }
+        @keyframes beer {
+            0% {
+                transform: translateY(90vh);
+            }
+            80% {
+                transform: translateY(0vh);
+            }
+            100% {
+                transform: translateY(0vh);
+            }
+        }
+        #overlayWrap {
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            background-color: #0003;
+        }
+        button#mapToggle {
+            border: 0;
+            background: #ddd;
+            color: #000;
+            width: 3rem;
+            height: 2rem;
+            position: absolute;
+            right: 5px;
+            top: -2rem;
+            z-index: 9999;
+            text-shadow: 0px 1px 0px #fff;
+            font-size: 2rem;
+            text-align: center;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        button#mapToggle:after {
+            content: "⌃";
+            display: inline-block;
+            position: absolute;
+            top: -8px;;
+            left: 0px;
+            width: 3rem;
+            transition: all 300ms linear;
+            transform: rotate(180deg);
+        }
+
+        .hidemap button#mapToggle:after {
+            display: inline-block;
+            position: absolute;
+            top: 2px;
+            left: 0px;
+            content: "⌃";
+            width: 3rem;
+            transform: rotate(0deg);
+        }
+        img#logo {
+            width: 58vw;
+            float: right;
+        }
+        button#hamburger {
+
+        }
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+
+  background: #cdcdcd;
+  border-radius: 3px;
+
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 80vw;
+  margin: -100px 0 0 -20px;
+  padding: 50px;
+  padding-top: 125px;
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    box-shadow: 3px 3px 3px #0006;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+        #about {
+            position: absolute;
+            bottom:0px;
+            left: 0px;
+            height: 91vh;
+            width: 100vw;
+            background: #fff;
+            transform: translateX(-100vw);
+            transition: all 300ms linear;
+            z-index: 99999;
+            font-weight 300;
+            line-height: 1.4;
+        }
+        #about blockquote { 
+            margin: 1rem 2rem;
+        }
+        #barsDropdown {
+            width: 100vw;
+        }
+    #panel {
+	height: 100%;
+	width: 100vw;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transform-style: preserve-3d;
+    pointer-events: none;
+    z-index: 99999;
+}
+.glitter {
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	background-color: red;
+}
+.balloon {
+    position: absolute;
+    top: 0px;
+    left: 50vw;
+    transform: translateX(5vw) translateY(100vh); 
+    transition: all 1000ms linear;
+    animation: 8s linear 0s 1 forwards running floater;
+    z-index: 99999;
+    height: 150px;
+    width: 100px;
+    opacity: 0.75;
+}
+@keyframes floater {
+    0% { transform: translateX(8vw) translateY(100vh); }
+    20% { transform: translateX(10vw) translateY(80vh); }
+    40% { transform: translateX(9vw) translateY(60vh); }
+    60% { transform: translateX(11vw) translateY(40vh); }
+    80% { transform: translateX(12vw) translateY(20vh); }
+    100% { transform: translateX(8vw) translateY(-30vh); }
+}
+        .heading {
+            background-color: #333;
+            display: flex;
+            height: 3rem;
+            justify-content: space-between;
+        }
+        .backArrow {
+            color: #eee;
+            text-shadow: 2px 2px 0px #0009;
+            font-size: 2rem;
+            font-weight: 900;
+            padding: 0px 1rem;
+        }
+        .heading h1 {
+            padding-right: 1rem;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js" integrity="sha512-BwHfrr4c9kmRkLw6iXFdzcdWV/PGkVgiIyIWLLlTSXzWQzxuSg4DiQUCpauz/EWjgk5TYQqX/kvn9pG1NpYfqg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js" crossorigin=""></script>
+    <script src="confetti.js"></script>
 </head>
 <body>
-<header></header>
+<header>
+ <nav role="navigation">
+  <div id="menuToggle">
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#" onclick="return app.showBars(app.bars)"><li>Home</li></a>
+      <a href="#" onclick="app.showAbout(); $('#menuToggle input').checked = false; return false;"><li>About</li></a>
+      <a href="#" onclick="return app.showBars(app.bars);"><li>The List</li></a>
+      <a href="#" onclick="return app.showMyList()"><li>My List</li></a>
+      <a href="#" onclick="return app.getPosition()"><li>Find Me!</li></a>
+      <a href="https://cdr2.com/" target="_blank"><li>Show me more</li></a>
+    </ul>
+  </div>
+</nav>
+<button class="findme" onclick="app.getPosition(); return false;"></button>
+    <img src='logo.png' id='logo'>
+    <div id="barsDropdown"></div>
+    <button onclick="return app.doStart()">Get List</button>
+    <button onclick="app.showBars(app.bars); return false;">The List</button>
+    <button onclick="app.getPosition()">Find Me</button>
+</header>
 <main><ol id='list'></ol></main>
-<footer><div id="map"></div></footer>
+<div id="about">
+    <div class='heading'>
+        <a href="#" class="backArrow" onclick="app.hideAbout()">&lt;</a> 
+        <h1 style="display:inline-block;float:right;">About</h1>
+    </div>
+    <blockquote>
+        <em>Booze Cluez</em> was created to help you, an adult lover of alcoholic beverages (not that kind of adult!) navigate the bars of San Francisco in an organized, fun and, dare we say, productive way.  Our goal is to have one (1) drink at every San Francisco bar, restaurant or pub that serves alcohol.
+    </blockquote>
+</div>
+<footer><button id="mapToggle" onclick="$('body').classList.toggle('hidemap')"></button><div id="map"></div></footer>
+<div id="overlayWrap">
+    <div id="overlay"></div>
+    <div id="foam"></div>
+</div>
+<div id="panel"></div>
 <script src="thelist.js"></script>
 </body>
 </html>
