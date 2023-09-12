@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title></title>
+    <link rel="icon" type="image/x-icon" href="img/boozecluez-favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..800&amp;display=swap" rel="stylesheet">
@@ -18,10 +19,8 @@
     </head>
     <body>
     <header>
-        <nav style="display:none;" role="navigation">
-            <div id="menuToggle">
-                <input type="checkbox"> 
-                <span></span> <span></span> <span></span> 
+        <div class="left" onclick="this.classList.toggle('open')">
+            <div class="drawer">
                 <ul id="menu">
                     <li><a href="#" onclick="return app.showBars(app.bars)">Home</a></li>
                     <li><a href="#" onclick="app.showAbout(); $('#menuToggle input').checked = false; return false;">About</a></li>
@@ -30,8 +29,9 @@
                     <li><a href="#" onclick="return app.getPosition()">Find Me!</a></li>
                     <li><a href="https://cdr2.com/" target="_blank">Show me more...</a></li>
                 </ul>
-            </div>
-        </nav>
+            </div>  
+            <a href="#" class="menu"></a>
+        </div>
         <div>
             <button class="findme" onclick="app.getPosition(); return false;"></button> <img src='img/logo.png' id='logo'>
         </div>

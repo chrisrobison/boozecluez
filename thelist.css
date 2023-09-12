@@ -241,7 +241,7 @@ input[type=checkbox] {
 }
 input[type=checkbox][checked]:after {
     position: absolute;
-    background-image: url("img/1sec2.png");
+    background-image: url("img/drunk.svg");
     background-size: contain;
     background-repeat: no-repeat;
     height: 150px;
@@ -273,7 +273,7 @@ li {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: center;
-        border-bottom: 1px solid #0006;
+    border-bottom: 1px solid #0006;
 }
 ol {
     margin: 0;
@@ -548,8 +548,21 @@ transform: translateX(5vw) translateY(100vh);
 transition: all 1000ms linear;
 animation: 8s linear 0s 1 forwards running floater;
 z-index: 99999;
-height: 150px;
-width: 100px;
+height: 170px;
+width: 125px;
+display: flex;
+flex-direction:column;
+align-items: center;
+justify-content: center;
+background-image: url("img/balloon.svg");
+background-repeat: no-repeat;
+background-size: contain;
+font-size: 64px;
+color: #fff;
+text-shadow: 4px 4px 4px #0009;
+font-weight: bold;
+text-align: center;
+padding-bottom: 1rem;
 }
 .barcount {
     position: absolute;

@@ -149,28 +149,27 @@ function addDivConfetti(e) {
     }
 }
 
-function celebrate(e) {
+function celebrate(e, num) {
     addDivConfetti(e);
     let cnt = ~~(Math.random() * 5) + 2;
     for (let i = 0; i < cnt; i++) {
         setTimeout(function() { addDivConfetti(); }, ~~(Math.random() * 2000));
     }
     
-    setTimeout(function() { addBalloon(e); }, ~~(Math.random() * 4000));
+    setTimeout(function() { addBalloon(e, num); }, ~~(Math.random() * 4000));
 
 
 }
 let balloons = [];
 
-function addBalloon(e) {
-    let img = document.createElement("img");
-    img.src = "balloon.svg";
-    img.className = 'balloon';
-    img.style.left = ~~(Math.random() * 80) + 'vw';
-    img.style.filter =  "hue-rotate("+~~(Math.random() * 360)+"deg)";
-    $("body").append(img);
-    balloons.push(img);
-    setTimeout(function() { $("body").removeChild(img); }, 8000);
+function addBalloon(e, num) {
+    let wrap = document.createElement("div");
+    wrap.className = "balloon";
+    wrap.innerHTML = num;
+    wrap.style.left = ~~(Math.random() * 80) + 'vw';
+    $("body").append(wrap);
+    balloons.push(wrap);
+    setTimeout(function() { $("body").removeChild(wrap); }, 8000);
 }
 
 function hideConfetti() {

@@ -242,13 +242,15 @@ const $$ = str => document.querySelectorAll(str);
             
             if (e.target.type === "checkbox") {
                 if (!e.target.hasAttribute("checked")) {
-                    celebrate(e);
                     if (app.state.visited[e.target.name]) {
                         app.state.visited[e.target.name].visits++;
                         app.state.visited[e.target.name].last_visit = new Date().toLocaleString();
                     } else {
                         app.state.visited[e.target.name] = { name: e.target.name, visits: 1, first_visit: new Date().toLocaleString(), last_visit: new Date().toLocaleString() };
                     }
+                    let v = Object.keys(app.state.visited);
+
+                    celebrate(e, v.length);
                     e.target.setAttribute("checked", "checked");
                     console.log(`Saved ${e.target.name} visit [${app.state.visited[e.target.name].visits} visits]`);
                 } else {

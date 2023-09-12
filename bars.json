@@ -247,7 +247,7 @@
     "clue": "Century and gang, where's the clang?",
     "closest": [
       "Blondie's Bar",
-      "Delirium Cocktails",
+      "Delirium",
       "Bar San Pancho",
       "ABV",
       "Over Proof",
@@ -315,7 +315,6 @@
     "clue": "Five-four-oh, where the night will go. Where?",
     "closest": [
       "Corks",
-      "Abbey Tavern",
       "Abbey Tavern, The",
       "Ireland 32",
       "Fizzee's",
@@ -323,7 +322,6 @@
     ],
     "distances": [
       310,
-      363,
       406,
       406,
       425,
@@ -331,7 +329,6 @@
     ],
     "clues": [
       "Bottle's end, where's the bend?",
-      "Monks and a pint, where the vibe's just right. Where?",
       "Monks and cheers, where's the years?",
       "Emerald count, where's the mount?",
       "Bubbles pop, where's the hop?",
@@ -352,7 +349,6 @@
       "Taverna Aventine",
       "Bar 333",
       "Blanc et Rouge",
-      "Cigar Bar & Grill",
       "Cigar Bar & Grill, The"
     ],
     "distances": [
@@ -360,7 +356,6 @@
       375,
       539,
       564,
-      566,
       717
     ],
     "clues": [
@@ -368,7 +363,6 @@
       "Inn and ancient, where's the pendant?",
       "Triple the fun, where the night's never done. Name it.",
       "White and red, where is it said?",
-      "Smoke and steak, where's the lake?",
       "Smoke and steak, where's the lake?"
     ]
   },
@@ -451,7 +445,6 @@
     "closest": [
       "Monk's Kettle, The",
       "Elixir",
-      "Delirium Cocktails",
       "Delirium",
       "Morak Lounge",
       "Dalva"
@@ -459,7 +452,6 @@
     "distances": [
       3,
       75,
-      93,
       100,
       121,
       177
@@ -467,7 +459,6 @@
     "clues": [
       "Holy brew, where's the crew?",
       "Magic in a glass, where time seems to pass. Where is this?",
-      "Confusion in a glass, served with a dash of class. Where are you?",
       "Sanity's blur, where's the cur?",
       "Exotic rest, where's the fest?",
       "One word wonder, where's the thunder?"
@@ -550,7 +541,6 @@
     "clue": "Near the stream, where you'll dream. What's it called?",
     "closest": [
       "Pedro's Cantina",
-      "Momo's",
       "MoMo's",
       "District San Francisco",
       "District Wine Lounge",
@@ -559,7 +549,6 @@
     "distances": [
       1209,
       1791,
-      2025,
       2060,
       2066,
       2147
@@ -567,44 +556,9 @@
     "clues": [
       "Mexican Peter, where's the meter?",
       "Short but sweet, where's the seat?",
-      "Modern joint, where's the point?",
       "City slice, where's the spice?",
       "Not quite a city, but vino's plenty. Where might you be?",
       "Perfect sip, where's the tip?"
-    ]
-  },
-  {
-    "name": "Abbey Tavern",
-    "address": "4100 Geary Boulevard",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94118",
-    "lat": "37.7812691",
-    "lng": "-122.4633654",
-    "clue": "Monks and a pint, where the vibe's just right. Where?",
-    "closest": [
-      "Scarlet Lounge",
-      "540 Club",
-      "Halu",
-      "Happy Lounge",
-      "Richmond Republic Draught House",
-      "Plough and the Stars, The"
-    ],
-    "distances": [
-      18,
-      487,
-      557,
-      558,
-      566,
-      721
-    ],
-    "clues": [
-      "Crimson sit, where's the hit?",
-      "Five-four-oh, where the night will go. Where?",
-      "Short and sweet, where music and drinks meet. Where?",
-      "Cheers and grins, where the good time begins. What's the place?",
-      "District draft, where's the craft?",
-      "Till and twinkle, where's the sprinkle?"
     ]
   },
   {
@@ -621,7 +575,7 @@
       "Halu",
       "Happy Lounge",
       "Richmond Republic Draught House",
-      "Plough and the Stars, The"
+      "Plough & Stars, The"
     ],
     "distances": [
       18,
@@ -752,16 +706,14 @@
     "lng": "-122.4511505",
     "clue": "Potion and lounge, where's the ounce?",
     "closest": [
-      "Hobson's Choice Bar",
-      "Kezar Pub",
+      "Hobson's Choice",
       "Kezar Pub, The",
       "Martin Macks",
       "Gold Cane Cocktail Lounge",
-      "Mad Dog in the Fog"
+      "Mad Dog in the Fog, The"
     ],
     "distances": [
       173,
-      304,
       429,
       548,
       616,
@@ -769,7 +721,6 @@
     ],
     "clues": [
       "Pick or not, the rum's quite hot. Name it.",
-      "Like the last, but the vibe's fast. What's the name?",
       "Stadium sips, where's the chips?",
       "Marty's spot, where's the shot?",
       "Golden stick, where's the trick?",
@@ -824,7 +775,6 @@
       "Irving Pizza",
       "Veritas",
       "Hanaro",
-      "Edinburgh Castle Pub",
       "Edinburgh Castle"
     ],
     "distances": [
@@ -832,7 +782,6 @@
       31,
       183,
       293,
-      310,
       379
     ],
     "clues": [
@@ -840,7 +789,6 @@
       "A street in a slice, where the vibe’s nice. What's it called?",
       "Truth and sip, where's the tip?",
       "One in many, where the drinks are plenty. Where?",
-      "Scots' fortress, where's the sorceress?",
       "Scottish stone, but far from alone. What is this place?"
     ]
   },
@@ -947,40 +895,6 @@
     ]
   },
   {
-    "name": "Amelie",
-    "address": "1754 Polk Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.7931093",
-    "lng": "-122.4209725",
-    "clue": "French and free, where you'll want to be. Where?",
-    "closest": [
-      "Bell Tower, The",
-      "Kozy Kar",
-      "Duffy's Irish Pub",
-      "Nara Sushi",
-      "Encore Karaoke Lounge",
-      "Bitter Badger"
-    ],
-    "distances": [
-      13,
-      40,
-      130,
-      189,
-      334,
-      413
-    ],
-    "clues": [
-      "Ding and height, where's the night?",
-      "Comfy ride, where's the slide?",
-      "From Dublin perhaps, where the crowd claps. What's this pub?",
-      "Raw bites, where are the nights?",
-      "Once is not enough, where the mic is tough. Where?",
-      "Angry and tart, where you might start?"
-    ]
-  },
-  {
     "name": "Amelie San Francisco",
     "address": "1754 Polk St",
     "city": "San Francisco",
@@ -1025,7 +939,6 @@
     "closest": [
       "Schroeder's",
       "Blanc et Rouge",
-      "Harrington's Bar and Grill",
       "Hard Water",
       "Harrington's Bar & Grill",
       "Royal Exchange"
@@ -1033,7 +946,6 @@
     "distances": [
       324,
       458,
-      792,
       996,
       1209,
       1440
@@ -1041,7 +953,6 @@
     "clues": [
       "Beethoven's fan, where's the can?",
       "White and red, where is it said?",
-      "Irish pride, where's the tide?",
       "Tough to sip, easy to tip. Where?",
       "Classy and sassy, where the crowd's never trashy. Where?",
       "Regal trades, where's the spades?"
@@ -1093,24 +1004,18 @@
       "Hardwood Bar & Smokery",
       "Pub, The",
       "Double Play Bar & Grill",
-      "Double Play Restaurant",
-      "Double Play Bar and Grill",
       "Red Forest Whisper"
     ],
     "distances": [
       721,
       1078,
       1211,
-      1437,
-      1767,
       2743
     ],
     "clues": [
       "Timber and ember, a place to remember. Name it.",
       "Basics and brews, where's the news?",
       "Two games in one, and food that's well-done. Where?",
-      "Twice the fun, when eating's done. Where are you?",
-      "Two runs scored, where's the board?",
       "Silent spruce, where's the juice?"
     ]
   },
@@ -1128,7 +1033,7 @@
       "Pisco",
       "Orbit Room",
       "Mint Karaoke Lounge, The",
-      "Giordanos Bros.",
+      "Giordano Bros.",
       "Morak Lounge"
     ],
     "distances": [
@@ -1162,7 +1067,6 @@
       "West Burger N More",
       "Wildhawk",
       "Amnesia",
-      "Phoenix Bar & Restaurant, The",
       "Phoenix Irish Bar & Restaurant, The"
     ],
     "distances": [
@@ -1170,7 +1074,6 @@
       312,
       312,
       373,
-      423,
       450
     ],
     "clues": [
@@ -1178,7 +1081,6 @@
       "Sunset and patty, where's the fatty?",
       "Feral and raptor, where's the captor?",
       "Forget the day, where you'll sway. Name it.",
-      "Rising from ashes, where are the stashes?",
       "Green rebirth, where's the mirth?"
     ]
   },
@@ -1193,7 +1095,6 @@
     "clue": "Watchful eye, where the night's not shy. Name it.",
     "closest": [
       "Lucita's Niteclub",
-      "Lucitas Nightclub",
       "Thread Lounge Inc",
       "Rock Bar",
       "Toad's Food & Drink",
@@ -1201,7 +1102,6 @@
     ],
     "distances": [
       10,
-      292,
       306,
       321,
       336,
@@ -1209,7 +1109,6 @@
     ],
     "clues": [
       "Evening Lucy, where's the juicy?",
-      "Dancing light, where's the fight?",
       "Fiber and chill, where's the bill?",
       "Boulders and beers, where's the cheers?",
       "Hopper's meal, where's the deal?",
@@ -1451,40 +1350,6 @@
     ]
   },
   {
-    "name": "Aunt Charlies Lounge",
-    "address": "133 Turk Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94102",
-    "lat": "37.7830381",
-    "lng": "-122.4113722",
-    "clue": "Family and a seat, where all will meet. Where?",
-    "closest": [
-      "Pandora Karaoke & Bar",
-      "Montesacro Pinseria",
-      "Showdown, The",
-      "Comedy on the Square",
-      "Mikkeller Bar SF",
-      "Club Omg"
-    ],
-    "distances": [
-      63,
-      251,
-      282,
-      371,
-      378,
-      441
-    ],
-    "clues": [
-      "Box of tunes, where are the moons?",
-      "Roman rounds, where are the sounds?",
-      "Duel and drink, where's the link?",
-      "Laughter in geometry, where could it be?",
-      "Danish pints, where's the tints?",
-      "Text-worthy fun, where's the run?"
-    ]
-  },
-  {
     "name": "Ave Bar, The",
     "address": "1607 Ocean Ave",
     "city": "San Francisco",
@@ -1582,40 +1447,6 @@
       "Dragons and stocks, where are the locks?",
       "Swords and cheers, where duels end in beers. What's the name?",
       "Golf and fry, where's the sky?"
-    ]
-  },
-  {
-    "name": "Azucar Lounge",
-    "address": "299 9th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.7739373",
-    "lng": "-122.4116232",
-    "clue": "Sweet and smooth, where you'll find your groove. Name it.",
-    "closest": [
-      "Lone Star Saloon",
-      "Cat Club",
-      "Bar Agricole",
-      "Slim's",
-      "Buzz Works Sports Tavern",
-      "Bloodhound"
-    ],
-    "distances": [
-      14,
-      347,
-      533,
-      584,
-      626,
-      654
-    ],
-    "clues": [
-      "Texas tipple, where's the ripple?",
-      "Nine lives, five dives, where's the hive?",
-      "Farm in a glass, where time will pass. What's it called?",
-      "Lean and mean, where's the scene?",
-      "Hive and jive, where's the dive?",
-      "A sniff and a sip, name this hip?"
     ]
   },
   {
@@ -1900,7 +1731,6 @@
     "closest": [
       "Royal Exchange",
       "Harrington's Bar & Grill",
-      "Harrington's Bar and Grill",
       "Tadich Grill",
       "Blanc et Rouge",
       "Schroeder's"
@@ -1908,7 +1738,6 @@
     "distances": [
       158,
       268,
-      308,
       360,
       493,
       508
@@ -1916,7 +1745,6 @@
     "clues": [
       "Regal trades, where's the spades?",
       "Classy and sassy, where the crowd's never trashy. Where?",
-      "Irish pride, where's the tide?",
       "Historic meals, where's the deals?",
       "White and red, where is it said?",
       "Beethoven's fan, where's the can?"
@@ -2106,7 +1934,7 @@
       "E & O Kitchen and Bar",
       "Bar Drake",
       "Starlight Room",
-      "JCB Tasting Lounge",
+      "JCB Tasting Lounge, The",
       "Lizzie's Starlight"
     ],
     "distances": [
@@ -2240,7 +2068,6 @@
     "closest": [
       "Gestalt",
       "Monk's Kettle, The",
-      "Delirium Cocktails",
       "Delirium",
       "Morak Lounge",
       "Hideout"
@@ -2248,7 +2075,6 @@
     "distances": [
       56,
       99,
-      121,
       122,
       213,
       220
@@ -2256,7 +2082,6 @@
     "clues": [
       "The sum's parts, where's the arts?",
       "Holy brew, where's the crew?",
-      "Confusion in a glass, served with a dash of class. Where are you?",
       "Sanity's blur, where's the cur?",
       "Exotic rest, where's the fest?",
       "A secret sip, where lips zip. What's this spot?"
@@ -2529,39 +2354,6 @@
     ]
   },
   {
-    "name": "Beach Chalet Brewery and Restaurant",
-    "address": "1000 Great Hwy",
-    "city": "San Francisco",
-    "zip": "94121",
-    "lat": 37.76826564751259,
-    "lng": -122.51038997651021,
-    "clue": "Sand and suds, where's the buds?",
-    "closest": [
-      "Zinc Bar",
-      "Hockey Haven",
-      "Lawton Tap Room",
-      "Sapoten",
-      "Flanahan's Pub",
-      "Kama Lounge Inc"
-    ],
-    "distances": [
-      450,
-      1742,
-      2922,
-      3071,
-      3073,
-      3877
-    ],
-    "clues": [
-      "Metal and ale, where's the tale?",
-      "Pucks and pints, a fan's delight. Where is this?",
-      "Law and taps, where the gavel claps. Name the place.",
-      "Sweet and tart, where's the art?",
-      "Irish stew, where's the crew?",
-      "Love in a glass, where the vibe’s first class. Where?"
-    ]
-  },
-  {
     "name": "Beachside Cafe",
     "address": "4300 Judah Street",
     "city": "San Francisco",
@@ -2641,7 +2433,7 @@
       "Bruno's",
       "Bender's Bar & Grill",
       "Ken Ken Ramen",
-      "Phoenix Bar & Restaurant, The",
+      "Phoenix Irish Bar & Restaurant, The",
       "Etcetera Wine Bar",
       "Chapel, The"
     ],
@@ -2794,40 +2586,6 @@
       "Swine and stone, where you're never alone. What's the name?",
       "Double the broth, where hunger's off. What's it called?",
       "Time for a drink, where's the ink?"
-    ]
-  },
-  {
-    "name": "Benders Bar and Grill",
-    "address": "806 Van Ness Avenue",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94109",
-    "lat": "37.7830918",
-    "lng": "-122.4206015",
-    "clue": "Flexible and hot, what's the spot?",
-    "closest": [
-      "Emperor Norton's BoozeLand",
-      "Harrington's Harry Pub",
-      "Hanaro",
-      "Titanic",
-      "Edinburgh Castle Pub",
-      "Club Kristi"
-    ],
-    "distances": [
-      558,
-      720,
-      819,
-      940,
-      955,
-      1020
-    ],
-    "clues": [
-      "Monarch's lair, where's the flair?",
-      "Like the first but more casual, where the vibe's not factual. Name the spot.",
-      "One in many, where the drinks are plenty. Where?",
-      "Sunk and grand, where's the land?",
-      "Scots' fortress, where's the sorceress?",
-      "First name basis, where's the oasis?"
     ]
   },
   {
@@ -3182,24 +2940,21 @@
       "Tony's Cable Car Restaurant",
       "Palmers Tavern",
       "Pizza Inferno Restaurant & Bar",
-      "BooM BooM RooM",
-      "Boom Boom Room"
+      "BooM BooM RooM"
     ],
     "distances": [
       70,
       409,
       719,
       719,
-      1569,
-      2107
+      1569
     ],
     "clues": [
       "Grape and can, where's the pan?",
       "Tram and feast, where's the east?",
       "Oasis joint, where's the point?",
       "Fiery slice, where's the ice?",
-      "Loud and high, what's nearby?",
-      "Loud and groove, where's the move?"
+      "Loud and high, what's nearby?"
     ]
   },
   {
@@ -3313,7 +3068,6 @@
       "Bourbon & Branch",
       "Rx",
       "Emperor Norton's BoozeLand",
-      "Aunt Charlies Lounge",
       "Redford",
       "Aunt Charlie's Lounge"
     ],
@@ -3322,14 +3076,12 @@
       501,
       649,
       691,
-      691,
       701
     ],
     "clues": [
       "Whiskey tree, where could it be?",
       "Prescribed pint, where's the hint?",
       "Monarch's lair, where's the flair?",
-      "Family and a seat, where all will meet. Where?",
       "Classic cinema, where's the lima?",
       "Relative and rest, where's the best?"
     ]
@@ -3513,7 +3265,7 @@
     "lng": "-122.467047",
     "clue": "Spiky and dark, what's this landmark?",
     "closest": [
-      "Fireside Bar",
+      "Fireside",
       "InnerFog",
       "Sage & Drifter, The",
       "Sozai Restaurant and Sake Lounge",
@@ -3646,62 +3398,22 @@
     "lng": -122.42210435,
     "clue": "Golden gal, where's the pal?",
     "closest": [
-      "Delirium Cocktails",
       "Delirium",
       "Giordano Bros.",
       "Monk's Kettle, The",
-      "Bond Bar",
-      "Giordanos Bros."
+      "Bond Bar"
     ],
     "distances": [
-      5,
       143,
       162,
       196,
-      196,
-      230
+      196
     ],
     "clues": [
-      "Confusion in a glass, served with a dash of class. Where are you?",
       "Sanity's blur, where's the cur?",
       "Siblings unite, where's the fight?",
       "Holy brew, where's the crew?",
-      "007's haunt, what do you want?",
-      "Family and food, where the mood's never rude. Where?"
-    ]
-  },
-  {
-    "name": "Blondie's Bar and No Grill",
-    "address": "540 Valencia Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94110",
-    "lat": "37.764216",
-    "lng": "-122.4221214",
-    "clue": "Fair hair but no fare, where?",
-    "closest": [
-      "Delirium Cocktails",
-      "Delirium",
-      "Giordano Bros.",
-      "Monk's Kettle, The",
-      "Bond Bar",
-      "Giordanos Bros."
-    ],
-    "distances": [
-      5,
-      147,
-      166,
-      193,
-      193,
-      233
-    ],
-    "clues": [
-      "Confusion in a glass, served with a dash of class. Where are you?",
-      "Sanity's blur, where's the cur?",
-      "Siblings unite, where's the fight?",
-      "Holy brew, where's the crew?",
-      "007's haunt, what do you want?",
-      "Family and food, where the mood's never rude. Where?"
+      "007's haunt, what do you want?"
     ]
   },
   {
@@ -3786,7 +3498,6 @@
       "El Amigo",
       "Lucita's Niteclub",
       "Dell'uva",
-      "Lucitas Nightclub",
       "Knockout"
     ],
     "distances": [
@@ -3794,7 +3505,6 @@
       1400,
       1517,
       1526,
-      1827,
       3009
     ],
     "clues": [
@@ -3802,7 +3512,6 @@
       "South of the border, where friends order. Where is this?",
       "Evening Lucy, where's the juicy?",
       "Italian vines in a bottle, find me where grapes are the motto.",
-      "Dancing light, where's the fight?",
       "A punch in a sip, where the night takes a trip. What's the spot?"
     ]
   },
@@ -3853,25 +3562,19 @@
       "Dalva",
       "Hideout",
       "Giordano Bros.",
-      "Giordanos Bros.",
-      "Delirium",
-      "Delirium Cocktails"
+      "Delirium"
     ],
     "distances": [
       20,
       103,
       162,
-      166,
-      166,
-      219
+      166
     ],
     "clues": [
       "One word wonder, where's the thunder?",
       "A secret sip, where lips zip. What's this spot?",
       "Siblings unite, where's the fight?",
-      "Family and food, where the mood's never rude. Where?",
-      "Sanity's blur, where's the cur?",
-      "Confusion in a glass, served with a dash of class. Where are you?"
+      "Sanity's blur, where's the cur?"
     ]
   },
   {
@@ -4091,24 +3794,21 @@
       "Leung, Will",
       "Grasslands",
       "E Z 5 Inc",
-      "Wayfare Tavern",
-      "EZ5 Inc"
+      "Wayfare Tavern"
     ],
     "distances": [
       83,
       216,
       386,
       391,
-      466,
-      527
+      466
     ],
     "clues": [
       "Filmic fare, where's the chair?",
       "A man as a bar, where you'll go far. What's the name?",
       "Fields and beers, where nature cheers. What's this spot?",
       "Simple by number, where you might slumber. Where?",
-      "Journey and bar, where's the car?",
-      "Simple five, where's the jive?"
+      "Journey and bar, where's the car?"
     ]
   },
   {
@@ -4224,7 +3924,6 @@
     "clue": "007's haunt, what do you want?",
     "closest": [
       "Blondie's Bar",
-      "Blondie's Bar and No Grill",
       "Hideout",
       "Dalva",
       "Morak Lounge",
@@ -4232,7 +3931,6 @@
     ],
     "distances": [
       66,
-      94,
       166,
       185,
       292,
@@ -4240,7 +3938,6 @@
     ],
     "clues": [
       "Golden gal, where's the pal?",
-      "Fair hair but no fare, where?",
       "A secret sip, where lips zip. What's this spot?",
       "One word wonder, where's the thunder?",
       "Exotic rest, where's the fest?",
@@ -4271,39 +3968,6 @@
       246,
       320,
       445
-    ],
-    "clues": [
-      "A party in a pour, where you'll ask for more. What's the name?",
-      "Fiery slice, where's the ice?",
-      "Grape and can, where's the pan?",
-      "Together and affection, where's the connection?",
-      "Fast fish, where's the dish?",
-      "Tower drinks, where's the links?"
-    ]
-  },
-  {
-    "name": "Boom Boom Room",
-    "address": "1601 Fillmore St",
-    "city": "San Francisco",
-    "zip": "94115",
-    "lat": "37.7846021",
-    "lng": "-122.433137",
-    "clue": "Loud and groove, where's the move?",
-    "closest": [
-      "Festa Wine & Cocktail Lounge",
-      "Pizza Inferno Restaurant & Bar",
-      "Wine Jar",
-      "United Love Inc",
-      "Hikari Bullet Train Sushi & Bar",
-      "Pagoda"
-    ],
-    "distances": [
-      8,
-      218,
-      231,
-      240,
-      315,
-      441
     ],
     "clues": [
       "A party in a pour, where you'll ask for more. What's the name?",
@@ -4430,7 +4094,6 @@
       "Dark Horse Inn, The",
       "Dark Horse Inn",
       "Billiard Palacade",
-      "Broken Record",
       "Broken Record, The"
     ],
     "distances": [
@@ -4438,7 +4101,6 @@
       862,
       1086,
       1151,
-      1696,
       1874
     ],
     "clues": [
@@ -4446,7 +4108,6 @@
       "A surprise steed, where's the mead?",
       "No light in sight, yet a stallion we keep. Where are you tonight?",
       "Cue and a throne, where you're not alone. Name it.",
-      "Skip the song, where's the throng?",
       "Shattered vinyl, where's the final?"
     ]
   },
@@ -4562,21 +4223,18 @@
     "closest": [
       "Wayfare Tavern",
       "Harrington's Bar & Grill",
-      "Harrington's Bar and Grill",
       "Royal Exchange",
       "Schroeder's"
     ],
     "distances": [
       0,
       375,
-      442,
       655,
       694
     ],
     "clues": [
       "Journey and bar, where's the car?",
       "Classy and sassy, where the crowd's never trashy. Where?",
-      "Irish pride, where's the tide?",
       "Regal trades, where's the spades?",
       "Beethoven's fan, where's the can?"
     ]
@@ -4697,7 +4355,7 @@
       "NODE Worldwide",
       "Saw Entertainment Ltd",
       "Noc Noc On Broadway",
-      "Cigar Bar & Grill",
+      "Cigar Bar & Grill, The",
       "Tosca Cafe"
     ],
     "distances": [
@@ -4715,40 +4373,6 @@
       "Neon lights, where are the sights?",
       "Smoke and steak, where's the lake?",
       "Opera and sips, where's the scripts?"
-    ]
-  },
-  {
-    "name": "Broken Record",
-    "address": "1166 Geneva Avenue",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94112",
-    "lat": "37.7143337",
-    "lng": "-122.4369709",
-    "clue": "Skip the song, where's the throng?",
-    "closest": [
-      "Bottoms Up Bar & Lounge",
-      "Tropi-Gala",
-      "Connection, The",
-      "Coco's Bar",
-      "Pissed Off Pete's",
-      "Our Place Bar"
-    ],
-    "distances": [
-      17,
-      1182,
-      1183,
-      1362,
-      2426,
-      2846
-    ],
-    "clues": [
-      "Glasses high, where's the sky?",
-      "Tropical and fest, where's the best?",
-      "Where links are made, where's the shade?",
-      "Tropical flair, where's the chair?",
-      "Angry ale, where's the pail?",
-      "Homey booze, where are the shoes?"
     ]
   },
   {
@@ -4797,14 +4421,12 @@
       "Myriad Gastropub",
       "Amnesia",
       "Bender's Bar & Grill",
-      "Phoenix Bar & Restaurant, The",
       "Wildhawk",
       "Phoenix Irish Bar & Restaurant, The"
     ],
     "distances": [
       207,
       243,
-      511,
       516,
       518,
       615
@@ -4813,7 +4435,6 @@
       "Many a munch, where's the brunch?",
       "Forget the day, where you'll sway. Name it.",
       "Twist and cook, where's the book?",
-      "Rising from ashes, where are the stashes?",
       "Feral and raptor, where's the captor?",
       "Green rebirth, where's the mirth?"
     ]
@@ -4900,24 +4521,21 @@
       "Mister Bing's",
       "Mr Bing's",
       "Steap Tea Bar",
-      "E Z 5 Inc",
-      "EZ5 Inc"
+      "E Z 5 Inc"
     ],
     "distances": [
       86,
       520,
       545,
       545,
-      656,
-      664
+      656
     ],
     "clues": [
       "Miner's haunt, where's the flaunt?",
       "Call him Sir, where's the blur?",
       "Bing's spot, what have you got?",
       "Climb and sip, where's the tip?",
-      "Simple by number, where you might slumber. Where?",
-      "Simple five, where's the jive?"
+      "Simple by number, where you might slumber. Where?"
     ]
   },
   {
@@ -5206,7 +4824,6 @@
       "Danny Coyle's",
       "Mini Bar SF",
       "Bar 821",
-      "Mini Bar Sf",
       "Molotov's"
     ],
     "distances": [
@@ -5214,7 +4831,6 @@
       370,
       449,
       689,
-      1192,
       1213
     ],
     "clues": [
@@ -5222,7 +4838,6 @@
       "Call him Dan, where's the pan?",
       "Small sips, where's the tips?",
       "Eight-to-one, where you'll have fun. What's the name?",
-      "Small but not shy, where's the sky?",
       "Explosive sip, where's the chip?"
     ]
   },
@@ -5237,7 +4852,7 @@
     "clue": "Flower's brew, what's the clue?",
     "closest": [
       "Twin Peaks Tavern",
-      440,
+      "440",
       "Lucky 13",
       "Last Call",
       "Q Bar",
@@ -5741,25 +5356,19 @@
       "Hideout",
       "Dalva",
       "Giordano Bros.",
-      "Giordanos Bros.",
-      "Delirium",
-      "Delirium Cocktails"
+      "Delirium"
     ],
     "distances": [
       20,
       118,
       143,
-      147,
-      185,
-      239
+      185
     ],
     "clues": [
       "A secret sip, where lips zip. What's this spot?",
       "One word wonder, where's the thunder?",
       "Siblings unite, where's the fight?",
-      "Family and food, where the mood's never rude. Where?",
-      "Sanity's blur, where's the cur?",
-      "Confusion in a glass, served with a dash of class. Where are you?"
+      "Sanity's blur, where's the cur?"
     ]
   },
   {
@@ -5877,7 +5486,7 @@
       "Sea Star, The",
       "Olfactory Brewing & Blending",
       "Triple Voodoo Brewery",
-      "Hi Dive Bar",
+      "Hi Dive",
       "Sam Jordan's Bar and Grill",
       "Ramp Restaurant, The"
     ],
@@ -5942,7 +5551,6 @@
     "clue": "High above, with lots of love, where's the dove?",
     "closest": [
       "City Beer Store",
-      "Aunt Charlies Lounge",
       "Montesacro Pinseria",
       "Ales Unlimited Basement",
       "Showdown, The",
@@ -5950,7 +5558,6 @@
     ],
     "distances": [
       470,
-      713,
       906,
       919,
       919,
@@ -5958,7 +5565,6 @@
     ],
     "clues": [
       "Urban hops, where's the shops?",
-      "Family and a seat, where all will meet. Where?",
       "Roman rounds, where are the sounds?",
       "Below but broad, where the kegs are stored. Name it.",
       "Duel and drink, where's the link?",
@@ -5980,7 +5586,7 @@
       "Bar Drake",
       "Lizzie's Starlight",
       "Bar 1915",
-      "JCB Tasting Lounge"
+      "JCB Tasting Lounge, The"
     ],
     "distances": [
       137,
@@ -6202,40 +5808,6 @@
     ]
   },
   {
-    "name": "Cigar Bar & Grill",
-    "address": "850 Montgomery Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94133",
-    "lat": "37.7972336",
-    "lng": "-122.4034106",
-    "clue": "Smoke and steak, where's the lake?",
-    "closest": [
-      "Bocadillos",
-      "Cafe Zoetrope",
-      "Taverna Aventine",
-      "Bamboo Hut",
-      "Cosmo Bar & Lounge, The",
-      "NODE Worldwide"
-    ],
-    "distances": [
-      66,
-      190,
-      302,
-      425,
-      433,
-      478
-    ],
-    "clues": [
-      "Spanish snacks, where are the tracks?",
-      "Filmic fare, where's the chair?",
-      "Inn and ancient, where's the pendant?",
-      "Tropics in a room, where you'll forget gloom. What's it called?",
-      "Universe in a glass, where's the class?",
-      "Globally connected, where's the projected?"
-    ]
-  },
-  {
     "name": "Cigar Bar & Grill, The",
     "address": "850 Montgomery St",
     "city": "San Francisco",
@@ -6314,15 +5886,13 @@
     "closest": [
       "Kezar Pub, The",
       "Hobson's Choice",
-      "Hobson's Choice Bar",
       "Martin Macks",
-      "Mad Dog in the Fog",
+      "Mad Dog in the Fog, The",
       "Gold Cane Cocktail Lounge"
     ],
     "distances": [
       173,
       233,
-      288,
       598,
       672,
       729
@@ -6330,7 +5900,6 @@
     "clues": [
       "Stadium sips, where's the chips?",
       "Either or, where's the door?",
-      "Pick or not, the rum's quite hot. Name it.",
       "Marty's spot, where's the shot?",
       "Angry pup, where's the cup?",
       "Golden stick, where's the trick?"
@@ -6518,15 +6087,13 @@
     "closest": [
       "Tee Off Bar & Grill",
       "Beachside Cafe",
-      "Pitt's Pub",
       "Pittsburgh's Pub",
       "China Town Business Pub Co",
       "Trad'r Sam"
     ],
     "distances": [
-      0,
+      1800,
       3468,
-      3877,
       4800,
       5371,
       5575
@@ -6620,7 +6187,6 @@
     "closest": [
       "Mint Space, The",
       "Happy Lounge",
-      "Plough and the Stars, The",
       "Plough & Stars, The",
       "3910 Lounge",
       "Ireland 32"
@@ -6629,7 +6195,6 @@
       451,
       514,
       519,
-      871,
       1014,
       1739
     ],
@@ -6637,7 +6202,6 @@
       "Fresh room, where's the broom?",
       "Cheers and grins, where the good time begins. What's the place?",
       "Till and twinkle, where's the sprinkle?",
-      "Farm and sky, where's the why?",
       "Digits and sit, where's the hit?",
       "Emerald count, where's the mount?"
     ]
@@ -6690,24 +6254,21 @@
       "Great American Music Hall",
       "Hanaro",
       "Irving Pizza",
-      "Veritas",
-      "Edinburgh Castle Pub"
+      "Veritas"
     ],
     "distances": [
       262,
       283,
       310,
       310,
-      323,
-      389
+      323
     ],
     "clues": [
       "Last sip, where's the tip?",
       "Stateside tunes, where the melody moons. Name it.",
       "One in many, where the drinks are plenty. Where?",
       "A street in a slice, where the vibe’s nice. What's it called?",
-      "Truth and sip, where's the tip?",
-      "Scots' fortress, where's the sorceress?"
+      "Truth and sip, where's the tip?"
     ]
   },
   {
@@ -7230,7 +6791,6 @@
       "Vertigo",
       "Edinburgh Castle",
       "Route 101",
-      "Edinburgh Castle Pub",
       "Lush Lounge"
     ],
     "distances": [
@@ -7238,7 +6798,6 @@
       424,
       446,
       453,
-      475,
       494
     ],
     "clues": [
@@ -7246,7 +6805,6 @@
       "Dizzy and high, where's the sky?",
       "Scottish stone, but far from alone. What is this place?",
       "Highway hops, where's the stops?",
-      "Scots' fortress, where's the sorceress?",
       "Verdant vibes, where's the tribes?"
     ]
   },
@@ -7327,24 +6885,18 @@
     "closest": [
       "Plough & Stars, The",
       "Steins",
-      "Plough and the Stars, The",
-      "Abbey Tavern",
       "Ireland 32",
       "Abbey Tavern, The"
     ],
     "distances": [
       760,
       760,
-      819,
-      929,
       984,
       1174
     ],
     "clues": [
       "Farm and sky, where's the why?",
       "Mugs and hugs, where's the rugs?",
-      "Till and twinkle, where's the sprinkle?",
-      "Monks and a pint, where the vibe's just right. Where?",
       "Emerald count, where's the mount?",
       "Monks and cheers, where's the years?"
     ]
@@ -7593,21 +7145,18 @@
     "lng": "-122.3961067",
     "clue": "Precious and eastern, where's the feastin'?",
     "closest": [
-      "Harrington's Bar and Grill",
       "Americano",
       "Royal Exchange",
       "Harrington's Bar & Grill",
       "Hard Water"
     ],
     "distances": [
-      414,
       567,
       689,
       824,
       934
     ],
     "clues": [
-      "Irish pride, where's the tide?",
       "U.S. in a glass, where the hours pass. What's the spot?",
       "Regal trades, where's the spades?",
       "Classy and sassy, where the crowd's never trashy. Where?",
@@ -7723,16 +7272,14 @@
     "lng": "-122.4224603",
     "clue": "One word wonder, where's the thunder?",
     "closest": [
-      "Giordanos Bros.",
-      "Blondie's Bar and No Grill",
+      "Giordano Bros.",
       "Blondie's Bar",
       "Skylark",
       "Gestalt",
       "Kilowatt Bar"
     ],
     "distances": [
-      0,
-      78,
+      50,
       87,
       120,
       138,
@@ -7740,7 +7287,6 @@
     ],
     "clues": [
       "Family and food, where the mood's never rude. Where?",
-      "Fair hair but no fare, where?",
       "Golden gal, where's the pal?",
       "Bird and blue, where's the clue?",
       "The sum's parts, where's the arts?",
@@ -7829,24 +7375,21 @@
       "Ame Restaurant",
       "Vitrine",
       "Dada Sf Studio",
-      "House Of Shields, The",
-      "House Of Shields"
+      "House Of Shields, The"
     ],
     "distances": [
       146,
       239,
       355,
       383,
-      451,
-      477
+      451
     ],
     "clues": [
       "Rat tunes, where's the dunes?",
       "Rain in a room, where taste will bloom. What's it called?",
       "Glass and case, where's the place?",
       "Surreal sounds, where are the bounds?",
-      "Guardian home, where's the dome?",
-      "Armor and ale, where tales set sail. Where?"
+      "Guardian home, where's the dome?"
     ]
   },
   {
@@ -7892,18 +7435,16 @@
     "lng": "-122.42269",
     "clue": "Sanity's blur, where's the cur?",
     "closest": [
-      "Giordanos Bros.",
+      "Giordano Bros.",
       "Kilowatt Bar",
       "Kilowatt",
       "Gestalt",
-      "Blondie's Bar and No Grill",
       "Blondie's Bar"
     ],
     "distances": [
       28,
       78,
       78,
-      89,
       89,
       128
     ],
@@ -7912,42 +7453,7 @@
       "Electric booze, where's the fuse?",
       "Power in a pour, where the amps soar. Where?",
       "The sum's parts, where's the arts?",
-      "Fair hair but no fare, where?",
       "Golden gal, where's the pal?"
-    ]
-  },
-  {
-    "name": "Delirium Cocktails",
-    "address": "3139 16th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.764726",
-    "lng": "-122.4227528",
-    "clue": "Confusion in a glass, served with a dash of class. Where are you?",
-    "closest": [
-      "Kilowatt Bar",
-      "Gestalt",
-      "Giordanos Bros.",
-      "Kilowatt",
-      "Blondie's Bar and No Grill",
-      "Over Proof"
-    ],
-    "distances": [
-      28,
-      67,
-      87,
-      87,
-      114,
-      156
-    ],
-    "clues": [
-      "Electric booze, where's the fuse?",
-      "The sum's parts, where's the arts?",
-      "Family and food, where the mood's never rude. Where?",
-      "Power in a pour, where the amps soar. Where?",
-      "Fair hair but no fare, where?",
-      "Extra strong, where do you belong?"
     ]
   },
   {
@@ -8062,7 +7568,6 @@
     "closest": [
       "Social Study, The",
       "Izakaya Kou",
-      "Boom Boom Room",
       "Origin",
       "BooM BooM RooM",
       "Wine Jar"
@@ -8070,7 +7575,6 @@
     "distances": [
       57,
       59,
-      115,
       442,
       524,
       885
@@ -8078,7 +7582,6 @@
     "clues": [
       "Books and booze, where's the news?",
       "East in a feast, where the chopsticks never cease. Where?",
-      "Loud and groove, where's the move?",
       "Start of all, where's the ball?",
       "Loud and high, what's nearby?",
       "Grape and can, where's the pan?"
@@ -8098,24 +7601,21 @@
       "Halu",
       "Ireland 32",
       "Fizzee's",
-      "Plough & Stars, The",
-      "Plough and the Stars, The"
+      "Plough & Stars, The"
     ],
     "distances": [
       0,
       195,
       406,
       716,
-      721,
-      737
+      721
     ],
     "clues": [
       "Bottle's end, where's the bend?",
       "Short and sweet, where music and drinks meet. Where?",
       "Emerald count, where's the mount?",
       "Bubbles pop, where's the hop?",
-      "Farm and sky, where's the why?",
-      "Till and twinkle, where's the sprinkle?"
+      "Farm and sky, where's the why?"
     ]
   },
   {
@@ -8299,7 +7799,6 @@
       "Pizza Inferno Restaurant & Bar",
       "Tony's Cable Car Restaurant",
       "BooM BooM RooM",
-      "Boom Boom Room",
       "Harry's Bar",
       "Fillmore, The"
     ],
@@ -8307,7 +7806,6 @@
       0,
       323,
       714,
-      719,
       1885,
       1908
     ],
@@ -8315,7 +7813,6 @@
       "Fiery slice, where's the ice?",
       "Tram and feast, where's the east?",
       "Loud and high, what's nearby?",
-      "Loud and groove, where's the move?",
       "One name fame, where everybody plays the game. What's it called?",
       "Street's namesake, where's the cake?"
     ]
@@ -8368,7 +7865,7 @@
       "Amnesia",
       "Beauty Bar",
       "Horsies Saloon",
-      "Phoenix Bar & Restaurant, The"
+      "Phoenix Irish Bar & Restaurant, The"
     ],
     "distances": [
       243,
@@ -8397,7 +7894,7 @@
     "clue": "Fido's haunt, where's the flaunt?",
     "closest": [
       "La Stazione Coffee & Wine Bar",
-      "Hi Dive Bar",
+      "Hi Dive",
       "Ramp Restaurant, The",
       "Cesar's Latin Palace",
       "Harmonic Brewing",
@@ -8465,7 +7962,6 @@
     "closest": [
       "Gestalt",
       "Monk's Kettle, The",
-      "Delirium Cocktails",
       "Delirium",
       "Morak Lounge",
       "Hideout"
@@ -8473,7 +7969,6 @@
     "distances": [
       56,
       75,
-      77,
       141,
       167,
       169
@@ -8481,7 +7976,6 @@
     "clues": [
       "The sum's parts, where's the arts?",
       "Holy brew, where's the crew?",
-      "Confusion in a glass, served with a dash of class. Where are you?",
       "Sanity's blur, where's the cur?",
       "Exotic rest, where's the fest?",
       "A secret sip, where lips zip. What's this spot?"
@@ -8496,73 +7990,6 @@
     "lat": "37.7654995",
     "lng": "-122.4106267",
     "clue": "Two games in one, and food that's well-done. Where?",
-    "closest": [
-      "Wooden Nickel, The",
-      "District Six",
-      "Nihon",
-      "Mission Bowling Club",
-      "Slate Bar",
-      "DNA Lounge"
-    ],
-    "distances": [
-      0,
-      6,
-      789,
-      1100,
-      1204,
-      1275
-    ],
-    "clues": [
-      "Vintage vibe, where's the tribe?",
-      "6th zone, where's the cone?",
-      "Land of rising sun, where's the fun?",
-      "Strikes or stories, where are the glories?",
-      "Stone-cold sips, where are the chips?",
-      "Life's building blocks in a spot that rocks. Where is it?"
-    ]
-  },
-  {
-    "name": "Double Play Bar and Grill",
-    "address": "2401 16th St",
-    "city": "San Francisco",
-    "zip": "94103",
-    "lat": "37.765515",
-    "lng": "-122.410634",
-    "clue": "Two runs scored, where's the board?",
-    "closest": [
-      "Wooden Nickel, The",
-      "District Six",
-      "Nihon",
-      "Mission Bowling Club",
-      "Slate Bar",
-      "DNA Lounge"
-    ],
-    "distances": [
-      6,
-      6,
-      787,
-      1106,
-      1206,
-      1280
-    ],
-    "clues": [
-      "Vintage vibe, where's the tribe?",
-      "6th zone, where's the cone?",
-      "Land of rising sun, where's the fun?",
-      "Strikes or stories, where are the glories?",
-      "Stone-cold sips, where are the chips?",
-      "Life's building blocks in a spot that rocks. Where is it?"
-    ]
-  },
-  {
-    "name": "Double Play Restaurant",
-    "address": "2401 16th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.7654995",
-    "lng": "-122.4106267",
-    "clue": "Twice the fun, when eating's done. Where are you?",
     "closest": [
       "Wooden Nickel, The",
       "District Six",
@@ -8634,7 +8061,6 @@
     "closest": [
       "Coco's Bar",
       "Billiard Palacade",
-      "Broken Record",
       "Broken Record, The",
       "Our Place Bar",
       "Cotters Corner"
@@ -8642,7 +8068,6 @@
     "distances": [
       595,
       862,
-      1947,
       1970,
       1976,
       1996
@@ -8650,7 +8075,6 @@
     "clues": [
       "Tropical flair, where's the chair?",
       "Cue and a throne, where you're not alone. Name it.",
-      "Skip the song, where's the throng?",
       "Shattered vinyl, where's the final?",
       "Homey booze, where are the shoes?",
       "Family's edge, where's the hedge?"
@@ -8667,7 +8091,6 @@
     "clue": "Scales and tails, where the fun never pales. Where?",
     "closest": [
       "Four Deuces, The",
-      "Four Deuces",
       "Spot Restaurant, The",
       "Dubliner West Portal, The",
       "Que Syrah",
@@ -8675,7 +8098,6 @@
     ],
     "distances": [
       235,
-      437,
       1135,
       1434,
       1781,
@@ -8683,7 +8105,6 @@
     ],
     "clues": [
       "Cards in hand, where's the band?",
-      "Two pairs in a name, where you bet on a good game. Where?",
       "X marks the dining, where's the wining?",
       "Irish in the west, where's the jest?",
       "Wine what if, where's the cliff?",
@@ -8768,7 +8189,6 @@
       "Harper & Rye",
       "Wreck Room, The",
       "Wreck Room, The",
-      "Hyde Out",
       "Hyde-Out",
       "Cabin"
     ],
@@ -8776,15 +8196,13 @@
       238,
       256,
       260,
-      358,
       480,
       548
     ],
     "clues": [
       "Books and booze, where you can't lose. Where is this?",
-      "",
       "Broken fun, where's the sun?",
-      "Jekyll's break, where's the stake?",
+      "Broken fun, where's the sun?",
       "A monster's haunt, where fear is scant. Name it.",
       "Woodsy sip, where's the trip?"
     ]
@@ -8926,39 +8344,6 @@
     ]
   },
   {
-    "name": "EZ5 Inc",
-    "address": "684 Commercial St",
-    "city": "San Francisco",
-    "zip": "94111",
-    "lat": "37.7941427143",
-    "lng": "-122.404378286",
-    "clue": "Simple five, where's the jive?",
-    "closest": [
-      "Wayfare Tavern",
-      "Bocadillos",
-      "Steap Tea Bar",
-      "Taverna Aventine",
-      "Li Po Cocktail Lounge",
-      "Buddha Lounge"
-    ],
-    "distances": [
-      16,
-      154,
-      159,
-      160,
-      226,
-      541
-    ],
-    "clues": [
-      "Journey and bar, where's the car?",
-      "Spanish snacks, where are the tracks?",
-      "Climb and sip, where's the tip?",
-      "Inn and ancient, where's the pendant?",
-      "A poem in a pour, where you'll ask for more. Name it.",
-      "Zen and gin, what's the pin?"
-    ]
-  },
-  {
     "name": "Eagles Drift Inn, The",
     "address": "1232 Noriega Street",
     "city": "San Francisco",
@@ -9037,7 +8422,6 @@
     "clue": "A pilot's dream, but grounded it seems. Where are you?",
     "closest": [
       "House Of Shields, The",
-      "House Of Shields",
       "Novela",
       "Fang",
       "Vitrine",
@@ -9045,7 +8429,6 @@
     ],
     "distances": [
       23,
-      154,
       365,
       410,
       488,
@@ -9053,7 +8436,6 @@
     ],
     "clues": [
       "Guardian home, where's the dome?",
-      "Armor and ale, where tales set sail. Where?",
       "Story sip, where's the clip?",
       "A bite in a sip, where tongues take a trip. Where?",
       "Glass and case, where's the place?",
@@ -9163,39 +8545,6 @@
     ]
   },
   {
-    "name": "Edinburgh Castle Pub",
-    "address": "950 Geary St",
-    "city": "San Francisco",
-    "zip": "94109",
-    "lat": "37.7861199",
-    "lng": "-122.418945",
-    "clue": "Scots' fortress, where's the sorceress?",
-    "closest": [
-      "HA-RA Club, The",
-      "Jackalope",
-      "Great American Music Hall",
-      "Club Kristi",
-      "O'Farrell Theatre",
-      "Blur"
-    ],
-    "distances": [
-      29,
-      78,
-      117,
-      209,
-      240,
-      276
-    ],
-    "clues": [
-      "Alphabet crew, where's the view?",
-      "Myth in a pint, where the scene’s never trite. What's the name?",
-      "Stateside tunes, where the melody moons. Name it.",
-      "First name basis, where's the oasis?",
-      "Stage and glass, where's the class?",
-      "Vague in a glass, what's its class?"
-    ]
-  },
-  {
     "name": "El Amigo",
     "address": "3355 Mission Street",
     "city": "San Francisco",
@@ -9273,7 +8622,6 @@
     "clue": "The river flows, where's the shows?",
     "closest": [
       "Lucita's Niteclub",
-      "Lucitas Nightclub",
       "Toad's Food & Drink",
       "Southend Grill 'N' Bar",
       "Dovre Club",
@@ -9281,7 +8629,6 @@
     ],
     "distances": [
       51,
-      336,
       342,
       605,
       621,
@@ -9289,7 +8636,6 @@
     ],
     "clues": [
       "Evening Lucy, where's the juicy?",
-      "Dancing light, where's the fight?",
       "Hopper's meal, where's the deal?",
       "Bottom tip, where's the dip?",
       "Norse by name, but drinks all the same. Where is this spot?",
@@ -9443,7 +8789,6 @@
     "closest": [
       "Gestalt",
       "Monk's Kettle, The",
-      "Delirium Cocktails",
       "Delirium",
       "Morak Lounge",
       "Hideout"
@@ -9451,7 +8796,6 @@
     "distances": [
       99,
       141,
-      215,
       217,
       307,
       311
@@ -9459,7 +8803,6 @@
     "clues": [
       "The sum's parts, where's the arts?",
       "Holy brew, where's the crew?",
-      "Confusion in a glass, served with a dash of class. Where are you?",
       "Sanity's blur, where's the cur?",
       "Exotic rest, where's the fest?",
       "A secret sip, where lips zip. What's this spot?"
@@ -9478,7 +8821,7 @@
       "Black Cat Jazz Supper Club",
       "Great American Music Hall",
       "O'Farrell Theatre",
-      "Benders Bar and Grill",
+      "Bender's Bar and Grill",
       "Veritas"
     ],
     "distances": [
@@ -9780,7 +9123,6 @@
       "Happy Lounge",
       "Divisadero Sports Bar",
       "San Francisco Athletic Club",
-      "Plough and the Stars, The",
       "Fishbowl Bar & Grill, The"
     ],
     "distances": [
@@ -9788,7 +9130,6 @@
       68,
       451,
       1288,
-      1304,
       1447
     ],
     "clues": [
@@ -9796,7 +9137,6 @@
       "Cheers and grins, where the good time begins. What's the place?",
       "Watch a game on a road well-named. What's the venue?",
       "Foggy fitness, where's the witness?",
-      "Till and twinkle, where's the sprinkle?",
       "Swimmers dine, where's the line?"
     ]
   },
@@ -9848,7 +9188,7 @@
       "Waterfront Restaurant",
       "Blanc et Rouge",
       "Schroeder's",
-      "Harrington's Bar and Grill",
+      "Harrington's Bar & Grill",
       "Royal Exchange"
     ],
     "distances": [
@@ -10051,7 +9391,6 @@
       "Murio's Trophy Room",
       "Zam Zam",
       "Citrus Club",
-      "Hobson's Choice Bar",
       "Hobson's Choice",
       "Milk Bar"
     ],
@@ -10059,7 +9398,6 @@
       169,
       237,
       237,
-      1255,
       1261,
       1496
     ],
@@ -10067,7 +9405,6 @@
       "Awards or antlers, where are the panthers?",
       "Double quick, where's the stick?",
       "Sour and sweet, where do we meet?",
-      "Pick or not, the rum's quite hot. Name it.",
       "Either or, where's the door?",
       "Calcium and cocktails, where are the details?"
     ]
@@ -10086,7 +9423,6 @@
       "Eagles Drift Inn, The",
       "Parkside Tavern",
       "Spot Restaurant, The",
-      "Four Deuces",
       "Four Deuces, The"
     ],
     "distances": [
@@ -10094,7 +9430,6 @@
       2758,
       3207,
       3493,
-      3496,
       3643
     ],
     "clues": [
@@ -10102,7 +9437,6 @@
       "Where birds roam, where's the foam?",
       "Green retreat, where's the seat?",
       "X marks the dining, where's the wining?",
-      "Two pairs in a name, where you bet on a good game. Where?",
       "Cards in hand, where's the band?"
     ]
   },
@@ -10120,57 +9454,21 @@
       "Little Shamrock",
       "Sage & Drifter, The",
       "Sozai Restaurant and Sake Lounge",
-      "Kezar Pub, The",
-      "Kezar Pub"
+      "Kezar Pub, The"
     ],
     "distances": [
       30,
       177,
       423,
       480,
-      607,
-      754
+      607
     ],
     "clues": [
       "Brew and chat, where's the hat?",
       "A small clover, where the drinks flow over. What's it called?",
       "Wise wanderer, where's the ponderer?",
       "Sake and sides, where's the guides?",
-      "Stadium sips, where's the chips?",
-      "Like the last, but the vibe's fast. What's the name?"
-    ]
-  },
-  {
-    "name": "Fireside Bar",
-    "address": "603 Irving St",
-    "city": "San Francisco",
-    "zip": "94122",
-    "lat": "37.7639974",
-    "lng": "-122.4643912",
-    "clue": "Cozy flame, where's the game?",
-    "closest": [
-      "Blackthorn",
-      "Little Shamrock",
-      "Sage & Drifter, The",
-      "Sozai Restaurant and Sake Lounge",
-      "Kezar Pub, The",
-      "Kezar Pub"
-    ],
-    "distances": [
-      30,
-      154,
-      437,
-      506,
-      630,
-      770
-    ],
-    "clues": [
-      "Spiky and dark, what's this landmark?",
-      "A small clover, where the drinks flow over. What's it called?",
-      "Wise wanderer, where's the ponderer?",
-      "Sake and sides, where's the guides?",
-      "Stadium sips, where's the chips?",
-      "Like the last, but the vibe's fast. What's the name?"
+      "Stadium sips, where's the chips?"
     ]
   },
   {
@@ -10220,7 +9518,6 @@
       "Wayfare Tavern",
       "Harrington's Bar & Grill",
       "Blanc et Rouge",
-      "Harrington's Bar and Grill",
       "Taverna Aventine",
       "5A5 Steak Lounge"
     ],
@@ -10228,7 +9525,6 @@
       150,
       158,
       234,
-      402,
       575,
       575
     ],
@@ -10236,7 +9532,6 @@
       "Journey and bar, where's the car?",
       "Classy and sassy, where the crowd's never trashy. Where?",
       "White and red, where is it said?",
-      "Irish pride, where's the tide?",
       "Inn and ancient, where's the pendant?",
       "A code for beef, where you'll find relief. What's the spot?"
     ]
@@ -10255,7 +9550,6 @@
       "Pizza Inferno Restaurant & Bar",
       "Tony's Cable Car Restaurant",
       "BooM BooM RooM",
-      "Boom Boom Room",
       "Palmers Tavern"
     ],
     "distances": [
@@ -10263,7 +9557,6 @@
       323,
       394,
       409,
-      1789,
       1938
     ],
     "clues": [
@@ -10271,7 +9564,6 @@
       "Fiery slice, where's the ice?",
       "Tram and feast, where's the east?",
       "Loud and high, what's nearby?",
-      "Loud and groove, where's the move?",
       "Oasis joint, where's the point?"
     ]
   },
@@ -10286,7 +9578,7 @@
     "clue": "Half a grand, where the drinks are in hand. Name it.",
     "closest": [
       "Blondie's Bar",
-      "Delirium Cocktails",
+      "Delirium",
       "Bar San Pancho",
       "ABV",
       "Over Proof",
@@ -10355,7 +9647,6 @@
       "Clubhouse Restaurant | Golden Gate Golf Course",
       "Kama Lounge Inc",
       "Spot Restaurant, The",
-      "Four Deuces",
       "Four Deuces, The"
     ],
     "distances": [
@@ -10363,7 +9654,6 @@
       2800,
       2803,
       2970,
-      4002,
       4119
     ],
     "clues": [
@@ -10371,7 +9661,6 @@
       "Fairway feast, where's the beast?",
       "Love in a glass, where the vibe’s first class. Where?",
       "X marks the dining, where's the wining?",
-      "Two pairs in a name, where you bet on a good game. Where?",
       "Cards in hand, where's the band?"
     ]
   },
@@ -10577,40 +9866,6 @@
     ]
   },
   {
-    "name": "Four Deuces",
-    "address": "2319 Taraval Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94116",
-    "lat": "37.7421689",
-    "lng": "-122.4911714",
-    "clue": "Two pairs in a name, where you bet on a good game. Where?",
-    "closest": [
-      "White Cap",
-      "Grandma's Saloon",
-      "Riptide, The",
-      "Fire Fly Sports Bar",
-      "Shannon Arms Irish Pub",
-      "Gold Mirror"
-    ],
-    "distances": [
-      4,
-      16,
-      1183,
-      2536,
-      2720,
-      2952
-    ],
-    "clues": [
-      "Snowy sips, where's the trips?",
-      "Nana's nest, where's the fest?",
-      "Pulled by the sea, where's the tea?",
-      "Light and games, where the screen claims fame. Where?",
-      "Emerald embrace, where's the space?",
-      "Reflect on riches, where the bar has no glitches. Where?"
-    ]
-  },
-  {
     "name": "Four Deuces, The",
     "address": "2319 Taraval St",
     "city": "San Francisco",
@@ -10791,7 +10046,6 @@
       "Irish Bank, The",
       "Meatball Bar, The",
       "Occidental Cigar Club",
-      "Occidental cigar club",
       "Rouge et Blanc",
       "Dada Sf Studio"
     ],
@@ -10799,7 +10053,6 @@
       0,
       39,
       57,
-      90,
       138,
       197
     ],
@@ -10807,7 +10060,6 @@
       "Clover cash, where's the stash?",
       "Saucy sip, where's the tip?",
       "Western smoke, where's the joke?",
-      "Western smoke, where's the bloke?",
       "Red and white, where's the sight?",
       "Surreal sounds, where are the bounds?"
     ]
@@ -10859,7 +10111,6 @@
       "Skylark",
       "Kilowatt Bar",
       "Kilowatt",
-      "Blondie's Bar and No Grill",
       "Blondie's Bar"
     ],
     "distances": [
@@ -10867,7 +10118,6 @@
       91,
       120,
       120,
-      128,
       156
     ],
     "clues": [
@@ -10875,42 +10125,7 @@
       "Bird and blue, where's the clue?",
       "Electric booze, where's the fuse?",
       "Power in a pour, where the amps soar. Where?",
-      "Fair hair but no fare, where?",
       "Golden gal, where's the pal?"
-    ]
-  },
-  {
-    "name": "Giordanos Bros.",
-    "address": "3108 16th Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94103",
-    "lat": "37.765083",
-    "lng": "-122.4223264",
-    "clue": "Family and food, where the mood's never rude. Where?",
-    "closest": [
-      "Monk's Kettle, The",
-      "Skylark",
-      "Kilowatt Bar",
-      "Kilowatt",
-      "Bond Bar",
-      "Blue Pea"
-    ],
-    "distances": [
-      37,
-      90,
-      151,
-      155,
-      155,
-      179
-    ],
-    "clues": [
-      "Holy brew, where's the crew?",
-      "Bird and blue, where's the clue?",
-      "Electric booze, where's the fuse?",
-      "Power in a pour, where the amps soar. Where?",
-      "007's haunt, what do you want?",
-      "Indigo legume, where's the room?"
     ]
   },
   {
@@ -10926,7 +10141,6 @@
       "Bitter End, The",
       "Natives Bar",
       "Abbey Tavern, The",
-      "Abbey Tavern",
       "Halberstadt Fencers' Club",
       "Dirty Trix Saloon"
     ],
@@ -10934,7 +10148,6 @@
       52,
       214,
       1100,
-      1241,
       1405,
       1664
     ],
@@ -10942,7 +10155,6 @@
       "Tart and stop, where's the hop?",
       "Local sip, where's the trip?",
       "Monks and cheers, where's the years?",
-      "Monks and a pint, where the vibe's just right. Where?",
       "Swords and cheers, where duels end in beers. What's the name?",
       "No illusions here, just maybe a beer. Where can you find me?"
     ]
@@ -11529,14 +10741,12 @@
     "closest": [
       "Irving Pizza",
       "Hanaro",
-      "Edinburgh Castle Pub",
       "Edinburgh Castle",
       "Nite Cap Bar",
       "Great American Music Hall"
     ],
     "distances": [
       143,
-      183,
       183,
       202,
       214,
@@ -11545,7 +10755,6 @@
     "clues": [
       "A street in a slice, where the vibe’s nice. What's it called?",
       "One in many, where the drinks are plenty. Where?",
-      "Scots' fortress, where's the sorceress?",
       "Scottish stone, but far from alone. What is this place?",
       "Last sip, where's the tip?",
       "Stateside tunes, where the melody moons. Name it."
@@ -11663,7 +10872,6 @@
     "lng": "-122.4664565",
     "clue": "Short and sweet, where music and drinks meet. Where?",
     "closest": [
-      "Abbey Tavern",
       "Abbey Tavern, The",
       "Would You Believe",
       "Corks",
@@ -11671,7 +10879,6 @@
       "Girls Lounge, The"
     ],
     "distances": [
-      198,
       211,
       425,
       699,
@@ -11679,7 +10886,6 @@
       809
     ],
     "clues": [
-      "Monks and a pint, where the vibe's just right. Where?",
       "Monks and cheers, where's the years?",
       "Query and trust, where's the crust?",
       "Bottle's end, where's the bend?",
@@ -11766,21 +10972,18 @@
     "clue": "Purses and posts, where gossip boasts. Name it.",
     "closest": [
       "Blanc et Rouge",
-      "Harrington's Bar and Grill",
       "Harrington's Bar & Grill",
       "Royal Exchange",
       "Tadich Grill"
     ],
     "distances": [
       458,
-      567,
       678,
       752,
       1126
     ],
     "clues": [
       "White and red, where is it said?",
-      "Irish pride, where's the tide?",
       "Classy and sassy, where the crowd's never trashy. Where?",
       "Regal trades, where's the spades?",
       "Historic meals, where's the deals?"
@@ -11901,7 +11104,7 @@
       "Olfactory Brewing & Blending",
       "Triple Voodoo Brewery",
       "Sam Jordan's Bar and Grill",
-      "Hi Dive Bar",
+      "Hi Dive",
       "Ramp Restaurant, The"
     ],
     "distances": [
@@ -11990,39 +11193,6 @@
     ]
   },
   {
-    "name": "Harrington's Bar and Grill",
-    "address": "245 Front St",
-    "city": "San Francisco",
-    "zip": "94111",
-    "lat": "37.793983625",
-    "lng": "-122.399013406",
-    "clue": "Irish pride, where's the tide?",
-    "closest": [
-      "Green Bar",
-      "Bar 333",
-      "Punch Line Comedy Club",
-      "Fish & Farm",
-      "Barrel Room, The",
-      "San Francisco Wine Society"
-    ],
-    "distances": [
-      58,
-      78,
-      80,
-      81,
-      245,
-      379
-    ],
-    "clues": [
-      "Earthy in a sip, where eco tips a tip. Where?",
-      "Triple the fun, where the night's never done. Name it.",
-      "Joke and juice, where's the goose?",
-      "Sea meets soil, where pots come to boil. What's the name?",
-      "Cask and zone, where's the cone?",
-      "Grapes by the bay, where's the hay?"
-    ]
-  },
-  {
     "name": "Harrington's Harry Pub",
     "address": "460 Larkin Street",
     "city": "San Francisco",
@@ -12034,7 +11204,7 @@
     "closest": [
       "Soluna Cafe & Lounge",
       "Black Cat Jazz Supper Club",
-      "Benders Bar and Grill",
+      "Bender's Bar and Grill",
       "Great American Music Hall",
       "O3 Bistro & Lounge",
       "O'Farrell Theatre"
@@ -12068,7 +11238,6 @@
     "closest": [
       "Dimples",
       "BooM BooM RooM",
-      "Boom Boom Room",
       "Pagoda",
       "Social Study, The",
       "Izakaya Kou"
@@ -12076,7 +11245,6 @@
     "distances": [
       584,
       774,
-      837,
       1261,
       1281,
       1323
@@ -12084,7 +11252,6 @@
     "clues": [
       "Cute on a face, but here it's a place. Where are you?",
       "Loud and high, what's nearby?",
-      "Loud and groove, where's the move?",
       "Tower drinks, where's the links?",
       "Books and booze, where's the news?",
       "East in a feast, where the chopsticks never cease. Where?"
@@ -12172,7 +11339,7 @@
       "Murphy's Pub",
       "Pizzeria Delfina",
       "Vino Venue",
-      "House Of Shields",
+      "House Of Shields, The",
       "Rouge et Blanc"
     ],
     "distances": [
@@ -12204,7 +11371,6 @@
     "closest": [
       "Bitter End, The",
       "Abbey Tavern, The",
-      "Abbey Tavern",
       "Natives Bar",
       "Halberstadt Fencers' Club",
       "Dirty Trix Saloon"
@@ -12212,7 +11378,6 @@
     "distances": [
       52,
       211,
-      1081,
       1216,
       1384,
       1638
@@ -12220,7 +11385,6 @@
     "clues": [
       "Tart and stop, where's the hop?",
       "Monks and cheers, where's the years?",
-      "Monks and a pint, where the vibe's just right. Where?",
       "Local sip, where's the trip?",
       "Swords and cheers, where duels end in beers. What's the name?",
       "No illusions here, just maybe a beer. Where can you find me?"
@@ -12295,39 +11459,6 @@
     ]
   },
   {
-    "name": "Hi Dive Bar",
-    "address": "28 Pier",
-    "city": "San Francisco",
-    "zip": "94105",
-    "lat": 37.7614544,
-    "lng": -122.3854586,
-    "clue": "Elevated plunge, where's the lunge?",
-    "closest": [
-      "Dogpatch Saloon",
-      "Smokestack",
-      "La Stazione Coffee & Wine Bar",
-      "Pub, The",
-      "Bottom of the Hill",
-      "Cesar's Latin Palace"
-    ],
-    "distances": [
-      824,
-      870,
-      967,
-      988,
-      1077,
-      1495
-    ],
-    "clues": [
-      "Fido's haunt, where's the flaunt?",
-      "Fumes and foam, where's the gnome?",
-      "A station of sips, where the train makes trips. Name the spot.",
-      "Basics and brews, where's the news?",
-      "Low but rising, where's it hiding?",
-      "Emperor's salsa, where's the fiesta?"
-    ]
-  },
-  {
     "name": "Hi-Fi Lounge",
     "address": "2125 Lombard Street",
     "city": "San Francisco",
@@ -12396,7 +11527,7 @@
     ]
   },
   {
-    "name": "Hidden Vine, The",
+    "name": "Hidden Vine II, The",
     "address": "620 Post Street",
     "city": "San Francisco",
     "state": "CA",
@@ -12439,16 +11570,14 @@
     "lng": "-122.4224603",
     "clue": "A secret sip, where lips zip. What's this spot?",
     "closest": [
-      "Giordanos Bros.",
-      "Blondie's Bar and No Grill",
+      "Giordano Bros.",
       "Blondie's Bar",
       "Skylark",
       "Gestalt",
       "Casanova Lounge"
     ],
     "distances": [
-      0,
-      78,
+      50,
       87,
       120,
       138,
@@ -12456,7 +11585,6 @@
     ],
     "clues": [
       "Family and food, where the mood's never rude. Where?",
-      "Fair hair but no fare, where?",
       "Golden gal, where's the pal?",
       "Bird and blue, where's the clue?",
       "The sum's parts, where's the arts?",
@@ -12474,7 +11602,6 @@
     "closest": [
       "Social Study, The",
       "Izakaya Kou",
-      "Boom Boom Room",
       "BooM BooM RooM",
       "Wine Jar",
       "Origin"
@@ -12482,7 +11609,6 @@
     "distances": [
       102,
       115,
-      127,
       424,
       554,
       772
@@ -12490,7 +11616,6 @@
     "clues": [
       "Books and booze, where's the news?",
       "East in a feast, where the chopsticks never cease. Where?",
-      "Loud and groove, where's the move?",
       "Loud and high, what's nearby?",
       "Grape and can, where's the pan?",
       "Start of all, where's the ball?"
@@ -12556,40 +11681,6 @@
     ],
     "clues": [
       "Tiny but bold, where the night's never old. Name the place.",
-      "Fast or slow, where do you go?",
-      "Potion and lounge, where's the ounce?",
-      "Rails and spin, where's the gin?",
-      "Sour and sweet, where do we meet?",
-      "Awards or antlers, where are the panthers?"
-    ]
-  },
-  {
-    "name": "Hobson's Choice Bar",
-    "address": "1601 Haight Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94117",
-    "lat": "37.7696557",
-    "lng": "-122.4486723",
-    "clue": "Pick or not, the rum's quite hot. Name it.",
-    "closest": [
-      "Club Deluxe",
-      "Cleriti Club",
-      "Alembic, The",
-      "Trax",
-      "Citrus Club",
-      "Murio's Trophy Room"
-    ],
-    "distances": [
-      15,
-      179,
-      195,
-      235,
-      249,
-      444
-    ],
-    "clues": [
-      "Above the norm, where's the swarm?",
       "Fast or slow, where do you go?",
       "Potion and lounge, where's the ounce?",
       "Rails and spin, where's the gin?",
@@ -12745,24 +11836,21 @@
       "Blue Cellars",
       "Thread Lounge Inc",
       "Cancholas Bar",
-      "Lucita's Niteclub",
-      "Lucitas Nightclub"
+      "Lucita's Niteclub"
     ],
     "distances": [
       335,
       353,
       429,
       772,
-      1463,
-      1501
+      1463
     ],
     "clues": [
       "South of the border, where friends order. Where is this?",
       "Sky in a bottle, name this throttle?",
       "Fiber and chill, where's the bill?",
       "Sounds like a dance, where's your chance?",
-      "Evening Lucy, where's the juicy?",
-      "Dancing light, where's the fight?"
+      "Evening Lucy, where's the juicy?"
     ]
   },
   {
@@ -12810,7 +11898,6 @@
     "clue": "East meets West, where the dim sum's the best. Where?",
     "closest": [
       "Four Deuces, The",
-      "Four Deuces",
       "Spot Restaurant, The",
       "Sunset Reservoir Brewing Company",
       "Dubliner West Portal, The",
@@ -12818,7 +11905,6 @@
     ],
     "distances": [
       244,
-      437,
       1360,
       1556,
       1861,
@@ -12826,7 +11912,6 @@
     ],
     "clues": [
       "Cards in hand, where's the band?",
-      "Two pairs in a name, where you bet on a good game. Where?",
       "X marks the dining, where's the wining?",
       "Western sky brews, where's the news?",
       "Irish in the west, where's the jest?",
@@ -12843,23 +11928,20 @@
     "lng": "-122.4544116",
     "clue": "Like the first, but second's not the worst. Name the place.",
     "closest": [
-      "Plough and the Stars, The",
       "Plough & Stars, The",
       "3910 Lounge",
       "Ireland 32",
       "Fizzee's",
-      "Abbey Tavern"
+      "Abbey Tavern, The"
     ],
     "distances": [
       144,
-      1014,
       1447,
       1514,
       1514,
       1564
     ],
     "clues": [
-      "Till and twinkle, where's the sprinkle?",
       "Farm and sky, where's the why?",
       "Digits and sit, where's the hit?",
       "Emerald count, where's the mount?",
@@ -12981,7 +12063,7 @@
       "Bruno's",
       "Ken Ken Ramen",
       "Wildhawk",
-      "Phoenix Bar & Restaurant, The",
+      "Phoenix Irish Bar & Restaurant, The",
       "Etcetera Wine Bar",
       "Chapel, The"
     ],
@@ -13070,37 +12152,6 @@
     ]
   },
   {
-    "name": "House Of Shields",
-    "address": "39 New Montgomery Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94105",
-    "lat": "37.7882737",
-    "lng": "-122.4013083",
-    "clue": "Armor and ale, where tales set sail. Where?",
-    "closest": [
-      "Sutter Station Tavern",
-      "Local Edition",
-      "Dave's",
-      "Pizzeria Delfina",
-      "Vino Venue"
-    ],
-    "distances": [
-      15,
-      222,
-      294,
-      335,
-      434
-    ],
-    "clues": [
-      "End of the line, where's the wine?",
-      "Newsy booze, where's the clues?",
-      "One man's domain, plain but never in vain. What place is this?",
-      "Dolphin dough, where's the flow?",
-      "Grape and place, where's the case?"
-    ]
-  },
-  {
     "name": "House Of Shields, The",
     "address": "39 New Montgomery St",
     "city": "San Francisco",
@@ -13128,39 +12179,6 @@
       "Newsy booze, where's the clues?",
       "One man's domain, plain but never in vain. What place is this?",
       "End of the line, where's the wine?"
-    ]
-  },
-  {
-    "name": "Hyde Out",
-    "address": "1068 Hyde St",
-    "city": "San Francisco",
-    "zip": "94109",
-    "lat": "37.7908937",
-    "lng": "-122.4172479",
-    "clue": "Jekyll's break, where's the stake?",
-    "closest": [
-      "Duffy's Irish Pub",
-      "California Jack's",
-      "Bitter Badger",
-      "Encore Karaoke Lounge",
-      "Plush Room Cabaret",
-      "Ace's"
-    ],
-    "distances": [
-      3,
-      99,
-      113,
-      124,
-      318,
-      659
-    ],
-    "clues": [
-      "From Dublin perhaps, where the crowd claps. What's this pub?",
-      "Golden state and cards, where's the guards?",
-      "Angry and tart, where you might start?",
-      "Once is not enough, where the mic is tough. Where?",
-      "Cushy show, where's the glow?",
-      "Top of the deck, where you'll write a check. Where?"
     ]
   },
   {
@@ -13244,24 +12262,21 @@
       "Little Shamrock",
       "Sage & Drifter, The",
       "Sozai Restaurant and Sake Lounge",
-      "Kezar Pub, The",
-      "Kezar Pub"
+      "Kezar Pub, The"
     ],
     "distances": [
       154,
       177,
       587,
       656,
-      784,
-      853
+      784
     ],
     "clues": [
       "Spiky and dark, what's this landmark?",
       "A small clover, where the drinks flow over. What's it called?",
       "Wise wanderer, where's the ponderer?",
       "Sake and sides, where's the guides?",
-      "Stadium sips, where's the chips?",
-      "Like the last, but the vibe's fast. What's the name?"
+      "Stadium sips, where's the chips?"
     ]
   },
   {
@@ -13277,7 +12292,6 @@
       "Citrus Club",
       "Zam Zam",
       "Milk Bar",
-      "Hobson's Choice Bar",
       "Hobson's Choice"
     ],
     "distances": [
@@ -13285,7 +12299,6 @@
       202,
       237,
       1028,
-      1034,
       1269
     ],
     "clues": [
@@ -13293,42 +12306,7 @@
       "Sour and sweet, where do we meet?",
       "Double quick, where's the stick?",
       "Calcium and cocktails, where are the details?",
-      "Pick or not, the rum's quite hot. Name it.",
       "Either or, where's the door?"
-    ]
-  },
-  {
-    "name": "Inovino",
-    "address": "108-B Carl Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94117",
-    "lat": "37.76591",
-    "lng": "-122.4503393",
-    "clue": "New in a glass, where time will pass. What's the place?",
-    "closest": [
-      "Murio's Trophy Room",
-      "Zam Zam",
-      "Citrus Club",
-      "Hobson's Choice Bar",
-      "Hobson's Choice",
-      "Milk Bar"
-    ],
-    "distances": [
-      29,
-      182,
-      237,
-      1038,
-      1045,
-      1261
-    ],
-    "clues": [
-      "Awards or antlers, where are the panthers?",
-      "Double quick, where's the stick?",
-      "Sour and sweet, where do we meet?",
-      "Pick or not, the rum's quite hot. Name it.",
-      "Either or, where's the door?",
-      "Calcium and cocktails, where are the details?"
     ]
   },
   {
@@ -13375,7 +12353,6 @@
     "lng": "-122.4539139",
     "clue": "Inside and out, where grapes sprout. Name it.",
     "closest": [
-      "Plough and the Stars, The",
       "Plough & Stars, The",
       "3910 Lounge",
       "Ireland 32",
@@ -13384,7 +12361,6 @@
     ],
     "distances": [
       144,
-      871,
       1304,
       1371,
       1371,
@@ -13392,7 +12368,6 @@
     ],
     "clues": [
       "Till and twinkle, where's the sprinkle?",
-      "Farm and sky, where's the why?",
       "Digits and sit, where's the hit?",
       "Emerald count, where's the mount?",
       "Bubbles pop, where's the hop?",
@@ -13481,13 +12456,11 @@
       "Sams Tavern",
       "E & O Kitchen and Bar",
       "Occidental Cigar Club",
-      "Occidental cigar club",
       "Meatball Bar, The"
     ],
     "distances": [
       197,
       231,
-      244,
       244,
       263,
       285
@@ -13496,7 +12469,6 @@
       "Heathen tiki, where's the cheeky?",
       "Plural pubs, where's the rubs?",
       "East meets West, where the food's the best. What's the name?",
-      "Western smoke, where's the joke?",
       "Western smoke, where's the bloke?",
       "Saucy sip, where's the tip?"
     ]
@@ -13511,7 +12483,6 @@
     "clue": "Metal mix, where's the fix?",
     "closest": [
       "Lucita's Niteclub",
-      "Lucitas Nightclub",
       "Thread Lounge Inc",
       "Rock Bar",
       "Toad's Food & Drink",
@@ -13519,7 +12490,6 @@
     ],
     "distances": [
       10,
-      290,
       307,
       317,
       342,
@@ -13527,7 +12497,6 @@
     ],
     "clues": [
       "Evening Lucy, where's the juicy?",
-      "Dancing light, where's the fight?",
       "Fiber and chill, where's the bill?",
       "Boulders and beers, where's the cheers?",
       "Hopper's meal, where's the deal?",
@@ -13603,39 +12572,6 @@
     ]
   },
   {
-    "name": "JCB Tasting Lounge",
-    "address": "600 Stockton St",
-    "city": "San Francisco",
-    "zip": "94108",
-    "lat": "37.7914692",
-    "lng": "-122.4073249",
-    "clue": "Monogram sips, where's the tips?",
-    "closest": [
-      "Mystic Hotel by Charlie Palmer",
-      "Last Drop Tavern",
-      "Steap Tea Bar",
-      "Rouge et Blanc",
-      "E & O Kitchen and Bar",
-      "Bin 480 Bar & Bistro in Marriott on Union Square"
-    ],
-    "distances": [
-      170,
-      448,
-      462,
-      484,
-      501,
-      570
-    ],
-    "clues": [
-      "Magical stay, where's the bay?",
-      "Like the last, but a tale’s cast. Where?",
-      "Climb and sip, where's the tip?",
-      "Red and white, where's the sight?",
-      "East meets West, where the food's the best. What's the name?",
-      "A lot in a name, but where's the game?"
-    ]
-  },
-  {
     "name": "JCB Tasting Lounge, The",
     "address": "600 Stockton Street",
     "city": "San Francisco",
@@ -13680,7 +12616,6 @@
     "closest": [
       "Edinburgh Castle",
       "R Bar",
-      "Edinburgh Castle Pub",
       "Irving Pizza",
       "Usmailforwarding Club",
       "Lush Lounge"
@@ -13689,14 +12624,12 @@
       132,
       164,
       196,
-      196,
       201,
       266
     ],
     "clues": [
       "Scottish stone, but far from alone. What is this place?",
       "Just one R, where's the star?",
-      "Scots' fortress, where's the sorceress?",
       "A street in a slice, where the vibe’s nice. What's it called?",
       "States and post, where's the host?",
       "Verdant vibes, where's the tribes?"
@@ -13882,7 +12815,6 @@
     "closest": [
       "E Z 5 Inc",
       "Bix Restaurant",
-      "EZ5 Inc",
       "Cigar Bar & Grill, The",
       "Z & Y Bistro",
       "R & G Lounge"
@@ -13890,7 +12822,6 @@
     "distances": [
       216,
       295,
-      381,
       492,
       512,
       512
@@ -13898,7 +12829,6 @@
     "clues": [
       "Simple by number, where you might slumber. Where?",
       "Short but chic, where do you seek?",
-      "Simple five, where's the jive?",
       "Smoke and steak, where's the lake?",
       "Last and first, where's the thirst?",
       "Letters and liquor, where's the flicker?"
@@ -13951,7 +12881,7 @@
       "Swig",
       "PianoFight",
       "Redford",
-      "Aunt Charlies Lounge",
+      "Aunt Charlie's Lounge",
       "Pandora Karaoke & Bar"
     ],
     "distances": [
@@ -14187,7 +13117,6 @@
     "closest": [
       "Zam Zam",
       "Murio's Trophy Room",
-      "Hobson's Choice Bar",
       "Hobson's Choice",
       "Citrus Club",
       "Gold Cane Cocktail Lounge"
@@ -14196,51 +13125,15 @@
       169,
       182,
       202,
-      1212,
       1219,
       1377
     ],
     "clues": [
       "Double quick, where's the stick?",
       "Awards or antlers, where are the panthers?",
-      "Pick or not, the rum's quite hot. Name it.",
       "Either or, where's the door?",
       "Sour and sweet, where do we meet?",
       "Golden stick, where's the trick?"
-    ]
-  },
-  {
-    "name": "Kezar Pub",
-    "address": "770 Stanyan Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94117",
-    "lat": "37.7678896",
-    "lng": "-122.4529242",
-    "clue": "Like the last, but the vibe's fast. What's the name?",
-    "closest": [
-      "Inovino",
-      "Kezar Bar & Restaurant",
-      "Zam Zam",
-      "Finnegans Wake",
-      "Cleriti Club",
-      "Hobson's Choice"
-    ],
-    "distances": [
-      12,
-      506,
-      600,
-      728,
-      729,
-      1028
-    ],
-    "clues": [
-      "New in a glass, where time will pass. What's the place?",
-      "Stadium nearby, where fans satisfy. Where?",
-      "Double quick, where's the stick?",
-      "Irish and alive, where spirits dive. Where are you?",
-      "Fast or slow, where do you go?",
-      "Either or, where's the door?"
     ]
   },
   {
@@ -14252,7 +13145,7 @@
     "lng": "-122.452964768",
     "clue": "Stadium sips, where's the chips?",
     "closest": [
-      "Inovino",
+      "InoVino",
       "Kezar Bar & Restaurant",
       "Zam Zam",
       "Finnegans Wake",
@@ -14287,15 +13180,13 @@
     "clue": "Power in a pour, where the amps soar. Where?",
     "closest": [
       "Morak Lounge",
-      "Delirium Cocktails",
       "Delirium",
       "Bar San Pancho",
-      "Giordanos Bros.",
+      "Giordano Bros.",
       "Dalva"
     ],
     "distances": [
       31,
-      91,
       93,
       146,
       167,
@@ -14303,7 +13194,6 @@
     ],
     "clues": [
       "Exotic rest, where's the fest?",
-      "Confusion in a glass, served with a dash of class. Where are you?",
       "Sanity's blur, where's the cur?",
       "Saint and a city, where the vibe's nitty gritty. What's the name?",
       "Family and food, where the mood's never rude. Where?",
@@ -14356,7 +13246,6 @@
       "Social Study, The",
       "Izakaya Kou",
       "Wine Jar",
-      "Boom Boom Room",
       "BooM BooM RooM",
       "Origin"
     ],
@@ -14364,7 +13253,6 @@
       59,
       112,
       127,
-      460,
       550,
       875
     ],
@@ -14372,7 +13260,6 @@
       "Books and booze, where's the news?",
       "East in a feast, where the chopsticks never cease. Where?",
       "Grape and can, where's the pan?",
-      "Loud and groove, where's the move?",
       "Loud and high, what's nearby?",
       "Start of all, where's the ball?"
     ]
@@ -14584,7 +13471,7 @@
       "Triple Voodoo Brewery",
       "Harmonic Brewing",
       "Cesar's Latin Palace",
-      "Hi Dive Bar",
+      "Hi Dive",
       "Bottom of the Hill",
       "Ramp Restaurant, The"
     ],
@@ -14815,26 +13702,20 @@
     "lng": "-122.4100923",
     "clue": "Green in a court, where drinks are sought. What's the spot?",
     "closest": [
-      "JCB Tasting Lounge",
       "JCB Tasting Lounge, The",
       "Summer Place, The",
-      "Summer Place",
       "Last Drop Tavern",
       "Chelsea Place"
     ],
     "distances": [
-      0,
       19,
       320,
-      453,
       453,
       821
     ],
     "clues": [
       "Monogram sips, where's the tips?",
-      "",
       "Seasonal sips, where's the trips?",
-      "Sunny space, where's the ace?",
       "Like the last, but a tale’s cast. Where?",
       "London or New York, where's the fork?"
     ]
@@ -14884,7 +13765,6 @@
     "clue": "Law and taps, where the gavel claps. Name the place.",
     "closest": [
       "Kama Lounge Inc",
-      "Beach Chalet Brewery and Restaurant",
       "Beach Chalet Brewery & Restaurant",
       "White Cap",
       "Riptide, The",
@@ -14892,7 +13772,6 @@
     ],
     "distances": [
       1549,
-      1941,
       1956,
       2225,
       3107,
@@ -14900,7 +13779,6 @@
     ],
     "clues": [
       "Love in a glass, where the vibe’s first class. Where?",
-      "Sand and suds, where's the buds?",
       "Sea, beer, and food, puts you in the mood. What's it called?",
       "Snowy sips, where's the trips?",
       "Pulled by the sea, where's the tea?",
@@ -15390,7 +14268,6 @@
     "closest": [
       "Vino Venue",
       "Novela",
-      "House Of Shields",
       "House Of Shields, The",
       "Ame Restaurant",
       "Vitrine"
@@ -15398,7 +14275,6 @@
     "distances": [
       146,
       351,
-      377,
       456,
       460,
       491
@@ -15406,7 +14282,6 @@
     "clues": [
       "Grape and place, where's the case?",
       "Story sip, where's the clip?",
-      "Armor and ale, where tales set sail. Where?",
       "Guardian home, where's the dome?",
       "Rain in a room, where taste will bloom. What's it called?",
       "Glass and case, where's the place?"
@@ -15615,39 +14490,6 @@
     ]
   },
   {
-    "name": "Lucitas Nightclub",
-    "address": "3247 Mission St",
-    "city": "San Francisco",
-    "zip": "94110",
-    "lat": 37.7447992,
-    "lng": -122.4202336,
-    "clue": "Dancing light, where's the fight?",
-    "closest": [
-      "Argus Lounge",
-      "Rock Bar",
-      "El Amigo",
-      "El Rio",
-      "Virgil's Sea Room",
-      "Club Malibu"
-    ],
-    "distances": [
-      22,
-      128,
-      150,
-      180,
-      420,
-      439
-    ],
-    "clues": [
-      "Watchful eye, where the night's not shy. Name it.",
-      "Boulders and beers, where's the cheers?",
-      "South of the border, where friends order. Where is this?",
-      "The river flows, where's the shows?",
-      "Poet and ocean, where's the motion?",
-      "Beaches or beats, where are the seats?"
-    ]
-  },
-  {
     "name": "Lucky 13",
     "address": "2140 Market Street",
     "city": "San Francisco",
@@ -15694,7 +14536,6 @@
       "Old Devil Moon",
       "Lucita's Niteclub",
       "Thread Lounge Inc",
-      "Lucitas Nightclub",
       "Dell'uva"
     ],
     "distances": [
@@ -15702,7 +14543,6 @@
       159,
       344,
       429,
-      1400,
       1812
     ],
     "clues": [
@@ -15710,7 +14550,6 @@
       "Sinful satellite, where's the night?",
       "Evening Lucy, where's the juicy?",
       "Fiber and chill, where's the bill?",
-      "Dancing light, where's the fight?",
       "Italian vines in a bottle, find me where grapes are the motto."
     ]
   },
@@ -15817,39 +14656,6 @@
     ]
   },
   {
-    "name": "Mad Dog in the Fog",
-    "address": "1568 Haight St",
-    "city": "San Francisco",
-    "zip": "94117",
-    "lat": "37.7701937",
-    "lng": "-122.448141864",
-    "clue": "Angry pup, where's the cup?",
-    "closest": [
-      "Zam Zam",
-      "Trax",
-      "Cleriti Club",
-      "Magnolia Brewing - Haight",
-      "Alembic, The",
-      "Citrus Club"
-    ],
-    "distances": [
-      19,
-      159,
-      249,
-      249,
-      328,
-      328
-    ],
-    "clues": [
-      "Double quick, where's the stick?",
-      "Rails and spin, where's the gin?",
-      "Fast or slow, where do you go?",
-      "Flower brew, where's the crew?",
-      "Potion and lounge, where's the ounce?",
-      "Sour and sweet, where do we meet?"
-    ]
-  },
-  {
     "name": "Madrone Art Bar",
     "address": "500 Divisadero Street",
     "city": "San Francisco",
@@ -15860,7 +14666,7 @@
     "clue": "Creative sip, where's the clip?",
     "closest": [
       "Bar 821",
-      "Mini Bar Sf",
+      "Mini Bar SF",
       "Fort Point Lower Haight",
       "Kava Lounge Sf",
       "Black Sands",
@@ -15893,7 +14699,6 @@
     "lng": "-122.4451741",
     "clue": "Flower brew, where's the crew?",
     "closest": [
-      "Hobson's Choice Bar",
       "Hobson's Choice",
       "Zam Zam",
       "Cleriti Club",
@@ -15901,7 +14706,6 @@
       "Citrus Club"
     ],
     "distances": [
-      290,
       610,
       610,
       849,
@@ -15909,7 +14713,6 @@
       859
     ],
     "clues": [
-      "Pick or not, the rum's quite hot. Name it.",
       "Either or, where's the door?",
       "Double quick, where's the stick?",
       "Fast or slow, where do you go?",
@@ -16465,15 +15268,13 @@
     "closest": [
       "Zam Zam",
       "Hobson's Choice",
-      "Hobson's Choice Bar",
       "Martin Macks",
-      "Mad Dog in the Fog",
+      "Mad Dog in the Fog, The",
       "Gold Cane Cocktail Lounge"
     ],
     "distances": [
       182,
       288,
-      429,
       600,
       604,
       831
@@ -16481,7 +15282,6 @@
     "clues": [
       "Double quick, where's the stick?",
       "Either or, where's the door?",
-      "Pick or not, the rum's quite hot. Name it.",
       "Marty's spot, where's the shot?",
       "Angry pup, where's the cup?",
       "Golden stick, where's the trick?"
@@ -16544,40 +15344,6 @@
       334,
       851,
       1100
-    ],
-    "clues": [
-      "Divide and sip, where's the tip?",
-      "Eco and a pup, where the drinks are up. Where is this?",
-      "Read and sip, where's the script?",
-      "Together and affection, where's the connection?",
-      "Call him Dan, where's the pan?",
-      "Historic sight, where's the light?"
-    ]
-  },
-  {
-    "name": "Mini Bar Sf",
-    "address": "837 Divisadero Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94117",
-    "lat": "37.7774002",
-    "lng": "-122.4384474",
-    "clue": "Small but not shy, where's the sky?",
-    "closest": [
-      "Cafe Divis",
-      "Greenhound",
-      "Page, The",
-      "United Love Inc",
-      "Danny Coyle's",
-      "Fort Point Lower Haight"
-    ],
-    "distances": [
-      70,
-      129,
-      217,
-      349,
-      949,
-      1197
     ],
     "clues": [
       "Divide and sip, where's the tip?",
@@ -16867,7 +15633,6 @@
     "closest": [
       "Chapel, The",
       "Etcetera Wine Bar",
-      "Phoenix Bar & Restaurant, The",
       "Ken Ken Ramen",
       "Phoenix Irish Bar & Restaurant, The",
       "Bruno's"
@@ -16875,7 +15640,6 @@
     "distances": [
       140,
       205,
-      222,
       244,
       407,
       423
@@ -16883,7 +15647,6 @@
     "clues": [
       "Holy space, where's the grace?",
       "And so on and so forth, where wine heads north. Where?",
-      "Rising from ashes, where are the stashes?",
       "Double the broth, where hunger's off. What's it called?",
       "Green rebirth, where's the mirth?",
       "Not Mars but stars, where are the bars?"
@@ -17126,40 +15889,6 @@
     ]
   },
   {
-    "name": "Momo's",
-    "address": "760 2nd Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94107",
-    "lat": "37.7798453",
-    "lng": "-122.3902228",
-    "clue": "Short but sweet, where's the seat?",
-    "closest": [
-      "Tres Agaves Restaurant",
-      "Gotham Club",
-      "Polo Grounds Pub N Grill",
-      "Lucky Strike Entertainment",
-      "Alchemist Bar & Lounge",
-      "District San Francisco"
-    ],
-    "distances": [
-      118,
-      186,
-      186,
-      236,
-      290,
-      290
-    ],
-    "clues": [
-      "Three cacti and dine, where's the wine?",
-      "Bats and capes, where mystery takes shape. Name the place.",
-      "Horses and hops, where's the tops?",
-      "Bowl a ten, where's the gin?",
-      "Elixirs and more, where the night's never a bore. What's the spot?",
-      "City slice, where's the spice?"
-    ]
-  },
-  {
     "name": "Monaghans",
     "address": "3243 Pierce Street",
     "city": "San Francisco",
@@ -17241,24 +15970,21 @@
       "Hideout",
       "ABV",
       "Over Proof",
-      "Giordano Bros.",
-      "Giordanos Bros."
+      "Giordano Bros."
     ],
     "distances": [
       67,
       89,
       105,
       118,
-      146,
-      151
+      146
     ],
     "clues": [
       "One word wonder, where's the thunder?",
       "A secret sip, where lips zip. What's this spot?",
       "Like the last, but the vibe’s cast. What's it called?",
       "Extra strong, where do you belong?",
-      "Siblings unite, where's the fight?",
-      "Family and food, where the mood's never rude. Where?"
+      "Siblings unite, where's the fight?"
     ]
   },
   {
@@ -17272,7 +15998,7 @@
     "clue": "Roman rounds, where are the sounds?",
     "closest": [
       "Biig - 94 Turk",
-      "Aunt Charlies Lounge",
+      "Aunt Charlie's Lounge",
       "Monarch",
       "Big Bar",
       "Mission Covo",
@@ -17376,24 +16102,21 @@
       "Showdown, The",
       "Club Omg",
       "Waystone",
-      "Aunt Charlie's Lounge",
-      "Aunt Charlies Lounge"
+      "Aunt Charlie's Lounge"
     ],
     "distances": [
       470,
       546,
       566,
       722,
-      734,
-      902
+      734
     ],
     "clues": [
       "Lights are bright, where's the night?",
       "Duel and drink, where's the link?",
       "Text-worthy fun, where's the run?",
       "Path and rock, where's the dock?",
-      "Relative and rest, where's the best?",
-      "Family and a seat, where all will meet. Where?"
+      "Relative and rest, where's the best?"
     ]
   },
   {
@@ -17442,15 +16165,13 @@
     "closest": [
       "Zam Zam",
       "Hobson's Choice",
-      "Hobson's Choice Bar",
       "Martin Macks",
       "Gold Cane Cocktail Lounge",
-      "Mad Dog in the Fog"
+      "Mad Dog in the Fog, The"
     ],
     "distances": [
       182,
       233,
-      304,
       506,
       513,
       830
@@ -17458,7 +16179,6 @@
     "clues": [
       "Double quick, where's the stick?",
       "Either or, where's the door?",
-      "Pick or not, the rum's quite hot. Name it.",
       "Marty's spot, where's the shot?",
       "Golden stick, where's the trick?",
       "Angry pup, where's the cup?"
@@ -17478,24 +16198,21 @@
       "Rouge et Blanc",
       "Meatball Bar, The",
       "E & O Kitchen and Bar",
-      "Occidental Cigar Club",
-      "Occidental cigar club"
+      "Occidental Cigar Club"
     ],
     "distances": [
       138,
       138,
       176,
       194,
-      197,
-      228
+      197
     ],
     "clues": [
       "Plural pubs, where's the rubs?",
       "Red and white, where's the sight?",
       "Saucy sip, where's the tip?",
       "East meets West, where the food's the best. What's the name?",
-      "Western smoke, where's the joke?",
-      "Western smoke, where's the bloke?"
+      "Western smoke, where's the joke?"
     ]
   },
   {
@@ -17815,7 +16532,6 @@
       "Fly Trap",
       "House Of Shields, The",
       "Novela",
-      "House Of Shields",
       "Vitrine"
     ],
     "distances": [
@@ -17823,7 +16539,6 @@
       154,
       338,
       343,
-      519,
       563
     ],
     "clues": [
@@ -17831,7 +16546,6 @@
       "Wings but no birds, where the buzz is in words. Where?",
       "Guardian home, where's the dome?",
       "Story sip, where's the clip?",
-      "Armor and ale, where tales set sail. Where?",
       "Glass and case, where's the place?"
     ]
   },
@@ -17983,7 +16697,6 @@
     "closest": [
       "Four Deuces, The",
       "Spot Restaurant, The",
-      "Four Deuces",
       "Dubliner West Portal, The",
       "Que Syrah",
       "Sunset Reservoir Brewing Company"
@@ -17991,7 +16704,6 @@
     "distances": [
       235,
       244,
-      1370,
       1558,
       1666,
       2016
@@ -17999,7 +16711,6 @@
     "clues": [
       "Cards in hand, where's the band?",
       "X marks the dining, where's the wining?",
-      "Two pairs in a name, where you bet on a good game. Where?",
       "Irish in the west, where's the jest?",
       "Wine what if, where's the cliff?",
       "Western sky brews, where's the news?"
@@ -18048,7 +16759,7 @@
     "lng": "-122.4101366",
     "clue": "Posh spot, where's the lot?",
     "closest": [
-      "Summer Place",
+      "Summer Place, The",
       "University Club",
       "Last Drop Tavern",
       "Bar 1915",
@@ -18150,7 +16861,6 @@
     "lng": "-122.4272875",
     "clue": "Biblical drink, where's the sink?",
     "closest": [
-      "Peaks, The",
       "Peak's, The",
       "Clooney's Pub",
       "Dovre Club",
@@ -18158,7 +16868,6 @@
       "Toad's Food & Drink"
     ],
     "distances": [
-      308,
       1683,
       1705,
       1805,
@@ -18166,7 +16875,6 @@
       2045
     ],
     "clues": [
-      "Summit sips, where are the trips?",
       "High spots, where are the shots?",
       "Famous name, where's the game?",
       "Norse by name, but drinks all the same. Where is this spot?",
@@ -18459,7 +17167,7 @@
       "HA-RA Club, The",
       "Outsiders, The",
       "Diva's",
-      "Benders Bar and Grill",
+      "Bender's Bar and Grill",
       "Tommy's Joynt"
     ],
     "distances": [
@@ -18493,24 +17201,21 @@
       "Dirty Trix Saloon",
       "Scarlet Lounge",
       "Halu",
-      "540 Club",
-      "Plough and the Stars, The"
+      "540 Club"
     ],
     "distances": [
       1395,
       1412,
       1487,
       1492,
-      1567,
-      1628
+      1567
     ],
     "clues": [
       "Tart and stop, where's the hop?",
       "No illusions here, just maybe a beer. Where can you find me?",
       "Crimson sit, where's the hit?",
       "Short and sweet, where music and drinks meet. Where?",
-      "Five-four-oh, where the night will go. Where?",
-      "Till and twinkle, where's the sprinkle?"
+      "Five-four-oh, where the night will go. Where?"
     ]
   },
   {
@@ -18637,40 +17342,6 @@
       384,
       392,
       430
-    ],
-    "clues": [
-      "Barrel base, where's the case?",
-      "Belief in a glass, where's the class?",
-      "Clover cash, where's the stash?",
-      "Irish lore, where's the door?",
-      "Saucy sip, where's the tip?",
-      "Red and white, where's the sight?"
-    ]
-  },
-  {
-    "name": "Occidental cigar club",
-    "address": "471 Pine Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94104",
-    "lat": "37.7916707",
-    "lng": "-122.4036575",
-    "clue": "Western smoke, where's the bloke?",
-    "closest": [
-      "Rickhouse",
-      "Credo",
-      "Irish Bank, The",
-      "Murphy's Pub",
-      "Meatball Bar, The",
-      "Rouge et Blanc"
-    ],
-    "distances": [
-      1,
-      245,
-      359,
-      385,
-      393,
-      431
     ],
     "clues": [
       "Barrel base, where's the case?",
@@ -18827,7 +17498,6 @@
     "closest": [
       "Soma Lounge",
       "Azúcar Lounge",
-      "Azucar Lounge",
       "Powerhouse",
       "City Beer Store",
       "F8 Nightclub & Bar"
@@ -18835,7 +17505,6 @@
     "distances": [
       567,
       672,
-      685,
       952,
       971,
       1003
@@ -18843,7 +17512,6 @@
     "clues": [
       "Body and beats, where's the seats?",
       "Sugar and couch, where's the pouch?",
-      "Sweet and smooth, where you'll find your groove. Name it.",
       "Amps and ales, where's the scales?",
       "Urban hops, where's the shops?",
       "One key to fun, where the night's never done. Name it."
@@ -18892,7 +17560,6 @@
     "lng": "-122.4229226",
     "clue": "Sinful satellite, where's the night?",
     "closest": [
-      "Lucitas Nightclub",
       "Lucita's Niteclub",
       "Dell'uva",
       "Royal Cuckoo, The",
@@ -18900,7 +17567,6 @@
       "Cancholas Bar"
     ],
     "distances": [
-      530,
       780,
       1108,
       1163,
@@ -18908,7 +17574,6 @@
       1501
     ],
     "clues": [
-      "Dancing light, where's the fight?",
       "Evening Lucy, where's the juicy?",
       "Italian vines in a bottle, find me where grapes are the motto.",
       "Where the king's bird sings, where are the wings?",
@@ -19061,25 +17726,19 @@
     "clue": "Singular task, where's the flask?",
     "closest": [
       "Bottom of the Hill",
-      "Double Play Restaurant",
       "Double Play Bar & Grill",
-      "Double Play Bar and Grill",
       "Mars Bar & Restaurant",
       "Pub, The"
     ],
     "distances": [
       878,
-      1211,
       1439,
-      1535,
       1535,
       1797
     ],
     "clues": [
       "Low but rising, where's it hiding?",
-      "Twice the fun, when eating's done. Where are you?",
       "Two games in one, and food that's well-done. Where?",
-      "Two runs scored, where's the board?",
       "Red planet feast, where's the east?",
       "Basics and brews, where's the news?"
     ]
@@ -19132,7 +17791,7 @@
       "Brass Tacks",
       "Noir Lounge",
       "Two Sisters Bar and Books",
-      "Meatball Bar Hayes St, The"
+      "Meatball Bar, The"
     ],
     "distances": [
       3,
@@ -19331,7 +17990,6 @@
     "closest": [
       "Monk's Kettle, The",
       "Elixir",
-      "Delirium Cocktails",
       "Morak Lounge",
       "Delirium",
       "Dalva"
@@ -19339,7 +17997,6 @@
     "distances": [
       3,
       77,
-      91,
       99,
       122,
       179
@@ -19347,7 +18004,6 @@
     "clues": [
       "Holy brew, where's the crew?",
       "Magic in a glass, where time seems to pass. Where is this?",
-      "Confusion in a glass, served with a dash of class. Where are you?",
       "Exotic rest, where's the fest?",
       "Sanity's blur, where's the cur?",
       "One word wonder, where's the thunder?"
@@ -19399,14 +18055,12 @@
       "Irish Bank, The",
       "Meatball Bar, The",
       "Occidental Cigar Club",
-      "Occidental cigar club",
       "Rouge et Blanc",
       "Dada Sf Studio"
     ],
     "distances": [
       33,
       54,
-      90,
       90,
       115,
       228
@@ -19415,7 +18069,6 @@
       "Clover cash, where's the stash?",
       "Saucy sip, where's the tip?",
       "Western smoke, where's the joke?",
-      "Western smoke, where's the bloke?",
       "Red and white, where's the sight?",
       "Surreal sounds, where are the bounds?"
     ]
@@ -19467,7 +18120,6 @@
       "Pizza Inferno Restaurant & Bar",
       "Izakaya Kou",
       "Origin",
-      "Boom Boom Room",
       "BooM BooM RooM",
       "Level 2 Karaoke"
     ],
@@ -19475,7 +18127,6 @@
       57,
       102,
       112,
-      460,
       480,
       845
     ],
@@ -19483,7 +18134,6 @@
       "Fiery slice, where's the ice?",
       "East in a feast, where the chopsticks never cease. Where?",
       "Start of all, where's the ball?",
-      "Loud and groove, where's the move?",
       "Loud and high, what's nearby?",
       "Above the first, where vocals burst. Where?"
     ]
@@ -19503,7 +18153,7 @@
       "Bocadillos",
       "Taverna Aventine",
       "Credo",
-      "Occidental cigar club"
+      "Occidental Cigar Club"
     ],
     "distances": [
       205,
@@ -19536,7 +18186,6 @@
       "Pagoda",
       "Wild Hare",
       "BooM BooM RooM",
-      "Boom Boom Room",
       "Fishbowl Bar & Grill, The"
     ],
     "distances": [
@@ -19544,7 +18193,6 @@
       1421,
       1611,
       2024,
-      2035,
       2078
     ],
     "clues": [
@@ -19552,7 +18200,6 @@
       "Tower drinks, where's the links?",
       "Untamed and bunny, where's the money?",
       "Loud and high, what's nearby?",
-      "Loud and groove, where's the move?",
       "Swimmers dine, where's the line?"
     ]
   },
@@ -19635,7 +18282,6 @@
     "clue": "Box of tunes, where are the moons?",
     "closest": [
       "Good Care Inc",
-      "Aunt Charlies Lounge",
       "Cable Car City Pub & Cafe",
       "Aunt Charlie's Lounge",
       "Le Club Epicurian",
@@ -19643,7 +18289,6 @@
     ],
     "distances": [
       82,
-      190,
       250,
       308,
       320,
@@ -19651,7 +18296,6 @@
     ],
     "clues": [
       "Well-being in a glass, where worries pass. Where is this?",
-      "Family and a seat, where all will meet. Where?",
       "Trolley's tap, where's the map?",
       "Relative and rest, where's the best?",
       "A taste for the grand, where life is planned. What's it called?",
@@ -19795,7 +18439,7 @@
     ]
   },
   {
-    "name": "Park Tavern",
+    "name": "Park Tavern II",
     "address": "1652 Stockton Street",
     "city": "San Francisco",
     "state": "CA",
@@ -20167,39 +18811,6 @@
     ]
   },
   {
-    "name": "Peaks, The",
-    "address": "1316 Castro St",
-    "city": "San Francisco",
-    "zip": "94114",
-    "lat": 37.75099925000001,
-    "lng": -122.4343024,
-    "clue": "Summit sips, where are the trips?",
-    "closest": [
-      "Hamburger Mary's",
-      "Liberties, The",
-      "Midnight Sun",
-      "Badlands",
-      "Edge, The",
-      "Harvey's"
-    ],
-    "distances": [
-      2,
-      267,
-      374,
-      1740,
-      2047,
-      3205
-    ],
-    "clues": [
-      "Beef and a queen, where the crowd's never mean. Where?",
-      "Free to sip, where's the tip?",
-      "Neither day nor moon, where's the tune?",
-      "Rough but cool, where rules are the fool. Name the place.",
-      "Cliff's end, where's the bend?",
-      "A place for pride, where love doesn't hide. Where?"
-    ]
-  },
-  {
     "name": "Pedro's Cantina",
     "address": "128 King Street",
     "city": "San Francisco",
@@ -20268,7 +18879,7 @@
     ]
   },
   {
-    "name": "Perry's",
+    "name": "Perry's II",
     "address": "1944 Union Street",
     "city": "San Francisco",
     "state": "CA",
@@ -20435,40 +19046,6 @@
       "A street in a slice, where the vibe’s nice. What's it called?",
       "Queens of the scene, where everyone's keen. Where is this?",
       "Alphabet crew, where's the view?"
-    ]
-  },
-  {
-    "name": "Phoenix Bar & Restaurant, The",
-    "address": "811 Valencia Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94110",
-    "lat": "37.7598422",
-    "lng": "-122.4210876",
-    "clue": "Rising from ashes, where are the stashes?",
-    "closest": [
-      "Hog and Rocks",
-      "Mission Street Oyster Bar",
-      "Beauty Bar",
-      "West Burger N More",
-      "Arabian Nights Restaurant",
-      "Bruno's"
-    ],
-    "distances": [
-      45,
-      170,
-      181,
-      195,
-      234,
-      246
-    ],
-    "clues": [
-      "Swine and stone, where you're never alone. What's the name?",
-      "Seafood sip, where's the trip?",
-      "Pretty in a pint, name this joint?",
-      "Sunset and patty, where's the fatty?",
-      "Desert tales and ales, where mystery prevails. Where?",
-      "Not Mars but stars, where are the bars?"
     ]
   },
   {
@@ -20807,39 +19384,6 @@
     ]
   },
   {
-    "name": "Pitt's Pub",
-    "address": "4207 Judah St",
-    "city": "San Francisco",
-    "zip": "94122",
-    "lat": 37.7602405,
-    "lng": -122.5071774,
-    "clue": "Not Angelina's ex, where's the next?",
-    "closest": [
-      "Beach Chalet Brewery & Restaurant",
-      "Kama Lounge Inc",
-      "Fire Fly Sports Bar",
-      "Hockey Haven",
-      "Sapoten",
-      "White Cap"
-    ],
-    "distances": [
-      33,
-      318,
-      1435,
-      1941,
-      2803,
-      3071
-    ],
-    "clues": [
-      "Sea, beer, and food, puts you in the mood. What's it called?",
-      "Love in a glass, where the vibe’s first class. Where?",
-      "Light and games, where the screen claims fame. Where?",
-      "Pucks and pints, a fan's delight. Where is this?",
-      "Sweet and tart, where's the art?",
-      "Snowy sips, where's the trips?"
-    ]
-  },
-  {
     "name": "Pittsburgh's Pub",
     "address": "4207 Judah Street",
     "city": "San Francisco",
@@ -20919,7 +19463,6 @@
     "closest": [
       "Local Edition",
       "House Of Shields, The",
-      "House Of Shields",
       "Living Room Bar",
       "Pied Piper Bar & Grill",
       "Atlas Tap Room"
@@ -20927,7 +19470,6 @@
     "distances": [
       29,
       182,
-      213,
       230,
       264,
       355
@@ -20935,7 +19477,6 @@
     "clues": [
       "Newsy booze, where's the clues?",
       "Guardian home, where's the dome?",
-      "Armor and ale, where tales set sail. Where?",
       "Homely sip, where's the tip?",
       "Rat tunes, where's the dunes?",
       "A map in a sip, where friendships grip. Name the place."
@@ -21055,7 +19596,6 @@
     "closest": [
       "Scarlet Lounge",
       "Bitter End, The",
-      "Abbey Tavern",
       "Abbey Tavern, The",
       "Corks",
       "540 Club"
@@ -21063,7 +19603,6 @@
     "distances": [
       51,
       657,
-      789,
       794,
       928,
       932
@@ -21071,40 +19610,6 @@
     "clues": [
       "Crimson sit, where's the hit?",
       "Tart and stop, where's the hop?",
-      "Monks and a pint, where the vibe's just right. Where?",
-      "Monks and cheers, where's the years?",
-      "Bottle's end, where's the bend?",
-      "Five-four-oh, where the night will go. Where?"
-    ]
-  },
-  {
-    "name": "Plough and the Stars, The",
-    "address": "116 Clement St",
-    "city": "San Francisco",
-    "zip": "94118",
-    "lat": "37.7832553",
-    "lng": "-122.4605138",
-    "clue": "Till and twinkle, where's the sprinkle?",
-    "closest": [
-      "Dirty Trix Saloon",
-      "Bitter End, The",
-      "Abbey Tavern",
-      "Abbey Tavern, The",
-      "Corks",
-      "540 Club"
-    ],
-    "distances": [
-      51,
-      618,
-      745,
-      753,
-      878,
-      940
-    ],
-    "clues": [
-      "No illusions here, just maybe a beer. Where can you find me?",
-      "Tart and stop, where's the hop?",
-      "Monks and a pint, where the vibe's just right. Where?",
       "Monks and cheers, where's the years?",
       "Bottle's end, where's the bend?",
       "Five-four-oh, where the night will go. Where?"
@@ -21125,7 +19630,7 @@
       "Resolute",
       "Zeki's Bar",
       "Rx",
-      "Hyde Out"
+      "Hyde-Out"
     ],
     "distances": [
       224,
@@ -21429,7 +19934,6 @@
       "Owl Tree",
       "Sakana",
       "Bar 587",
-      "Summer Place",
       "Summer Place, The"
     ],
     "distances": [
@@ -21437,7 +19941,6 @@
       224,
       238,
       330,
-      363,
       395
     ],
     "clues": [
@@ -21445,7 +19948,6 @@
       "Wise wood, where's the good?",
       "Fish and fizz, where's the whizz?",
       "A mix of numbers, where no one slumbers. Where?",
-      "Sunny space, where's the ace?",
       "Seasonal sips, where's the trips?"
     ]
   },
@@ -21530,7 +20032,6 @@
       "5A5 Steak Lounge",
       "Harrington's Bar & Grill",
       "Barrel Room, The",
-      "Harrington's Bar and Grill",
       "L'Olivier",
       "Schroeder's"
     ],
@@ -21538,7 +20039,6 @@
       149,
       234,
       360,
-      457,
       558,
       560
     ],
@@ -21546,7 +20046,6 @@
       "A code for beef, where you'll find relief. What's the spot?",
       "Classy and sassy, where the crowd's never trashy. Where?",
       "Cask and zone, where's the cone?",
-      "Irish pride, where's the tide?",
       "French for tree, where the wine flows free. Name it.",
       "Beethoven's fan, where's the can?"
     ]
@@ -21729,7 +20228,6 @@
     "closest": [
       "Steap Tea Bar",
       "Joe Hamer Salon San Francisco",
-      "Occidental cigar club",
       "Occidental Cigar Club",
       "Bocadillos",
       "Barrel Room, The"
@@ -21737,7 +20235,6 @@
     "distances": [
       9,
       160,
-      175,
       211,
       213,
       599
@@ -21745,7 +20242,6 @@
     "clues": [
       "Climb and sip, where's the tip?",
       "Cut and booze, where's the news?",
-      "Western smoke, where's the bloke?",
       "Western smoke, where's the joke?",
       "Spanish snacks, where are the tracks?",
       "Cask and zone, where's the cone?"
@@ -22129,7 +20625,6 @@
     "clue": "District draft, where's the craft?",
     "closest": [
       "Corks",
-      "Abbey Tavern",
       "Abbey Tavern, The",
       "Would You Believe",
       "Hearth Bar",
@@ -22137,7 +20632,6 @@
     ],
     "distances": [
       198,
-      310,
       311,
       651,
       716,
@@ -22145,7 +20639,6 @@
     ],
     "clues": [
       "Bottle's end, where's the bend?",
-      "Monks and a pint, where the vibe's just right. Where?",
       "Monks and cheers, where's the years?",
       "Query and trust, where's the crust?",
       "Fire in a glass, where moments pass. What's the name?",
@@ -22165,7 +20658,6 @@
       "Irish Bank, The",
       "Meatball Bar, The",
       "Occidental Cigar Club",
-      "Occidental cigar club",
       "Rouge et Blanc",
       "Dada Sf Studio"
     ],
@@ -22173,7 +20665,6 @@
       0,
       39,
       57,
-      90,
       138,
       197
     ],
@@ -22181,7 +20672,6 @@
       "Clover cash, where's the stash?",
       "Saucy sip, where's the tip?",
       "Western smoke, where's the joke?",
-      "Western smoke, where's the bloke?",
       "Red and white, where's the sight?",
       "Surreal sounds, where are the bounds?"
     ]
@@ -22300,7 +20790,6 @@
     "closest": [
       "Steap Tea Bar",
       "Joe Hamer Salon San Francisco",
-      "Occidental cigar club",
       "Occidental Cigar Club",
       "Bocadillos",
       "Barrel Room, The"
@@ -22308,7 +20797,6 @@
     "distances": [
       9,
       154,
-      168,
       205,
       211,
       593
@@ -22316,7 +20804,6 @@
     "clues": [
       "Climb and sip, where's the tip?",
       "Cut and booze, where's the news?",
-      "Western smoke, where's the bloke?",
       "Western smoke, where's the joke?",
       "Spanish snacks, where are the tracks?",
       "Cask and zone, where's the cone?"
@@ -22434,7 +20921,6 @@
       "Dark Horse Inn, The",
       "Dark Horse Inn",
       "Billiard Palacade",
-      "Broken Record",
       "Broken Record, The"
     ],
     "distances": [
@@ -22442,7 +20928,6 @@
       595,
       1378,
       1427,
-      1977,
       2153
     ],
     "clues": [
@@ -22450,7 +20935,6 @@
       "A surprise steed, where's the mead?",
       "No light in sight, yet a stallion we keep. Where are you tonight?",
       "Cue and a throne, where you're not alone. Name it.",
-      "Skip the song, where's the throng?",
       "Shattered vinyl, where's the final?"
     ]
   },
@@ -22804,24 +21288,21 @@
       "Mars Bar & Restaurant",
       "Stud Bar, The",
       "Blow Buddies",
-      "Azúcar Lounge",
-      "Azucar Lounge"
+      "Azúcar Lounge"
     ],
     "distances": [
       658,
       672,
       959,
       1000,
-      1021,
-      1036
+      1021
     ],
     "clues": [
       "Teddy and game, where's the flame?",
       "Red planet feast, where's the east?",
       "Manly mingling, where's the jingling?",
       "Windy pals, where are the gals?",
-      "Sugar and couch, where's the pouch?",
-      "Sweet and smooth, where you'll find your groove. Name it."
+      "Sugar and couch, where's the pouch?"
     ]
   },
   {
@@ -22836,7 +21317,6 @@
     "closest": [
       "Credo",
       "83 Proof",
-      "House Of Shields",
       "Tequila Mockingbird",
       "House Of Shields, The",
       "Pied Piper Bar & Grill"
@@ -22844,7 +21324,6 @@
     "distances": [
       289,
       325,
-      334,
       694,
       694,
       740
@@ -22852,7 +21331,6 @@
     "clues": [
       "Belief in a glass, where's the class?",
       "Numbers and truth, where you'll find vermouth. Name it.",
-      "Armor and ale, where tales set sail. Where?",
       "Harper Lee shots, where's the plots?",
       "Guardian home, where's the dome?",
       "Rat tunes, where's the dunes?"
@@ -23307,7 +21785,7 @@
     "lng": "-122.4035876",
     "clue": "Plural pubs, where's the rubs?",
     "closest": [
-      "Occidental cigar club",
+      "Occidental Cigar Club",
       "Murphy's Pub",
       "Irish Bank, The",
       "Meatball Bar, The",
@@ -23344,7 +21822,6 @@
       "Pizza Inferno Restaurant & Bar",
       "Tony's Cable Car Restaurant",
       "BooM BooM RooM",
-      "Boom Boom Room",
       "Harry's Bar",
       "Fillmore, The"
     ],
@@ -23352,7 +21829,6 @@
       0,
       323,
       714,
-      719,
       1885,
       1908
     ],
@@ -23360,7 +21836,6 @@
       "Fiery slice, where's the ice?",
       "Tram and feast, where's the east?",
       "Loud and high, what's nearby?",
-      "Loud and groove, where's the move?",
       "One name fame, where everybody plays the game. What's it called?",
       "Street's namesake, where's the cake?"
     ]
@@ -23444,22 +21919,19 @@
       "Royal Exchange",
       "Taverna Aventine",
       "Harrington's Bar & Grill",
-      "Wayfare Tavern",
-      "Harrington's Bar and Grill"
+      "Wayfare Tavern"
     ],
     "distances": [
       149,
       308,
       548,
-      566,
-      599
+      566
     ],
     "clues": [
       "Regal trades, where's the spades?",
       "Inn and ancient, where's the pendant?",
       "Classy and sassy, where the crowd's never trashy. Where?",
-      "Journey and bar, where's the car?",
-      "Irish pride, where's the tide?"
+      "Journey and bar, where's the car?"
     ]
   },
   {
@@ -23475,7 +21947,6 @@
       "Little Sushi Bar",
       "Blarney Stone Bar, The",
       "Beach Chalet Brewery & Restaurant",
-      "Beach Chalet Brewery and Restaurant",
       "Orson's Belly",
       "Cliff House"
     ],
@@ -23483,7 +21954,6 @@
       635,
       2158,
       2845,
-      3306,
       3896,
       4344
     ],
@@ -23491,7 +21961,6 @@
       "Mini roll, where's the bowl?",
       "Irish rock, where's the talk?",
       "Sea, beer, and food, puts you in the mood. What's it called?",
-      "Sand and suds, where's the buds?",
       "Welles' gut, where's the cut?",
       "Edge of the world, where's it unfurled?"
     ]
@@ -23612,24 +22081,21 @@
       "Halu",
       "Ireland 32",
       "Fizzee's",
-      "Plough & Stars, The",
-      "Plough and the Stars, The"
+      "Plough & Stars, The"
     ],
     "distances": [
       0,
       195,
       406,
       716,
-      721,
-      737
+      721
     ],
     "clues": [
       "Bottle's end, where's the bend?",
       "Short and sweet, where music and drinks meet. Where?",
       "Emerald count, where's the mount?",
       "Bubbles pop, where's the hop?",
-      "Farm and sky, where's the why?",
-      "Till and twinkle, where's the sprinkle?"
+      "Farm and sky, where's the why?"
     ]
   },
   {
@@ -23813,7 +22279,7 @@
       "Green Bar",
       "Schroeder's",
       "83 Proof",
-      "Harrington's Bar and Grill",
+      "Harrington's Bar & Grill",
       "Blanc et Rouge",
       "Hard Water"
     ],
@@ -23943,7 +22409,7 @@
     "closest": [
       "Soluna Cafe & Lounge",
       "Black Cat Jazz Supper Club",
-      "Benders Bar and Grill",
+      "Bender's Bar and Grill",
       "Great American Music Hall",
       "O3 Bistro & Lounge",
       "O'Farrell Theatre"
@@ -24008,7 +22474,7 @@
     "lng": "-122.4138962",
     "clue": "Cold and colder, where's the boulder?",
     "closest": [
-      "Double Play Bar and Grill",
+      "Double Play Bar & Grill",
       "Southern Pacific Brewing",
       "Slate Bar",
       "City Club",
@@ -24145,7 +22611,6 @@
     "closest": [
       "Wayfare Tavern",
       "Harrington's Bar & Grill",
-      "Harrington's Bar and Grill",
       "Royal Exchange",
       "Schroeder's"
     ],
@@ -24153,13 +22618,11 @@
       0,
       375,
       442,
-      655,
       694
     ],
     "clues": [
       "Journey and bar, where's the car?",
       "Classy and sassy, where the crowd's never trashy. Where?",
-      "Irish pride, where's the tide?",
       "Regal trades, where's the spades?",
       "Beethoven's fan, where's the can?"
     ]
@@ -24174,10 +22637,10 @@
     "lng": "-122.4216181",
     "clue": "Bird and blue, where's the clue?",
     "closest": [
-      "Blondie's Bar and No Grill",
+      "Blondie's Bar",
       "Dalva",
       "Hideout",
-      "Giordanos Bros.",
+      "Giordano Bros.",
       "Delirium",
       "Morak Lounge"
     ],
@@ -24307,7 +22770,7 @@
     "clue": "Fumes and foam, where's the gnome?",
     "closest": [
       "La Stazione Coffee & Wine Bar",
-      "Hi Dive Bar",
+      "Hi Dive",
       "Cesar's Latin Palace",
       "Harmonic Brewing",
       "Ramp Restaurant, The",
@@ -24920,7 +23383,7 @@
       "University Club",
       "Li Po Cocktail Lounge",
       "Palio D' Asti",
-      "Occidental cigar club"
+      "Occidental Cigar Club"
     ],
     "distances": [
       517,
@@ -24985,7 +23448,6 @@
     "closest": [
       "House Of Shields, The",
       "Fang",
-      "House Of Shields",
       "Novela",
       "Vitrine",
       "Living Room Bar"
@@ -24993,7 +23455,6 @@
     "distances": [
       23,
       139,
-      382,
       428,
       470,
       477
@@ -25001,7 +23462,6 @@
     "clues": [
       "Guardian home, where's the dome?",
       "A bite in a sip, where tongues take a trip. Where?",
-      "Armor and ale, where tales set sail. Where?",
       "Story sip, where's the clip?",
       "Glass and case, where's the place?",
       "Homely sip, where's the tip?"
@@ -25020,7 +23480,6 @@
       "Scarlet Lounge",
       "Hearth Bar",
       "Girls Lounge, The",
-      "Abbey Tavern",
       "Abbey Tavern, The",
       "Corks"
     ],
@@ -25028,7 +23487,6 @@
       211,
       311,
       605,
-      891,
       906,
       1003
     ],
@@ -25036,7 +23494,6 @@
       "Crimson sit, where's the hit?",
       "Fire in a glass, where moments pass. What's the name?",
       "Ladies' den, where's the pen?",
-      "Monks and a pint, where the vibe's just right. Where?",
       "Monks and cheers, where's the years?",
       "Bottle's end, where's the bend?"
     ]
@@ -25107,40 +23564,6 @@
       "Pirate's port, where's the sport?",
       "No sight, just bites, where are the lights?",
       "Question marks, where are the sparks?"
-    ]
-  },
-  {
-    "name": "Summer Place",
-    "address": "801 Bush Street",
-    "city": "San Francisco",
-    "state": "CA",
-    "zip": "94108",
-    "lat": "37.7897556",
-    "lng": "-122.410595",
-    "clue": "Sunny space, where's the ace?",
-    "closest": [
-      "Club Minibar-Downtown",
-      "Sutter Pub & Restaurant",
-      "Nob Hill Club at the Mark Hopkins",
-      "Top of the Mark",
-      "Pub Sutter",
-      "Golden Gate Grill"
-    ],
-    "distances": [
-      30,
-      178,
-      256,
-      298,
-      419,
-      445
-    ],
-    "clues": [
-      "Tiny but grand, where's the band?",
-      "A street of eats, where's the beats?",
-      "Posh spot, where's the lot?",
-      "Summit and label, where's the table?",
-      "Sutter's gold, where's the old?",
-      "From bridge to plate, where hunger can't wait. What's the name?"
     ]
   },
   {
@@ -25256,7 +23679,6 @@
       "Sakana",
       "Rove Kitchen",
       "Bar 587",
-      "Summer Place",
       "Summer Place, The"
     ],
     "distances": [
@@ -25264,7 +23686,6 @@
       240,
       254,
       327,
-      366,
       371
     ],
     "clues": [
@@ -25272,7 +23693,6 @@
       "Fish and fizz, where's the whizz?",
       "Wander and eat, where's the seat?",
       "A mix of numbers, where no one slumbers. Where?",
-      "Sunny space, where's the ace?",
       "Seasonal sips, where's the trips?"
     ]
   },
@@ -25459,7 +23879,6 @@
       "Blue Pea",
       "Blondie's Bar",
       "Skylark",
-      "Blondie's Bar and No Grill",
       "Bond Bar"
     ],
     "distances": [
@@ -25467,7 +23886,6 @@
       359,
       493,
       495,
-      600,
       803
     ],
     "clues": [
@@ -25475,7 +23893,6 @@
       "Indigo legume, where's the room?",
       "Golden gal, where's the pal?",
       "Bird on high, where's the sky?",
-      "Fair hair but no fare, where?",
       "007's haunt, what do you want?"
     ]
   },
@@ -25521,27 +23938,21 @@
     "lat": "37.7923686",
     "lng": "-122.410030098",
     "closest": [
-      "JCB Tasting Lounge",
       "JCB Tasting Lounge, The",
       "Summer Place, The",
       "Last Drop Tavern",
-      "Summer Place",
       "Chelsea Place"
     ],
     "distances": [
       19,
-      19,
       302,
-      447,
       447,
       815
     ],
     "clues": [
       "Monogram sips, where's the tips?",
-      "",
       "Seasonal sips, where's the trips?",
       "Like the last, but a tale’s cast. Where?",
-      "Sunny space, where's the ace?",
       "London or New York, where's the fork?"
     ]
   },
@@ -26028,7 +24439,6 @@
       "Mercer Restaurant Group",
       "City Beer Store",
       "Azúcar Lounge",
-      "Azucar Lounge",
       "Endup, The",
       "AsiaSF"
     ],
@@ -26036,7 +24446,6 @@
       314,
       623,
       672,
-      687,
       938,
       941
     ],
@@ -26044,7 +24453,6 @@
       "Named for a street, where's the meet?",
       "Urban hops, where's the shops?",
       "Sugar and couch, where's the pouch?",
-      "Sweet and smooth, where you'll find your groove. Name it.",
       "Final stop, where's the hop?",
       "Continent and initials, where the night's not trivial. What's the spot?"
     ]
@@ -26061,25 +24469,19 @@
     "closest": [
       "Blueprint Tap Room",
       "Hardwood Bar & Smokery",
-      "Double Play Restaurant",
       "Double Play Bar & Grill",
-      "Double Play Bar and Grill",
       "Mars Bar & Restaurant"
     ],
     "distances": [
       601,
       721,
-      878,
       998,
-      2193,
       2251
     ],
     "clues": [
       "Design and a draft, what’s the craft?",
       "Timber and ember, a place to remember. Name it.",
-      "Twice the fun, when eating's done. Where are you?",
       "Two games in one, and food that's well-done. Where?",
-      "Two runs scored, where's the board?",
       "Red planet feast, where's the east?"
     ]
   },
@@ -26400,7 +24802,6 @@
     "closest": [
       "Hemlock Tavern",
       "Edinburgh Castle",
-      "Edinburgh Castle Pub",
       "Hanaro",
       "Great American Music Hall",
       "Upcider"
@@ -26408,7 +24809,6 @@
     "distances": [
       357,
       771,
-      774,
       791,
       802,
       803
@@ -26416,7 +24816,6 @@
     "clues": [
       "Poison or not, the scene's quite hot. Where?",
       "Scottish stone, but far from alone. What is this place?",
-      "Scots' fortress, where's the sorceress?",
       "One in many, where the drinks are plenty. Where?",
       "Stateside tunes, where the melody moons. Name it.",
       "Upward and apple, where's the chapel?"
@@ -26465,26 +24864,20 @@
     "lng": "-122.4100923",
     "clue": "Island and space, where's the place?",
     "closest": [
-      "JCB Tasting Lounge",
       "JCB Tasting Lounge, The",
       "Summer Place, The",
-      "Summer Place",
       "Last Drop Tavern",
       "Chelsea Place"
     ],
     "distances": [
-      0,
       19,
       320,
-      453,
       453,
       821
     ],
     "clues": [
       "Monogram sips, where's the tips?",
-      "",
       "Seasonal sips, where's the trips?",
-      "Sunny space, where's the ace?",
       "Like the last, but a tale’s cast. Where?",
       "London or New York, where's the fork?"
     ]
@@ -26601,7 +24994,7 @@
     "lng": "-122.4101366",
     "clue": "Summit and label, where's the table?",
     "closest": [
-      "Summer Place",
+      "Summer Place, The",
       "University Club",
       "Last Drop Tavern",
       "Bar 1915",
@@ -26668,7 +25061,6 @@
       "Irish Bank, The",
       "Meatball Bar, The",
       "Occidental Cigar Club",
-      "Occidental cigar club",
       "Rouge et Blanc",
       "Dada Sf Studio"
     ],
@@ -26676,7 +25068,6 @@
       23,
       39,
       39,
-      54,
       157,
       176
     ],
@@ -26684,7 +25075,6 @@
       "Clover cash, where's the stash?",
       "Saucy sip, where's the tip?",
       "Western smoke, where's the joke?",
-      "Western smoke, where's the bloke?",
       "Red and white, where's the sight?",
       "Surreal sounds, where are the bounds?"
     ]
@@ -26834,7 +25224,6 @@
     "lng": "-122.4460345",
     "clue": "Rails and spin, where's the gin?",
     "closest": [
-      "Hobson's Choice Bar",
       "Hobson's Choice",
       "Zam Zam",
       "Cleriti Club",
@@ -26842,7 +25231,6 @@
       "Citrus Club"
     ],
     "distances": [
-      290,
       328,
       328,
       575,
@@ -26850,7 +25238,6 @@
       613
     ],
     "clues": [
-      "Pick or not, the rum's quite hot. Name it.",
       "Either or, where's the door?",
       "Double quick, where's the stick?",
       "Fast or slow, where do you go?",
@@ -26870,14 +25257,12 @@
       "Meatball Bar, The",
       "Sams Tavern",
       "Occidental Cigar Club",
-      "Occidental cigar club",
       "Pagan Idol",
       "Topsy's Bar"
     ],
     "distances": [
       334,
       414,
-      442,
       442,
       481,
       512
@@ -26886,7 +25271,6 @@
       "Saucy sip, where's the tip?",
       "Plural pubs, where's the rubs?",
       "Western smoke, where's the joke?",
-      "Western smoke, where's the bloke?",
       "Heathen tiki, where's the cheeky?",
       "Upside-down and laugh, where's the staff?"
     ]
@@ -27036,7 +25420,7 @@
     "lng": "-122.4072909",
     "clue": "Underground sips, where's the trips?",
     "closest": [
-      "JCB Tasting Lounge",
+      "JCB Tasting Lounge, The",
       "E & O Kitchen and Bar",
       "Taj Campton Place Restaurant",
       "Bar Drake",
@@ -27274,7 +25658,7 @@
     "lng": "-122.4339113",
     "clue": "Together and affection, where's the connection?",
     "closest": [
-      "Boom Boom Room",
+      "BooM BooM RooM",
       "Festa Wine & Cocktail Lounge",
       "Pizza Inferno Restaurant & Bar",
       "Hikari Bullet Train Sushi & Bar",
@@ -27308,7 +25692,6 @@
     "lng": "-122.4180506",
     "clue": "Mail and meeting, where's the greeting?",
     "closest": [
-      "Hyde Out",
       "Hyde-Out",
       "R Bar",
       "Pour House, The",
@@ -27316,7 +25699,6 @@
       "Wreck Room, The"
     ],
     "distances": [
-      475,
       476,
       498,
       500,
@@ -27324,7 +25706,6 @@
       634
     ],
     "clues": [
-      "Jekyll's break, where's the stake?",
       "A monster's haunt, where fear is scant. Name it.",
       "Just one R, where's the star?",
       "Where libations flow, where's the go?",
@@ -27752,7 +26133,6 @@
       "Local Edition",
       "Living Room Bar",
       "House Of Shields, The",
-      "House Of Shields",
       "Fang",
       "Pied Piper Bar & Grill"
     ],
@@ -27760,7 +26140,6 @@
       29,
       164,
       201,
-      204,
       291,
       383
     ],
@@ -27768,7 +26147,6 @@
       "Newsy booze, where's the clues?",
       "Homely sip, where's the tip?",
       "Guardian home, where's the dome?",
-      "Armor and ale, where tales set sail. Where?",
       "A bite in a sip, where tongues take a trip. Where?",
       "Rat tunes, where's the dunes?"
     ]
@@ -27785,7 +26163,6 @@
       "El Amigo",
       "Old Devil Moon",
       "Lucita's Niteclub",
-      "Lucitas Nightclub",
       "Dell'uva",
       "Thread Lounge Inc"
     ],
@@ -27793,7 +26170,6 @@
       344,
       450,
       459,
-      772,
       1068,
       2126
     ],
@@ -27801,7 +26177,6 @@
       "South of the border, where friends order. Where is this?",
       "Sinful satellite, where's the night?",
       "Evening Lucy, where's the juicy?",
-      "Dancing light, where's the fight?",
       "Italian vines in a bottle, find me where grapes are the motto.",
       "Fiber and chill, where's the bill?"
     ]
@@ -27819,7 +26194,6 @@
       "Toad's Food & Drink",
       "Southend Grill 'N' Bar",
       "Lucita's Niteclub",
-      "Lucitas Nightclub",
       "Dovre Club",
       "Pi Bar"
     ],
@@ -27827,7 +26201,6 @@
       51,
       386,
       391,
-      656,
       671,
       703
     ],
@@ -27835,7 +26208,6 @@
       "Hopper's meal, where's the deal?",
       "Bottom tip, where's the dip?",
       "Evening Lucy, where's the juicy?",
-      "Dancing light, where's the fight?",
       "Norse by name, but drinks all the same. Where is this spot?",
       "Circle math, where's the path?"
     ]
@@ -28056,7 +26428,6 @@
       "Etcetera Wine Bar",
       "Sycamore, The",
       "Arabian Nights Restaurant",
-      "Phoenix Bar & Restaurant, The",
       "Phoenix Irish Bar & Restaurant, The"
     ],
     "distances": [
@@ -28064,7 +26435,6 @@
       321,
       389,
       390,
-      394,
       465
     ],
     "clues": [
@@ -28072,7 +26442,6 @@
       "And so on and so forth, where wine heads north. Where?",
       "Tree bar, where's the car?",
       "Desert tales and ales, where mystery prevails. Where?",
-      "Rising from ashes, where are the stashes?",
       "Green rebirth, where's the mirth?"
     ]
   },
@@ -28090,7 +26459,6 @@
       "Irving Pizza",
       "Veritas",
       "Hanaro",
-      "Edinburgh Castle Pub",
       "Edinburgh Castle"
     ],
     "distances": [
@@ -28098,7 +26466,6 @@
       31,
       183,
       293,
-      310,
       379
     ],
     "clues": [
@@ -28106,7 +26473,6 @@
       "A street in a slice, where the vibe’s nice. What's it called?",
       "Truth and sip, where's the tip?",
       "One in many, where the drinks are plenty. Where?",
-      "Scots' fortress, where's the sorceress?",
       "Scottish stone, but far from alone. What is this place?"
     ]
   },
@@ -28157,24 +26523,21 @@
       "Fire Fly Sports Bar",
       "Hong Kong Lounge",
       "Ninki Sushi Bar & Restaurant",
-      "Pittsburgh's Pub",
-      "Pitt's Pub"
+      "Pittsburgh's Pub"
     ],
     "distances": [
       185,
       3950,
       3950,
       3962,
-      4002,
-      5119
+      4002
     ],
     "clues": [
       "Law and taps, where the gavel claps. Name the place.",
       "Light and games, where the screen claims fame. Where?",
       "East meets West, where the dim sum's the best. Where?",
       "Popular fish, where's the dish?",
-      "Steel sip, where's the tip?",
-      "Not Angelina's ex, where's the next?"
+      "Steel sip, where's the tip?"
     ]
   },
   {
@@ -28188,7 +26551,6 @@
     "clue": "Pale and gallop, where's the scallop?",
     "closest": [
       "Hidden Vine, The",
-      "Summer Place",
       "Ocean Club",
       "Sakana",
       "San Francisco Elks Lodge #3",
@@ -28196,7 +26558,6 @@
     ],
     "distances": [
       328,
-      368,
       371,
       375,
       395,
@@ -28204,7 +26565,6 @@
     ],
     "clues": [
       "Covered grapes, where's the capes?",
-      "Sunny space, where's the ace?",
       "Sea and sip, where's the ship?",
       "Fish and fizz, where's the whizz?",
       "Where antlers meet, what's the treat?",
@@ -28290,24 +26650,21 @@
       "Palmers Tavern",
       "Pizza Inferno Restaurant & Bar",
       "Tony's Cable Car Restaurant",
-      "BooM BooM RooM",
-      "Boom Boom Room"
+      "BooM BooM RooM"
     ],
     "distances": [
       70,
       394,
       714,
       714,
-      1638,
-      2039
+      1638
     ],
     "clues": [
       "Grape and can, where's the pan?",
       "Oasis joint, where's the point?",
       "Fiery slice, where's the ice?",
       "Tram and feast, where's the east?",
-      "Loud and high, what's nearby?",
-      "Loud and groove, where's the move?"
+      "Loud and high, what's nearby?"
     ]
   },
   {
@@ -28557,24 +26914,21 @@
       "Veritas",
       "Irving Pizza",
       "Hanaro",
-      "Rx",
-      "Edinburgh Castle Pub"
+      "Rx"
     ],
     "distances": [
       31,
       31,
       214,
       323,
-      324,
-      379
+      324
     ],
     "clues": [
       "Sunk and grand, where's the land?",
       "Truth and sip, where's the tip?",
       "A street in a slice, where the vibe’s nice. What's it called?",
       "One in many, where the drinks are plenty. Where?",
-      "Prescribed pint, where's the hint?",
-      "Scots' fortress, where's the sorceress?"
+      "Prescribed pint, where's the hint?"
     ]
   },
   {
@@ -28591,7 +26945,7 @@
       "Armory Club, The",
       "Siberia",
       "Uptown",
-      "Double Play Bar and Grill"
+      "Double Play Bar & Grill"
     ],
     "distances": [
       695,
@@ -28656,7 +27010,6 @@
     "closest": [
       "Bitter End, The",
       "Abbey Tavern, The",
-      "Abbey Tavern",
       "Dirty Trix Saloon",
       "Scarlet Lounge",
       "Halberstadt Fencers' Club"
@@ -28664,7 +27017,6 @@
     "distances": [
       211,
       214,
-      891,
       1041,
       1199,
       1466
@@ -28672,7 +27024,6 @@
     "clues": [
       "Tart and stop, where's the hop?",
       "Monks and cheers, where's the years?",
-      "Monks and a pint, where the vibe's just right. Where?",
       "No illusions here, just maybe a beer. Where can you find me?",
       "Crimson sit, where's the hit?",
       "Swords and cheers, where duels end in beers. What's the name?"
@@ -28755,7 +27106,7 @@
     "clue": "Grape's surrender, where's the blender?",
     "closest": [
       "La Stazione Coffee & Wine Bar",
-      "Hi Dive Bar",
+      "Hi Dive",
       "Ramp Restaurant, The",
       "Cesar's Latin Palace",
       "Harmonic Brewing",
@@ -28960,15 +27311,13 @@
     "closest": [
       "Tee Off Bar & Grill",
       "Beachside Cafe",
-      "Pitt's Pub",
       "Pittsburgh's Pub",
       "China Town Business Pub Co",
       "Trad'r Sam"
     ],
     "distances": [
-      0,
+      1980,
       3468,
-      3877,
       4800,
       5371,
       5575
@@ -28976,7 +27325,6 @@
     "clues": [
       "Golf and fry, where's the sky?",
       "Tides in your cup, where'll you end up?",
-      "Not Angelina's ex, where's the next?",
       "Steel sip, where's the tip?",
       "Dragons and stocks, where are the locks?",
       "Merchant and name, where's the game?"
