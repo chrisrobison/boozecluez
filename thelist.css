@@ -211,7 +211,7 @@ li {
 }
 
 .marker-many {
-    background-image:url("martinis.png");
+    background-image:url("img/martinis.png");
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
@@ -241,7 +241,7 @@ input[type=checkbox] {
 }
 input[type=checkbox][checked]:after {
     position: absolute;
-    background-image: url("1sec2.png");
+    background-image: url("img/1sec2.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 150px;
@@ -253,7 +253,7 @@ input[type=checkbox][checked]:after {
 
 #drunk {
     position: absolute;
-    background-image: url("1sec.png");
+    background-image: url("img/1sec.png");
     background-size: contain;
     background-repeat: no-repeat;
     height: 74px;
@@ -292,12 +292,12 @@ input[type=checkbox] {
     height: 100%;
     width: 100%;
     opacity: 0.7;
-    background-image: url("bubbles.svg");
+    background-image: url("img/bubbles.svg");
     background-size: contain;
     overflow: hidden;
 }
 #foam {
-    background-image: url("foam.png");
+    background-image: url("img/foam.png");
     background-size: contain;
     background-repeat: repeat-x;
     width: 100%;
