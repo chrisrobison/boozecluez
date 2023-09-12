@@ -12,7 +12,7 @@ rand = (min, max) => Math.random() * (max - min) + min;
 // params to play with
 const confettiParams = {
     // number of confetti per "explosion"
-    number: 70,
+    number: 50,
     // min and max size for each rectangle
     size: {
         x: [5, 20],
@@ -151,14 +151,12 @@ function addDivConfetti(e) {
 
 function celebrate(e) {
     addDivConfetti(e);
-    let cnt = ~~(Math.random() * 16) + 2;
+    let cnt = ~~(Math.random() * 5) + 2;
     for (let i = 0; i < cnt; i++) {
-        setTimeout(function() { addDivConfetti(); }, ~~(Math.random() * 4000));
+        setTimeout(function() { addDivConfetti(); }, ~~(Math.random() * 2000));
     }
     
-    for (let i = 0; i < cnt / 2; i++) {
-        setTimeout(function() { addBalloon(e); }, ~~(Math.random() * 4000));
-    }
+    setTimeout(function() { addBalloon(e); }, ~~(Math.random() * 4000));
 
 
 }

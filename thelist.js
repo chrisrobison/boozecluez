@@ -17,7 +17,10 @@ const $$ = str => document.querySelectorAll(str);
             
             app.map = L.map($("#map"), { center: [ 37.757113, -122.442943], zoom: 11 });
             L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '' }).addTo(app.map);
-            app.fetch("closest.json", app.loadNext);
+
+            app.map.on("click", app.mapclick);
+
+            app.fetch("bars.json", app.showBars);
         },
         fetch: function(url, callback) {
             return fetch(url).then(response=>response.json()).then(data=>{
@@ -27,6 +30,12 @@ const $$ = str => document.querySelectorAll(str);
                     callback(data);
                 }
             });
+        },
+        mapclick: function(e) {
+            console.log("mapclick");
+            console.dir(e);
+            let closest = app.findClosest(e.latlng[0], e.latlng[1]);
+            app.doNext(closest.name);
         },
         saveSettings: function(key, obj) {
             if (key && obj) {
@@ -83,7 +92,7 @@ const $$ = str => document.querySelectorAll(str);
             } else {
                 bar = mybar;
             }
-            let clue = app.clues[bar.name];
+            let clue = mybar.clue;
             let ctxt = clue ? clue.clue : '';
             let fullbar = app.bars.find(item=>item.name==bar.name);
             let checked = app.state.visited[bar.name] ? " checked" : "";
@@ -105,11 +114,11 @@ const $$ = str => document.querySelectorAll(str);
             app.state.markers.push(marker);
 
             // Get next closest bar we haven't seen
-            if (bar.closestBars) {
-                for (let i=0; i<bar.closestBars.length; i++) {
-                    if (!app.state.seen[bar.closestBars[i]]) {
-                        nextBar = app.next[bar.closestBars[i]].name;
-                        i = bar.closestBars.length;
+            if (bar.closest) {
+                for (let i=0; i<bar.closest.length; i++) {
+                    if (!app.state.seen[bar.closest[i]]) {
+                        nextBar = app.next[bar.closest[i]].name;
+                        i = bar.closest.length;
                         app.state.seen[nextBar] = 1;
                     }
                 }
@@ -208,18 +217,19 @@ const $$ = str => document.querySelectorAll(str);
             $("#barsDropdown").innerHTML = bdd;
 
             let out = "<form oninput='app.doInput(event)'><ol>";
+            app.next = [];
 
             data.forEach(bar => {
+                app.next[bar.name] = bar;
                 bar.name = bar.name.replace(/\&amp;/, '&');
-                let clue = app.clues[bar.name];
-                let ctxt = clue ? clue.clue : '';
                 let check = (app.state.visited[bar.name]) ? "checked='checked'" : '';
                 out += `<li>
                             <details>
                     <summary><input type='checkbox' id='${bar.name.replace(/\W/,'')}' name="${bar.name}" ${check}> <a href='#${bar.name}'>${bar.name}</a></summary>
                                 <label>Address:</label> <span class='addr'>${bar.address}</span><br>
-                                <label>Riddle:</label> <span class='addr'>${ctxt}</span><br>
-                                <label>Next Bars:</label> <span class='addr hidden'>${app.next[bar.name].closestBars.join(', ')}</span><br>
+                                <label>Riddle:</label> <span class='addr'>${bar.clue}</span><br>
+                                <label>Next Bars:</label> <span class='addr hidden'>${bar.closest.join(', ')}</span><br>
+                                <label>Next Clues:</label> <span class='addr hidden'>${bar.clues.join(',<br> ')}</span><br>
                             </details>
                     </li>`;
             });
@@ -278,22 +288,29 @@ const $$ = str => document.querySelectorAll(str);
             }
             return out;
         },
-        gotPosition: function(pos) {
-            let me = { lat: pos.coords.latitude, lng: pos.coords.longitude };
-            let closest = 999999999;
-            app.bars.forEach(item=>{
-                let dist = app.getDistance(me, item);
+        findClosest: function(lat, lng) {
+            const me = { lat: lat, lng: lng };
+            let closest = 9999999999;
+            let closestBar = "";
+
+            app.bars.forEach(bar=>{
+                let dist = app.getDistance(me, bar);
                 if (dist < closest) {
                     closest = dist;
-                    closestBar = item;
+                    closestBar = bar;
                 }
             });
+            return closestBar;
+        },
+        gotPosition: function(pos) {
+            let me = { lat: pos.coords.latitude, lng: pos.coords.longitude };
+            let closestBar = app.findClosest(pos.coords.latitude, pos.coords.longitude);
             $("main").innerHTML = "<ol id='list' onclick='app.doInput(event)'></ol>";
             app.doNext(closestBar.name);
             app.hideOverlay();
         },
         getPosition: function() {
-            app.showOverlay();
+          app.showOverlay();
           if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(app.gotPosition);
           } else { 
