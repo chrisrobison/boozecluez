@@ -3,24 +3,35 @@ const $$ = str => document.querySelectorAll(str);
 
 (function() {
     const app = {
+        config: {
+            maxBars: 5,
+            hideVisited: 0,
+            months: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+            day_of_week: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+        },
         data: [],
         state: {
             seen: {},
             loaded: false,
             visited: {},
+            markers: [],
             layers: [],
             markerClusterGroups: []
         },
         init: function() {
+            app.showOverlay();
+
+            // Load user data from localStorage
             let tmp = app.loadSettings('visits');
             if (tmp) app.state.visited = tmp;
             
+            // Setup map
             app.map = L.map($("#map"), { center: [ 37.757113, -122.442943], zoom: 11 });
             L.tileLayer('https://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '' }).addTo(app.map);
-
             app.map.on("click", app.mapclick);
 
             app.fetch("bars.json", app.showBars);
+            setTimeout(function() { app.hideOverlay(); }, 3000);
         },
         fetch: function(url, callback) {
             return fetch(url).then(response=>response.json()).then(data=>{
@@ -60,7 +71,7 @@ const $$ = str => document.querySelectorAll(str);
             let val = dd.options[dd.selectedIndex].value;
             if (val) {
 
-                $("main").innerHTML = "<form oninput='app.doInput(event)'><ol id='list'></ol></form>";
+                $("#list").innerHTML = "";
                 app.doNext(val);
             }
             return false;
@@ -74,6 +85,8 @@ const $$ = str => document.querySelectorAll(str);
                 let idx = ~~(Math.random() * mybars.length);
                 mybar = mybars[idx];
             }
+            $("#list").innerHTML = "";
+            app.clearLayer();
             app.state.seen = [];
             app.state.seen[txt] = 1;
             app.state.markers = [];
@@ -93,17 +106,32 @@ const $$ = str => document.querySelectorAll(str);
                 bar = mybar;
             }
             let clue = mybar.clue;
-            let ctxt = clue ? clue.clue : '';
+            let ctxt = clue ? clue : '';
             let fullbar = app.bars.find(item=>item.name==bar.name);
             let checked = app.state.visited[bar.name] ? " checked" : "";
             let el = document.createElement("li");
+            let stats = '';
+
+            if (app.state.visited[bar.name]) {
+                let visited = app.state.visited[bar.name];
+                stats = `
+<div class='stats'>
+    <div><label>Visits: </label> <span class='stat'>${visited.visits}</span></div>
+    <div><label>First Visit: </label> <span class='stat'>${visited.first_visit}</span></div>
+    <div><label>Last Visit: </label> <span class='stat'>${visited.last_visit}</span></div>
+    <div><label>Notes: </label> <span class='stat'>${visited.notes}</span></div>
+</div>`;
+                    
+            }
+
             el.innerHTML = `
                 <details>
                     <summary><input type='checkbox' name='${bar.name}' id='${bar.name.replace(/\W/,'')}'${checked}><a onclick="return app.goto('${bar.name.replace(/\'/, "\\\'")}', ${fullbar.lat}, ${fullbar.lng}, event)" href='#${bar.name}'> ${bar.name}</a></summary>
                     <div class="detail">
-                        <span class='addr'>${fullbar.address}</span><br>
-                        <em><span class='clue'>${ctxt}</span></em><br>
+                        <div><span class='addr'>${fullbar.address}</span></div>
+                        <div><em><span class='clue'>${ctxt}</span></em></div>
                     </div>
+                    ${stats}
                 </details>`;
             let nextBar;
             
@@ -124,10 +152,15 @@ const $$ = str => document.querySelectorAll(str);
                 }
             }
             $("ol#list").append(el); 
-            if (nextBar && barcnt < 9) {
+            if (nextBar && barcnt < 5) {
                 app.showNext(nextBar, barcnt + 1);
             } else {
                 app.map.fitBounds(app.state.markerClusterGroup.getBounds());
+            }
+        },
+        clearLayer: function() {
+            if (app.state.markerClusterGroup) {
+                app.map.removeLayer(app.state.markerClusterGroup);
             }
         },
         makeIcon: function(hood, bar) {
@@ -153,55 +186,6 @@ const $$ = str => document.querySelectorAll(str);
 
             return app.state.markerClusterGroups[app.state.markerClusterGroups.length -1];;
         },
-        showOrder: function(start) {
-            let bar = app.next[start];
-            if (bar) {
-                var seen = {};
-                out = "<ol>";
-                let name = start;
-
-                while (bar) {
-                    let closest = bar.closestBar?.name || '';
-
-                    let clue = app.clues[bar.name];
-                    let ctxt = clue ? clue.clue : '';
-
-                    out += `<li>
-                                <details>
-                                    <summary><input type='checkbox' id='${bar.name.replace(/\W/,'')}'><a href='#${bar.name}'> ${bar.name}</a></summary>
-                                    <label>Address:</label> <span class='addr'>${bar.address}</span><br>
-                                    <label>Riddle:</label> <span class='addr'>${ctxt}</span><br>
-                                    <label>Next Bar:</label> <span class='addr hidden'>${app.next[bar.name].closestBar.name} [${~~app.next[bar.name].distance}m]</span><br>
-                                </details>
-                        </li>`;
-                    let oldbar = bar;
-
-                    bar = app.next[bar.closestBar.name];
-                    let newbar, newtxt;
-                    if (!bar || seen[bar.name]) {
-                        for (let i=0; i<oldbar.closestBars.length; i++) {
-                            newbar = oldbar.closestBars[i];
-                            if (!seen[newbar]) {
-                                newtxt = newbar;
-                                i = oldbar.closestBars.length;
-                            }
-                        }
-                        if (newtxt) {
-                            bar = app.next[newtxt];
-                            seen[bar.name] = 1;
-                        } else { 
-                            break;
-                        }
-                    }
-                    seen[bar.name] = 1;
-
-                };
-
-                out += `</ol>`;
-
-                $("main").innerHTML = out;
-            }
-        },
         buildSelect: function(data) {
             let out = `<select onchange="return app.doStart()" id="startBar"><option>  -- Select Starting Point --</option>`;
 
@@ -211,31 +195,63 @@ const $$ = str => document.querySelectorAll(str);
             out += `</select>`;
             return out;
         },
+
+        showVisitedCal: function(when) {
+            let datetime = when.split(/\,\s*/);
+            let parts = datetime[0].split(/\//);
+            let month = app.config.months[parts[0] - 1];
+
+            let out = "<div class='tinycal'><div class='calhead'>"+month+"</div><div class='caldate'>"+parts[1]+"</div><div class='calyear'>"+parts[2]+"</div></div>";
+
+            return out;;
+        },
         showBars: function(data) {
             if (!app.bars && data) app.bars = data;
             let bdd = app.buildSelect(data);
             $("#barsDropdown").innerHTML = bdd;
 
-            let out = "<form oninput='app.doInput(event)'><ol>";
+            let out = "";
             app.next = [];
+            app.state.markerClusterGroup = app.createMarkerClusterGroup();
+            app.map.addLayer(app.state.markerClusterGroup);
 
             data.forEach(bar => {
                 app.next[bar.name] = bar;
                 bar.name = bar.name.replace(/\&amp;/, '&');
                 let check = (app.state.visited[bar.name]) ? "checked='checked'" : '';
-                out += `<li>
+                let stats = "";
+
+                if (app.state.visited[bar.name]) {
+                    let visited = app.state.visited[bar.name];
+                    let vfirst = app.showVisitedCal(visited.first_visit);
+                    let vlast = app.showVisitedCal(visited.last_visit);
+
+                    stats = `
+    <div class='stats'>
+        <div><label>Visits: </label> <span class='stat'>${visited.visits}</span></div>
+        ${vfirst}
+        ${vlast}
+    </div>`;
+                        
+                }
+
+                out += `<li name="${bar.name}">
                             <details>
                     <summary><input type='checkbox' id='${bar.name.replace(/\W/,'')}' name="${bar.name}" ${check}> <a href='#${bar.name}'>${bar.name}</a></summary>
-                                <label>Address:</label> <span class='addr'>${bar.address}</span><br>
-                                <label>Riddle:</label> <span class='addr'>${bar.clue}</span><br>
-                                <label>Next Bars:</label> <span class='addr hidden'>${bar.closest.join(', ')}</span><br>
-                                <label>Next Clues:</label> <span class='addr hidden'>${bar.clues.join(',<br> ')}</span><br>
+                                <span class='addr'>${bar.address}</span><br>
+                                <span class='addr'>${bar.clue}</span><br>
+                                ${stats}
                             </details>
                     </li>`;
-            });
-            out += `</ol></form>`;
 
-            $("main").innerHTML = out;
+                let icon = L.divIcon({className: "marker", html: `<div class='marker'><span class='label'>${bar.name}</span></div>`});
+                let marker = L.marker([bar.lat, bar.lng], { icon: icon, title: bar.name }).bindPopup(`<h2>${bar.name}</h2><hr>${bar.address}<br>${bar.clue}`);
+
+                marker.addTo(app.state.markerClusterGroup);
+                app.state.markers.push(marker);
+            });
+
+            $("#list").innerHTML = out;
         },
         doInput: function(e) {
             console.dir(e);
@@ -245,6 +261,7 @@ const $$ = str => document.querySelectorAll(str);
                     if (app.state.visited[e.target.name]) {
                         app.state.visited[e.target.name].visits++;
                         app.state.visited[e.target.name].last_visit = new Date().toLocaleString();
+                        app.state.visited[e.target.name].notes = "";
                     } else {
                         app.state.visited[e.target.name] = { name: e.target.name, visits: 1, first_visit: new Date().toLocaleString(), last_visit: new Date().toLocaleString() };
                     }
@@ -262,6 +279,9 @@ const $$ = str => document.querySelectorAll(str);
                 }
                 console.dir(app.state.visited);
                 app.saveSettings('visits', app.state.visited);
+            } else if (e.target.tagName === "LI") {
+                let b = e.target.getAttribute('name');
+                e.target.querySelector("details").toggleAttribute("open");
             }
         },
         showHoods: function(data) {
@@ -307,7 +327,6 @@ const $$ = str => document.querySelectorAll(str);
         gotPosition: function(pos) {
             let me = { lat: pos.coords.latitude, lng: pos.coords.longitude };
             let closestBar = app.findClosest(pos.coords.latitude, pos.coords.longitude);
-            $("main").innerHTML = "<ol id='list' onclick='app.doInput(event)'></ol>";
             app.doNext(closestBar.name);
             app.hideOverlay();
         },
@@ -342,6 +361,7 @@ const $$ = str => document.querySelectorAll(str);
             console.log(`Flying to ${bar} [${lat}, ${lng}]`);
 
             app.map.flyTo([lat, lng], 18);
+            app.doNext(bar);
             return false;
         }, 
         showOverlay: function() {
