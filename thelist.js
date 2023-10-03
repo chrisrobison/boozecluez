@@ -3,6 +3,7 @@ const $$ = str => document.querySelectorAll(str);
 
 (function() {
     const app = {
+        debug: 1,
         config: {
             maxBars: 5,
             hideVisited: 0,
@@ -14,9 +15,11 @@ const $$ = str => document.querySelectorAll(str);
             seen: {},
             loaded: false,
             visited: {},
+            closests: {},
             markers: [],
             layers: [],
-            markerClusterGroups: []
+            markerClusterGroups: [],
+            currentClosest: []
         },
         init: function() {
             app.showOverlay();
@@ -31,6 +34,9 @@ const $$ = str => document.querySelectorAll(str);
             app.map.on("click", app.mapclick);
 
             app.fetch("bars.json", app.showBars);
+            $("main").addEventListener("click", app.openBar);
+            document.addEventListener("contextmenu", app.doContext);
+
             setTimeout(function() { app.hideOverlay(); }, 3000);
         },
         fetch: function(url, callback) {
@@ -85,6 +91,8 @@ const $$ = str => document.querySelectorAll(str);
                 let idx = ~~(Math.random() * mybars.length);
                 mybar = mybars[idx];
             }
+
+            app.state.mybar = mybar;
             $("#list").innerHTML = "";
             app.clearLayer();
             app.state.seen = [];
@@ -96,9 +104,61 @@ const $$ = str => document.querySelectorAll(str);
             app.state.markerClusterGroup = app.createMarkerClusterGroup();
             app.map.addLayer(app.state.markerClusterGroup);
 
-            app.showNext(mybar);
+            app.showNext(mybar, 0, 0);
         },
-        showNext: function(mybar, barcnt=0) {
+        showMore: function(barcnt=0) {
+
+            document.querySelector("#more").parentElement.removeChild(document.querySelector("#more"));
+            app.showNext(app.state.mybar, barcnt, 0);
+        },
+        updateVenue: function(mybar) {
+            let bar;
+            console.log(`updateVenue`);
+            console.dir(mybar);
+
+            if (typeof(mybar)==="string") {
+                bar = app.bars.find(item=>item.cleanname==mybar);
+                if (!bar) app.bars.find(item=>item.name == mybar);
+            } else {
+                bar = mybar;
+            }
+            console.dir(`bar: ${bar}`);
+            let clue = mybar.clue;
+            let ctxt = clue ? clue : '';
+            let fullbar = app.bars.find(item=>item.cleanname==bar.cleanname);
+            let checked = app.state.visited[bar.name.replace(/\W/g, '')] ? " checked" : "";
+            let el = document.createElement("li");
+            let stats = '';
+            let cleanname = bar.name.replace(/\W/g, '');
+            let visits = 0;            
+            el.id = 'bar_' + cleanname;
+
+            if (app.state.visited[cleanname]) {
+//                    let vfirst = app.showVisitedCal(visited.first_visit);
+//                    let vlast = app.showVisitedCal(visited.last_visit);
+                let visited = app.state.visited[cleanname];
+                let visitlist = '';
+                if (visited && visited.visits && visited.visits.length) {
+                    visited.visits.forEach((item, idx)=>{ visitlist += `<li>${item} <button onclick='return app.rmVisit("${cleanname}","${idx}")' class='rmVisit'>x</button></li>` });
+                    visits = ' <span class="tiny">' + visited.visits.length + '</span>';
+                }
+
+                stats = `<div class='stats'><div class='tinycal'><div class='calhead' style='background:#09f'>Visits</div><ol class='visits'>${visitlist}</ol></div></div>`;
+            }
+
+            el.innerHTML = `
+                <details>
+                    <summary><input type='checkbox' name='${bar.name}' id='${bar.name.replace(/\W/g,'')}'${checked}><a onclick="return app.goto('${bar.name.replace(/\'/g, "\\\'")}', ${fullbar.lat}, ${fullbar.lng}, event)" href='#${bar.name}'> ${bar.name}</a> ${visits}</summary>
+                    <div class="detail">
+                        <div><span class='addr'>${fullbar.address}</span></div>
+                        <div><em><span class='clue'>${ctxt}</span></em></div>
+                    </div>
+                    ${stats}
+                </details>`;
+            $(`#bar_${cleanname}`).innerHTML = el.innerHTML;
+            $(`#bar_${cleanname} > details`).setAttribute("open", true);     
+        },
+        showNext: function(mybar, barcnt=0, batchcnt=0) {
             let bar;
             if (typeof(mybar)==="string") {
                 bar = app.next[mybar];
@@ -108,25 +168,31 @@ const $$ = str => document.querySelectorAll(str);
             let clue = mybar.clue;
             let ctxt = clue ? clue : '';
             let fullbar = app.bars.find(item=>item.name==bar.name);
-            let checked = app.state.visited[bar.name] ? " checked" : "";
+            let checked = app.state.visited[bar.name.replace(/\W/g, '')] ? " checked" : "";
             let el = document.createElement("li");
             let stats = '';
+            let cleanname = bar.name.replace(/\W/g, '');
+            let visits = "";
 
-            if (app.state.visited[bar.name]) {
-                let visited = app.state.visited[bar.name];
-                stats = `
-<div class='stats'>
-    <div><label>Visits: </label> <span class='stat'>${visited.visits}</span></div>
-    <div><label>First Visit: </label> <span class='stat'>${visited.first_visit}</span></div>
-    <div><label>Last Visit: </label> <span class='stat'>${visited.last_visit}</span></div>
-    <div><label>Notes: </label> <span class='stat'>${visited.notes}</span></div>
-</div>`;
+            el.id = 'bar_'+cleanname;
+
+            if (app.state.visited[cleanname]) {
+//                    let vfirst = app.showVisitedCal(visited.first_visit);
+//                    let vlast = app.showVisitedCal(visited.last_visit);
+                let visited = app.state.visited[cleanname];
+                let visitlist = '';
+                if (visited && visited.visits && visited.visits.length) {
+                    visited.visits.forEach((item, idx)=>{ visitlist += `<li>${item} <button onclick='return app.rmVisit("${cleanname}","${idx}")' class='rmVisit'>x</button></li>` });
+                    visits = " <span class='tiny'>" + visited.visits.length  + "</span>";
+                }
+
+                stats = `<div class='stats'><div class='tinycal'><div class='calhead' style='background:#09f'>Visits</div><ol class='visits'>${visitlist}</ol></div></div>`;
                     
             }
 
             el.innerHTML = `
                 <details>
-                    <summary><input type='checkbox' name='${bar.name}' id='${bar.name.replace(/\W/,'')}'${checked}><a onclick="return app.goto('${bar.name.replace(/\'/, "\\\'")}', ${fullbar.lat}, ${fullbar.lng}, event)" href='#${bar.name}'> ${bar.name}</a></summary>
+                    <summary><input type='checkbox' name='${bar.name}' id='${bar.name.replace(/\W/g,'')}'${checked}><a onclick="return app.goto('${bar.name.replace(/\'/g, "\\\'")}', ${fullbar.lat}, ${fullbar.lng}, event)" href='#${bar.name}'> ${bar.name}</a>${visits}</summary>
                     <div class="detail">
                         <div><span class='addr'>${fullbar.address}</span></div>
                         <div><em><span class='clue'>${ctxt}</span></em></div>
@@ -137,24 +203,24 @@ const $$ = str => document.querySelectorAll(str);
             
             let icon = L.divIcon({className: "marker", html: `<div class='marker'><span class='label'>${bar.name}</span></div>`});
             let marker = L.marker([fullbar.lat, fullbar.lng], { icon: icon, title: bar.name }).bindPopup(`<h2>${bar.name}</h2><hr>${fullbar.address}<br>${ctxt}`);
-
+            
             marker.addTo(app.state.markerClusterGroup);
             app.state.markers.push(marker);
 
-            // Get next closest bar we haven't seen
-            if (bar.closest) {
-                for (let i=0; i<bar.closest.length; i++) {
-                    if (!app.state.seen[bar.closest[i]]) {
-                        nextBar = app.next[bar.closest[i]].name;
-                        i = bar.closest.length;
-                        app.state.seen[nextBar] = 1;
-                    }
-                }
+            if (app.state.currentClosest) {
+                nextBar = app.state.currentClosest[barcnt+1].name;
+            } else {
+                app.state.closests[bar.cleanname] = app.getClosestList(bar.cleanname);
+                nextBar = app.state.closests[bar.cleanname][0].name;
             }
             $("ol#list").append(el); 
-            if (nextBar && barcnt < 5) {
-                app.showNext(nextBar, barcnt + 1);
+            if (nextBar && batchcnt < 5) {
+                app.showNext(nextBar, barcnt + 1, batchcnt + 1);
             } else {
+                let more = document.createElement("li");
+                more.id = "more";
+                more.innerHTML = `<a class='more' href='#more' onclick='return app.showMore(${barcnt})'>Show more...</a>`;
+                $("ol#list").append(more);
                 app.map.fitBounds(app.state.markerClusterGroup.getBounds());
             }
         },
@@ -201,7 +267,7 @@ const $$ = str => document.querySelectorAll(str);
             let parts = datetime[0].split(/\//);
             let month = app.config.months[parts[0] - 1];
 
-            let out = "<div class='tinycal'><div class='calhead'>"+month+"</div><div class='caldate'>"+parts[1]+"</div><div class='calyear'>"+parts[2]+"</div></div>";
+            let out = `<div class='tinycal'><div class='calhead'>${month}</div><div class='caldate'>${parts[1]}</div><div class='calyear'>${parts[2]}</div></div>`;
 
             return out;;
         },
@@ -217,27 +283,28 @@ const $$ = str => document.querySelectorAll(str);
 
             data.forEach(bar => {
                 app.next[bar.name] = bar;
-                bar.name = bar.name.replace(/\&amp;/, '&');
-                let check = (app.state.visited[bar.name]) ? "checked='checked'" : '';
-                let stats = "";
+                bar.name = bar.name.replace(/\&amp;/g, '&');
+                let cleanname = bar.name.replace(/\W/g, '');
+                let check = (app.state.visited[cleanname]) ? "checked='checked'" : '';
+                let stats = "", visits = "";
 
-                if (app.state.visited[bar.name]) {
-                    let visited = app.state.visited[bar.name];
-                    let vfirst = app.showVisitedCal(visited.first_visit);
-                    let vlast = app.showVisitedCal(visited.last_visit);
+                if (app.state.visited[cleanname]) {
+//                    let vfirst = app.showVisitedCal(visited.first_visit);
+//                    let vlast = app.showVisitedCal(visited.last_visit);
+                    let visited = app.state.visited[cleanname];
+                    let visitlist = '';
+                    if (visited && visited.visits && visited.visits.length) {
+                        visited.visits.forEach((item, idx)=>{ visitlist += `<li>${item} <button onclick='return app.rmVisit("${cleanname}","${idx}")' class='rmVisit'>x</button></li>` });
+                        visits = ` <span class='tiny'>${visited.visits.length}</span>`;
+                    }
 
-                    stats = `
-    <div class='stats'>
-        <div><label>Visits: </label> <span class='stat'>${visited.visits}</span></div>
-        ${vfirst}
-        ${vlast}
-    </div>`;
+                    stats = `<div class='stats'><div class='tinycal'><div class='calhead' style='background:#09f'>Visits</div><ol class='visits'>${visitlist}</ol></div></div>`;
                         
                 }
 
-                out += `<li name="${bar.name}">
+                out += `<li id="bar_${cleanname}" name="${bar.name}">
                             <details>
-                    <summary><input type='checkbox' id='${bar.name.replace(/\W/,'')}' name="${bar.name}" ${check}> <a href='#${bar.name}'>${bar.name}</a></summary>
+                    <summary><input type='checkbox' id='${cleanname}' name="${bar.name}" ${check}> <a href='#${cleanname}'>${bar.name}</a> ${visits}</summary>
                                 <span class='addr'>${bar.address}</span><br>
                                 <span class='addr'>${bar.clue}</span><br>
                                 ${stats}
@@ -253,36 +320,109 @@ const $$ = str => document.querySelectorAll(str);
 
             $("#list").innerHTML = out;
         },
-        doInput: function(e) {
-            console.dir(e);
-            
-            if (e.target.type === "checkbox") {
-                if (!e.target.hasAttribute("checked")) {
-                    if (app.state.visited[e.target.name]) {
-                        app.state.visited[e.target.name].visits++;
-                        app.state.visited[e.target.name].last_visit = new Date().toLocaleString();
-                        app.state.visited[e.target.name].notes = "";
-                    } else {
-                        app.state.visited[e.target.name] = { name: e.target.name, visits: 1, first_visit: new Date().toLocaleString(), last_visit: new Date().toLocaleString() };
-                    }
-                    let v = Object.keys(app.state.visited);
-
-                    celebrate(e, v.length);
-                    e.target.setAttribute("checked", "checked");
-                    console.log(`Saved ${e.target.name} visit [${app.state.visited[e.target.name].visits} visits]`);
-                } else {
-                    if (app.state.visited[e.target.name]) {
-                        delete app.state.visited[e.target.name];
-                    }
-                    e.target.removeAttribute("checked");
-                    console.log(`Removed ${e.target.name} from list`);
-                }
-                console.dir(app.state.visited);
-                app.saveSettings('visits', app.state.visited);
-            } else if (e.target.tagName === "LI") {
-                let b = e.target.getAttribute('name');
-                e.target.querySelector("details").toggleAttribute("open");
+        openBar: function(e) {
+            if (app.debug) {
+                console.log("openBar");
+                console.dir(e);
             }
+            if (e.target.tagName === "LI") {
+                let el = e.target;
+
+                let detail = el.querySelector("details");
+                if (detail) {
+                    if (detail.open) {
+                        detail.removeAttribute("open");
+                    } else {
+                        detail.setAttribute("open", true);
+                        detail.open = true;
+                    }
+                }
+            }
+        },
+        doContext: function(e) {
+            if (app.debug) {
+                console.log("doContext");
+                console.dir(e);
+            }
+        },
+        rmVisit: function(bar, visit) {
+            if (app.state.visited[bar] && app.state.visited[bar].visits) {
+                app.state.visited[bar].visits.splice(visit, 1);
+                app.updateVenue(bar);
+            }
+        },
+        doInput: function(e) {
+            if (app.mouseTO) {
+                clearTimeout(app.mouseTO);
+            }
+            console.dir(e);
+           e.stopPropagation();
+            if ((app.currentEl != e.target) || (app.currentEl == e.target && app.currentAction !== "removed")) {
+                if (e.target.type === "checkbox") {
+                    let mybarname = e.target.id.replace(/^bar_/, '');;
+                    let mybar = app.bars.find(item=>item.cleanname===mybarname);
+
+                    if (!e.target.hasAttribute("checked")) {
+                        console.log("bar not checked and we clicked it");
+                        if (app.state.visited[e.target.id]) {
+                            console.log("bar was not checked but had visited entry anyway.  updating existing entry");
+                            app.state.visited[e.target.id].visits.push(new Date().toLocaleString());
+                            app.state.visited[e.target.id].notes = "";
+                        } else {
+                            console.log(`Creating new visited entry for ${e.target.id}`);
+                            app.state.visited[e.target.id] = { name: e.target.name, visits: [ new Date().toLocaleString() ], notes: "" };
+                        }
+                        let v = Object.keys(app.state.visited);
+
+                        celebrate(e, v.length);
+                        e.target.setAttribute("checked", "checked");
+                        e.target.checked = true;
+                        console.log(`Saved ${e.target.id} visit [${app.state.visited[e.target.id].visits} visits]`);
+                    } else {
+                        e.preventDefault();
+                        if (app.state.visited[e.target.id]) {
+                            console.log(`Updating existing visits for ${e.target.id}`);
+                            app.state.visited[e.target.id].visits.push(new Date().toLocaleString());
+                            e.target.setAttribute("checked", "checked");
+                            e.target.checked = true;
+                        }
+                    }
+                    if (mybar) {
+                        app.updateVenue(mybar);
+                    }
+                    console.dir(app.state.visited);
+                    app.saveSettings('visits', app.state.visited);
+                    e.target.checked = true;
+
+                    return false;
+                } else if ((e.target.tagName === "LI") || (e.target.tagName==="A")) {
+                    let b = e.target.getAttribute('name');
+                    e.target.querySelector("details").toggleAttribute("open");
+                }
+            }
+            return false;
+        },
+        
+        removeVisit: function() {
+            console.log("*** in removeVisit");
+            if (app.currentItem) {
+                delete app.state.visited[app.currentItem];
+                    
+                app.currentEl.removeAttribute("checked");
+                console.log(`Removed ${app.currentItem} from list`);
+                app.currentAction = 'removed';
+
+                setTimeout(function() { app.currentAction = ''; app.currentItem = ''; app.currentEl = ''; }, 1000);
+            }
+        },
+        doUp: function(e) {
+            if (app.mouseTO) {
+                clearTimeout(app.mouseTO);
+            }
+        },
+        doDown: function(e) {
+            console.log("doDown");
+            console.dir(e);
         },
         showHoods: function(data) {
 
@@ -314,6 +454,7 @@ const $$ = str => document.querySelectorAll(str);
             const me = { lat: lat, lng: lng };
             let closest = 9999999999;
             let closestBar = "";
+            let closestBars = [];
 
             app.bars.forEach(bar=>{
                 let dist = app.getDistance(me, bar);
@@ -321,9 +462,48 @@ const $$ = str => document.querySelectorAll(str);
                     closest = dist;
                     closestBar = bar;
                 }
+                closestBars.push({ name: bar.name, distance: dist});
             });
+            closestBars.sort((a, b) => a.distance - b.distance);
+            console.log("Closest Bars:");
+            console.dir(closestBars);
+            app.state.currentClosest = closestBars;
+
             return closestBar;
         },
+        getClosestList: function(bar) {
+            let obj;
+            let venue;
+
+            if (typeof(bar)==="string") {
+                venue = bar;
+                obj = app.bars.find(item=>item.name==bar);
+                if (!obj) obj = app.bars.find(item=>item.cleanname == bar);
+            } else {
+                obj = bar;
+                venue = obj.name;
+            }
+            const me = { lat: obj.latitude, lng: obj.longitude };
+
+            if (!me.lat || !me.lng) {
+                if (app.state.currentClosest) return app.state.currentClosest;
+                console.error("Could not get latlon to retrieve closest venues");
+                return;
+            }
+            let closest = 9999999999;
+            let closestBar = "";
+            let closestBars = [];
+
+            app.bars.forEach(loc=>{
+                let dist = app.getDistance(me, loc);
+                closestBars.push({ name: loc.name, distance: dist});
+            });
+            closestBars.sort((a, b) => a.distance - b.distance);
+            app.state.closests[venue] = closestBars;
+
+            console.log("Closest Bars:");
+            console.dir(closestBars);
+         },
         gotPosition: function(pos) {
             let me = { lat: pos.coords.latitude, lng: pos.coords.longitude };
             let closestBar = app.findClosest(pos.coords.latitude, pos.coords.longitude);
@@ -340,6 +520,7 @@ const $$ = str => document.querySelectorAll(str);
           }
 
         },
+        // returns in feet
         getDistance: function( from, to ) {
             let latFrom = from.lat * 0.0174533;
             let lonFrom = from.lng * 0.0174533;
@@ -350,7 +531,7 @@ const $$ = str => document.querySelectorAll(str);
             let lonDelta = lonTo - lonFrom;
 
             let angle = 2 * Math.asin(Math.sqrt(Math.pow(Math.sin(latDelta / 2), 2) + Math.cos(latFrom) * Math.cos(latTo) * Math.pow(Math.sin(lonDelta / 2), 2)));
-            return angle * 6371000;
+            return ~~((angle * 6371000) * 1.09) * 3;      // multiply angle * radius of earth(km) then convert to yards and then to feet
         },
         goto: function(bar, lat, lng, e) {
             if (e) {
@@ -371,10 +552,24 @@ const $$ = str => document.querySelectorAll(str);
             $("#overlayWrap").style.display = "none";
         }, 
         showAbout: function() {
+            $("#about").style.display = "flex";
             $("#about").style.transform = "translateX(0vw)";
         },
         hideAbout: function() {
-            $("#about").style.transform = "translateX(-100vw)";
+            $("#about").style.transform = "translateX(100vw)";
+            setTimeout(function() { $("#about").style.display = "none"; }, 1000);
+        }, 
+        showMenu: function(e) {
+            console.log("showMenu");
+            if (e) e.preventDefault();
+            $(".left").className = "left open";
+            return false;
+        },
+        hideMenu: function(e) {
+            if (e) e.preventDefault();
+            $(".left").classList.remove("open");
+            return false;
+
         }
 
     }

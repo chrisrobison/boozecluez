@@ -2,7 +2,7 @@
 //const confetti = document.getElementById('confetti');
 //const confettiCtx = confetti.getContext('2d');
 let container = { h: 500, w: 500 }, confettiElements = [],
-    clickPosition;
+    clickPosition = [ window.innerWidth / 2, window.innerHeight / 2];
 
 const panel = document.querySelector("#panel");
 
@@ -12,7 +12,7 @@ rand = (min, max) => Math.random() * (max - min) + min;
 // params to play with
 const confettiParams = {
     // number of confetti per "explosion"
-    number: 50,
+    number: 25,
     // min and max size for each rectangle
     size: {
         x: [5, 20],
@@ -21,13 +21,13 @@ const confettiParams = {
     // power of explosion
     initSpeed: 20,
     // defines how fast particles go down after blast-off
-    gravity: 0.65,
+    gravity: 0.35,
     // how wide is explosion
     drag: 0.08,
     // how slow particles are falling
-    terminalVelocity: 4,
+    terminalVelocity: 1,
     // how fast particles are rotating around themselves
-    flipSpeed: 1.5,
+    flipSpeed: .1,
     rotateSpeed: ~~(Math.random() * 100) + 1
 };
 const colors = [
@@ -75,6 +75,9 @@ function Conf() {
     
     this.element = document.createElement("div");
     this.element.className = "glitter";
+
+    let html = "<div class='glitter-inner'><div class='glitter-front'></div><div class='glitter-back'></div></div>";
+
     this.element.style.backgroundColor = this.colorPair.front;
     this.element.style.top = this.position.y + "px";
     this.element.style.left = this.position.x + "px";
@@ -116,7 +119,9 @@ function updateConfetti() {
                 confettiElements.splice(idx, 1)
         }
     });
-		setTimeout(function() { updateConfetti(); }, 20);
+	if (confettiElements.length) {
+        window.requestAnimationFrame(updateConfetti);
+    }
 }
 
 function addConfetti(e) {
@@ -135,18 +140,21 @@ function addConfetti(e) {
         confettiElements.push(new Conf())
     }
 }
-function addDivConfetti(e) {
-    if (e) {
+function addDivConfetti(e, cnt=0) {
+    if (e && e.x && e.y) {
         clickPosition = [ e.x, e.y ];
     } else {
         clickPosition = [
-            container.w * Math.random(),
-            container.h * Math.random()
+            window.innerWidth / 2,
+            window.innerHeight / 2
         ];
     }
-    for (let i = 0; i < confettiParams.number; i++) {
+    cnt = (cnt) ? cnt : confettiParams.number;
+
+    for (let i = 0; i < cnt; i++) {
         confettiElements.push(new Conf());
     }
+    updateConfetti();
 }
 
 function celebrate(e, num) {
@@ -166,7 +174,12 @@ function addBalloon(e, num) {
     let wrap = document.createElement("div");
     wrap.className = "balloon";
     wrap.innerHTML = num;
-    wrap.style.left = ~~(Math.random() * 80) + 'vw';
+    wrap.style.left = "40%";
+    wrap.addEventListener("click", function(e) {
+        addDivConfetti(e, 15);
+        wrap.style.display = "none";
+    });
+
     $("body").append(wrap);
     balloons.push(wrap);
     setTimeout(function() { $("body").removeChild(wrap); }, 8000);

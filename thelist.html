@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-    <meta name="generator" content="HTML Tidy for HTML5 for Linux version 5.6.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Booze Cluez">
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-180.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-167.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-120.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="touch-icon-114.png">
+    <link rel="apple-touch-icon" sizes="87x87" href="touch-icon-87.png">
+    <link rel="apple-touch-icon" sizes="80x80" href="touch-icon-80.png">
     <meta charset="utf-8">
-    <title></title>
-    <link rel="icon" type="image/x-icon" href="img/boozecluez-favicon.png">
+    <title>Booze Cluez: The List</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Titillium+Web:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity= "sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css" integrity= "sha512-Zcn6bjR/8RZbLEpLIeOwNtzREBAJnUKESxces60Mpoj+2okopSAcSUIUOseddDm0cxnGQzxIR7vJgsLZbdLE3w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="thelist.css">
@@ -18,42 +28,34 @@
     <script src="confetti.js"></script>
     </head>
     <body>
-    <nav class="left" onclick="this.classList.toggle('open')">
-        <div class="drawer">
-            <ul id="menu">
-                <li><a href="#" onclick="return app.showBars(app.bars)">Home</a></li>
-                <li><a href="#" onclick="app.showAbout(); $('#menuToggle input').checked = false; return false;">About</a></li>
-                <li><a href="#" onclick="return app.showBars(app.bars);">The List</a></li>
-                <li><a href="#" onclick="return app.showMyList()">My List</a></li>
-                <li><a href="#" onclick="return app.getPosition()">Find Me!</a></li>
-                <li><a href="https://cdr2.com/" target="_blank">Show me more...</a></li>
-            </ul>
-        </div>  
-        <a href="#" class="menu"></a>
-    </nav>
     <header>
         <div>
-            <button class="findme" onclick="app.getPosition(); return false;"></button> <img src='img/logo.png' id='logo'>
+            <a href="#" onclick="return app.showMenu(event)" class="menu2"></a>
+            <button class="findme" onclick="app.getPosition(); return false;"></button> 
+            <a href="https://boozecluez.com/thelist.html"><img src='img/logo.png' id='logo'></a>
         </div>
         <div id="barsDropdown"></div><!--button onclick="return app.doStart()">Get List</button>
     <button onclick="app.showBars(app.bars); return false;">The List</button>
     <button onclick="app.getPosition()">Find Me</button-->
     </header>
     <main>
-        <form oninput='app.doInput(event)'><ol id='list' onclick="app.doInput(event)"></ol></form>
+        <form oninput='app.doInput(event)'><ol id='list'></ol></form>
     </main>
     <div id="about">
         <div class='heading'>
-            <a href="#" class="backArrow" onclick="app.hideAbout()">&lt;</a>
-            <h1 style="display:inline-block;float:right;">
-                About
-            </h1>
+            <a href="#" class="backArrow" onclick="app.hideAbout()"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><path style="fill:rgb(255,255,255);" d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg></a>
         </div>
-        <blockquote>
-            <em>Booze Cluez</em> was created to help you, an adult lover of alcoholic beverages (not that kind of adult!)
-            navigate the bars of San Francisco in an organized, fun and, dare we say, productive way. Our goal is to have one (1)
-            drink at every San Francisco bar, restaurant or pub that serves alcohol.
-        </blockquote>
+        <div class="card">
+            <h1>About Us</h1>
+            <h2>Who We Are</h2>
+            <p>Welcome to Booze Cluez, your ultimate guide to navigating the vibrant and diverse bars of San Francisco! Founded by a group of friends with a passion for exploration and, of course, a good drink, we're here to make your bar-hopping experience organized, fun, and unforgettable.</p>
+
+            <h2>Our Mission</h2>
+            <p>Our mission is simple: to have one (1) drink at every bar, restaurant, or pub in San Francisco that serves alcohol. Why? Because life's too short to drink at the same bar twice! We're all about discovering new places, meeting new people, and enjoying the rich tapestry of experiences that San Francisco's nightlife has to offer.</p>
+        <h2>History</h2>                    
+        <p><em>Booze Cluez</em> is a labor of love provided free of charge to anyone who has a love of exploring new places, a strong desire to explore San Francisco, and just a tiny bit of an alcohol problem.  It has been created to help you, an adult over 21 years of age and a lover of alcoholic beverages, to navigate the bars of San Francisco in an organized, fun and, dare we say, productive way.</p>
+  <img src="img/booze_party.svg" style="width:80vw;margin:0 auto;">
+        </div>
     </div>
     <footer>
         <button id="mapToggle" onclick="$('body').classList.toggle('hidemap')"></button>
@@ -64,6 +66,24 @@
             <div id="foam"></div>
         </div>
     </div>
+    <nav class="left" onclick="this.classList.toggle('open')">
+        <span class='title-wrap'>
+            <img class="beerman" src="img/beerman.png" height="200">
+            <span class='title'>Booze Cluez</span>
+        </span>
+        <div class="drawer">
+            <ul id="menu">
+                <li><a href="#" onclick="return app.showBars(app.bars)"><i class="fa-solid fa-house-chimney"></i> Home</a></li>
+                <li><a href="#" onclick="return app.showAbout();"><i class="fa-solid fa-circle-info"></i> About</a></li>
+                <li><a href="#" onclick="return app.showBars(app.bars);"><i class="fa-solid fa-rectangle-list"></i> The List</a></li>
+                <li><a href="#" onclick="return app.showMyList()"><i class="fa-solid fa-list-check"></i> My List</a></li>
+                <li><a href="#" onclick="return app.getPosition()"><i class="fa-solid fa-location-dot"></i> Find Me!</a></li>
+                <li><a href="#" onclick="return app.addBar()"><i class="fa-solid fa-map-location-dot"></i> Add Location</a></li>
+                <li><a href="#" onclick="return app.settings()"><i class="fa-solid fa-gear"></i> Settings</a></li>
+                <li><a href="https://cdr2.com/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Show me more...</a></li>
+            </ul>
+        </div>  
+    </nav>
     <div id="panel"></div>
     <script src="thelist.js"></script>
     </body>
