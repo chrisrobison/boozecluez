@@ -214,7 +214,7 @@ const $$ = str => document.querySelectorAll(str);
                 nextBar = app.state.closests[bar.cleanname][0].name;
             }
             $("ol#list").append(el); 
-            if (nextBar && batchcnt < 5) {
+            if (nextBar && batchcnt < 6) {
                 app.showNext(nextBar, barcnt + 1, batchcnt + 1);
             } else {
                 let more = document.createElement("li");
@@ -547,6 +547,7 @@ const $$ = str => document.querySelectorAll(str);
         }, 
         showOverlay: function() {
             $("#overlayWrap").style.display = "block";
+            setTimeout(function() { app.hideOverlay(); }, 3000);
         },
         hideOverlay: function() {
             $("#overlayWrap").style.display = "none";
@@ -558,7 +559,75 @@ const $$ = str => document.querySelectorAll(str);
         hideAbout: function() {
             $("#about").style.transform = "translateX(100vw)";
             setTimeout(function() { $("#about").style.display = "none"; }, 1000);
-        }, 
+        },
+        showAddBar: function() {
+            $("#addBar").style.display = "flex";
+            $("#addBar").style.transform = "translateX(0vw)";
+        },
+        hideAddBar: function() {
+            $("#addBar").style.transform = "translateX(100vw)";
+            setTimeout(function() { $("#addBar").style.display = "none"; }, 1000);
+        },
+        addBar: function(name, addr, evt) {
+            if (evt) {
+                evt.preventDefault();
+                evt.stopPropagation();
+            }
+            name = encodeURIComponent(name);
+            addr = encodeURIComponent(addr);
+            let url = `api.php?x=addbar&name=${name}&addr=${addr}`;
+            fetch(url).then(r=>r.json()).then(data=>{
+                console.dir(data);
+            });
+            
+            app.hideAddBar();
+            return false;
+        },
+        showMyList: function() {
+            let stats = "";
+            let allbars = Object.keys(app.state.visited);
+            for (let i=0; i<allbars.length; i++) {
+                let el = document.createElement("li");
+                let visits = "";
+                let visited = app.state.visited[allbars[i]];
+                let bar = app.next[visited.name];
+
+                let cleanname = allbars[i];
+                let fullbar = bar;
+                
+                el.id = 'bar_'+cleanname;
+                
+                let ctxt = "";
+                
+                let visitlist = '';
+                if (visited && visited.visits && visited.visits.length) {
+                    visited.visits.forEach((item, idx)=>{ visitlist += `<li>${item} <button onclick='return app.rmVisit("${cleanname}","${idx}")' class='rmVisit'>x</button></li>` });
+                    visits = " <span class='tiny'>" + visited.visits.length  + "</span>";
+                }
+
+                stats = `<div class='stats'><div class='tinycal'><div class='calhead' style='background:#09f'>Visits</div><ol class='visits'>${visitlist}</ol></div></div>`;
+                    
+
+                el.innerHTML = `
+                    <details>
+                        <summary><input type='checkbox' name='${bar.name}' id='${bar.name.replace(/\W/g,'')}' CHECKED><a onclick="return app.goto('${bar.name.replace(/\'/g, "\\\'")}', ${fullbar.lat}, ${fullbar.lng}, event)" href='#${bar.name}'> ${bar.name}</a>${visits}</summary>
+                        <div class="detail">
+                            <div><span class='addr'>${fullbar.address}</span></div>
+                        </div>
+                        ${stats}
+                    </details>`;
+                let nextBar;
+                
+                let icon = L.divIcon({className: "marker", html: `<div class='marker'><span class='label'>${bar.name}</span></div>`});
+                let marker = L.marker([fullbar.lat, fullbar.lng], { icon: icon, title: bar.name }).bindPopup(`<h2>${bar.name}</h2><hr>${fullbar.address}<br>${ctxt}`);
+                
+                $("ol#list").append(el); 
+                marker.addTo(app.state.markerClusterGroup);
+                app.state.markers.push(marker);
+            }
+            app.map.fitBounds(app.state.markerClusterGroup.getBounds());
+            
+        },
         showMenu: function(e) {
             console.log("showMenu");
             if (e) e.preventDefault();
