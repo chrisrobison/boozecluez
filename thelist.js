@@ -130,7 +130,7 @@ const $$ = str => document.querySelectorAll(str);
             let el = document.createElement("li");
             let stats = '';
             let cleanname = bar.name.replace(/\W/g, '');
-            let visits = 0;            
+            let visits = ""; 
             el.id = 'bar_' + cleanname;
 
             if (app.state.visited[cleanname]) {
@@ -189,10 +189,19 @@ const $$ = str => document.querySelectorAll(str);
                 stats = `<div class='stats'><div class='tinycal'><div class='calhead' style='background:#09f'>Visits</div><ol class='visits'>${visitlist}</ol></div></div>`;
                     
             }
-
+            let dist = (app.state.currentClosest && app.state.currentClosest[barcnt]) ? app.state.currentClosest[barcnt].distance : "";
+            let disthtml = "";
+            if (dist && dist > 1000) {
+                dist = dist / 5280;
+                dist = Math.floor(dist * 10) / 10;
+                disthtml = `<span class='distance'>${dist} miles</span>`;
+            } else if (dist) {
+                dist /= 3;
+                disthtml = `<span class='distance'>${dist} yards</span>`;
+            }
             el.innerHTML = `
                 <details>
-                    <summary><input type='checkbox' name='${bar.name}' id='${bar.name.replace(/\W/g,'')}'${checked}><a onclick="return app.goto('${bar.name.replace(/\'/g, "\\\'")}', ${fullbar.lat}, ${fullbar.lng}, event)" href='#${bar.name}'> ${bar.name}</a>${visits}</summary>
+                    <summary><input type='checkbox' name='${bar.name}' id='${bar.name.replace(/\W/g,'')}'${checked}><a onclick="return app.goto('${bar.name.replace(/\'/g, "\\\'")}', ${fullbar.lat}, ${fullbar.lng}, event)" href='#${bar.name}'> ${bar.name}</a>${visits} ${disthtml}</summary>
                     <div class="detail">
                         <div><span class='addr'>${fullbar.address}</span></div>
                         <div><em><span class='clue'>${ctxt}</span></em></div>
@@ -214,7 +223,7 @@ const $$ = str => document.querySelectorAll(str);
                 nextBar = app.state.closests[bar.cleanname][0].name;
             }
             $("ol#list").append(el); 
-            if (nextBar && batchcnt < 6) {
+            if (nextBar && batchcnt < 10) {
                 app.showNext(nextBar, barcnt + 1, batchcnt + 1);
             } else {
                 let more = document.createElement("li");
@@ -348,6 +357,10 @@ const $$ = str => document.querySelectorAll(str);
         rmVisit: function(bar, visit) {
             if (app.state.visited[bar] && app.state.visited[bar].visits) {
                 app.state.visited[bar].visits.splice(visit, 1);
+                if (app.state.visited[bar].visits.length == 0) {
+                    delete app.state.visited[bar];
+                    app.saveSettings('visits', app.state.visited);
+                }
                 app.updateVenue(bar);
             }
         },
@@ -379,6 +392,7 @@ const $$ = str => document.querySelectorAll(str);
                         e.target.checked = true;
                         console.log(`Saved ${e.target.id} visit [${app.state.visited[e.target.id].visits} visits]`);
                     } else {
+                        // bar 
                         e.preventDefault();
                         if (app.state.visited[e.target.id]) {
                             console.log(`Updating existing visits for ${e.target.id}`);
